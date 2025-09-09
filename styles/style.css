@@ -1,0 +1,34 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px 0 8px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px 8px 8px;
+
+}
+
+.main-div{
+    flex-grow: 1;
+}
+
