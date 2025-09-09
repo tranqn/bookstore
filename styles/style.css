@@ -1,9 +1,16 @@
+:root {
+    --primary-color: white;
+    --large-font-size: 36px;
+    --medium-font-size: 24px;
+    --minimal-font-size: 16px;
+}
+
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: black;
-    color: white;
+    color: var(--primary-color);
 }
 
 header{
@@ -14,10 +21,8 @@ header{
 }
 
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+    height: 100%;
+    width: 100%;
 }
 
 footer{
@@ -32,3 +37,86 @@ footer{
     flex-grow: 1;
 }
 
+.books-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ---------- Card --------------------------------------------------------- */
+/* .book-display{
+    background: linear-gradient(90deg,rgba(255, 0, 13, 1) 0%, rgba(250, 204, 0, 1) 50%, rgba(255, 0, 13, 1) 100%);
+    width: 280px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.book-card{
+    background: rgb(100, 0, 0);
+    width: 280px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.book-title{
+    font-size: var(--large-font-size);
+}
+
+.book-image{
+    height: 100px;
+    aspect-ratio: 1/1;
+}
+
+.price-likes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_book-table{
+    width: 100%;
+}
+
+.book-table{
+    font-size: var(--minimal-font-size);
+}
+
+.book-table-first{
+    font-weight: 800;
+}
+
+.comments{
+    background-color: aqua;
+    width: 100%;
+    height: 20px;
+    flex-grow: 1;
+    padding: 8px;
+}
+
+.share-comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-top: 8px ;
+}
+
+.comment{
+    width: 240px;
+    height: 16px;
+}
+
+.comment-icon{
+    width: 24px;
+    height: 24px;
+}
