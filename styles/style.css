@@ -87,25 +87,68 @@ footer{
     justify-content: space-between;
 }
 
-.div_book-table{
+.book-card-details{
     width: 100%;
 }
 
-.book-table{
-    font-size: var(--minimal-font-size);
+.book-card-row{
+    display: flex;
 }
 
-.book-table-first{
-    font-weight: 800;
+.book-card-left-side{
+    font-size: var(--minimal-font-size);
+    font-weight: 100;
+    height: 20px;
     width: 128px;
 }
 
-.comments{
+.book-card-right-side{
+    font-size: var(--minimal-font-size);
+    font-weight: 100;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.font-bold{
+    font-weight: 800;
+}
+
+.comments-display{
     width: 100%;
     height: 20px;
     flex-grow: 1;
     padding: 8px;
 }
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+
+.comment{
+    display: flex;
+}
+
+.comment-first{
+    font-size: var(--minimal-font-size);
+    font-weight: 100;
+    width: 128px;
+        height: auto;
+    overflow-x: hidden;
+}
+
+.commnet-second{
+    font-size: var(--minimal-font-size);
+    font-weight: 100;
+    height: auto;
+    overflow-x: hidden;
+}
+
 
 .share-comment{
     display: flex;
@@ -123,8 +166,4 @@ footer{
 .comment-icon{
     width: 24px;
     height: 24px;
-}
-
-.comment{
-    display: flex;
 }
