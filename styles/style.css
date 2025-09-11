@@ -219,7 +219,8 @@ footer{
 
 .favoriten{
     font-size: var(--medium-font-size);
-    background-color: rgba(255, 255, 255, 0.178);
+    padding: 6px 18px;
+    background-color: rgba(211, 211, 211, 0.508);
     border-radius: 10px;
     border: none;
 }
