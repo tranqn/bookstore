@@ -9,10 +9,12 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(90deg,rgba(255, 95, 59, 0.79) 1%, 
-                                    rgba(14, 16, 67, 0.96) 5%, 
-                                    rgba(14, 16, 67, 0.93) 95%, 
-                                    rgba(255, 95, 59, 0.86) 100%);
+    align-items: center;
+    background-color: black;
+    background-image: url("../assets/imgs/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: var(--primary-color);
 }
 
