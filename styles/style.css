@@ -48,6 +48,7 @@ footer{
 
 .header-title{
     padding: 24px;
+    cursor: pointer;
 }
 
 .books-gallery{
