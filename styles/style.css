@@ -1,6 +1,6 @@
 :root {
     --primary-color: white;
-    --large-font-size: 36px;
+    --large-font-size: 28px;
     --medium-font-size: 24px;
     --minimal-font-size: 16px;
 }
@@ -10,8 +10,8 @@ body{
     display: flex;
     flex-direction: column;
     background: linear-gradient(90deg,rgba(255, 95, 59, 0.79) 1%, 
-                                    rgba(14, 16, 67, 0.96) 15%, 
-                                    rgba(14, 16, 67, 0.93) 85%, 
+                                    rgba(14, 16, 67, 0.96) 5%, 
+                                    rgba(14, 16, 67, 0.93) 95%, 
                                     rgba(255, 95, 59, 0.86) 100%);
     color: var(--primary-color);
 }
@@ -69,10 +69,18 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0px 18px rgb(255 137 112);
 }
 
 .book-title{
     font-size: var(--large-font-size);
+    height: 64px;
+    overflow: auto;
 }
 
 .book-image{
@@ -85,6 +93,35 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.price{
+    font-size: var(--large-font-size);
+    font-weight: 600;
+    color: rgb(255 137 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    padding: 16px 0;
+}
+
+.likes-combo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    padding: 16px 0;
+    gap: 8px;
+}
+
+.likes{
+    font-size: var(--minimal-font-size);
+}
+
+.likes-icon{
+    width: 28px;
+    height: 28px;
 }
 
 .book-card-details{
@@ -106,8 +143,8 @@ footer{
     font-size: var(--minimal-font-size);
     font-weight: 100;
     width: 100%;
-    overflow-x: auto;
 }
+
 
 .font-bold{
     font-weight: 800;
@@ -126,27 +163,13 @@ footer{
     gap: 4px;
     width: 100%;
     height: 100%;
-    overflow-y: hidden;
     overflow-y: scroll;
+    scrollbar-color: rgb(55 48 144) transparent;
+    scrollbar-width: thin;
 }
 
 .comment{
     display: flex;
-}
-
-.comment-first{
-    font-size: var(--minimal-font-size);
-    font-weight: 100;
-    width: 128px;
-        height: auto;
-    overflow-x: hidden;
-}
-
-.commnet-second{
-    font-size: var(--minimal-font-size);
-    font-weight: 100;
-    height: auto;
-    overflow-x: hidden;
 }
 
 
@@ -155,7 +178,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 8px;
-    padding-top: 8px ;
+    margin-top: 16px;
 }
 
 .comment-input{
@@ -166,4 +189,14 @@ footer{
 .comment-icon{
     width: 24px;
     height: 24px;
+}
+
+.seperator{
+    text-align: left;
+    width: 10px;
+}
+
+.make-red{
+    filter: invert(18%) sepia(99%) saturate(7496%) hue-rotate(1deg)
+            brightness(102%) contrast(106%);
 }
