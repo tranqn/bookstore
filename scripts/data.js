@@ -13,19 +13,19 @@ let books = [
           "comment": "Ein faszinierendes Abenteuerbuch, das mich von der ersten Seite an gefesselt hat."
         },
         {
-          "name": "Bookworm84",
+          "name": "worm84",
           "comment": "Eine romantische Geschichte, die mein Herz berührt und mich zum Nachdenken gebracht hat."
         },
         {
-          "name": "FantasyFanatic",
+          "name": "Fanatic",
           "comment": "Eine spannende Fantasiewelt, die ich nur schwer aus der Hand legen konnte."
         },
         {
-          "name": "SciFiGuru",
+          "name": "Guru",
           "comment": "Ein cleverer Science-Fiction-Roman mit interessanten Zeitreise-Konzepten und Charakteren."
         },
         {
-          "name": "NovelLover",
+          "name": "Lover",
           "comment": "Ein Buch, das voller magischer Überraschungen steckt und mich begeistert hat."
         }
       ]
@@ -44,19 +44,19 @@ let books = [
           "comment": "Ein faszinierendes Abenteuerbuch, das mich von der ersten Seite an gefesselt hat."
         },
         {
-          "name": "Bookworm84",
+          "name": "worm84",
           "comment": "Eine romantische Geschichte, die mein Herz berührt und mich zum Nachdenken gebracht hat."
         },
         {
-          "name": "FantasyFanatic",
+          "name": "Fanatic",
           "comment": "Eine spannende Fantasiewelt, die ich nur schwer aus der Hand legen konnte."
         },
         {
-          "name": "SciFiGuru",
+          "name": "Guru",
           "comment": "Ein cleverer Science-Fiction-Roman mit interessanten Zeitreise-Konzepten und Charakteren."
         },
         {
-          "name": "NovelLover",
+          "name": "Lover",
           "comment": "Ein Buch, das voller magischer Überraschungen steckt und mich begeistert hat."
         }
       ]
@@ -71,23 +71,23 @@ let books = [
       "genre": "Romantik",
       "comments": [
         {
-          "name": "LeserPeter",
+          "name": "eter",
           "comment": "Die Handlung war fesselnd und die Charaktere unglaublich lebendig dargestellt."
         },
         {
-          "name": "BookLover21",
+          "name": "Lover21",
           "comment": "Ein romantisches Meisterwerk, das mich tief berührt und bewegt hat."
         },
         {
-          "name": "FantasyNerd",
+          "name": "Nerd",
           "comment": "Fantastische Welten und epische Abenteuer - genau mein Geschmack!"
         },
         {
-          "name": "SciFiEnthusiast",
+          "name": "husiast",
           "comment": "Die Zeitreise-Elemente waren genial und haben die Story spannend gemacht."
         },
         {
-          "name": "ReadingAddict",
+          "name": "Addict",
           "comment": "Ein unvergessliches Buch, das mich auf eine magische Reise mitgenommen hat."
         }
       ]
@@ -102,7 +102,7 @@ let books = [
       "genre": "Science-Fiction",
       "comments": [
         {
-          "name": "BuchKenner",
+          "name": "Kenner",
           "comment": "Ein spannendes Abenteuer, das mich von Anfang an mitgerissen hat."
         },
         {
@@ -131,7 +131,7 @@ let books = [
       "genre": "Science-Fiction",
       "comments": [
         {
-          "name": "BücherLiebhaber",
+          "name": "Liebhaber",
           "comment": "Eine magische Reise durch eine faszinierende Fantasiewelt, absolut fesselnd."
         },
         {
@@ -165,7 +165,7 @@ let books = [
       "genre": "Fantasy",
       "comments": [
         {
-          "name": "Bookworm92",
+          "name": "worm92",
           "comment": "Ein faszinierendes Buch, das mich von der ersten Seite an gefesselt hat."
         }
       ]
@@ -180,15 +180,15 @@ let books = [
       "genre": "Romantik",
       "comments": [
         {
-          "name": "Bibliophile23",
+          "name": "phile23",
           "comment": "Die Fantasiewelt war so lebendig, ich konnte das Buch kaum aus der Hand legen."
         },
         {
-          "name": "StorySeeker",
+          "name": "Seeker",
           "comment": "Eine unglaublich berührende Liebesgeschichte, die mich tief bewegt hat."
         },
         {
-          "name": "SciFiExplorer",
+          "name": "Explorer",
           "comment": "Spannende Zukunftsvisionen und interessante Charaktere machten diesen Roman einzigartig."
         }
       ]

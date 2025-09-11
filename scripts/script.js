@@ -1,4 +1,5 @@
 function loadBookCards(){
+    getBooks();
     const galleryRef = document.getElementById("books-gallery");
     galleryRef.innerHTML = "";
 
@@ -11,14 +12,22 @@ function loadBookCards(){
 
 function addComment(bookIndex){
     let commentRef = document.getElementById(`comment-input${bookIndex}`);
-    let comment = { "name" : "Anonym",
+    let inputFieldRef = document.getElementById(`comment-input${bookIndex}`);
+    let comment = { 
+                    "name" : "Anonym",
                     "comment" : commentRef.value,
-    };
+                };
 
-    books[bookIndex].comments.unshift(comment);
-    createComments(bookIndex);
-    commentRef.value = "";
-    saveBooks();
+    if(commentRef.value == ""){
+        inputFieldRef.classList.add("red-border");
+        inputFieldRef.placeholder="Sie haben nichts geschrieben :/";
+    }
+    else{
+        books[bookIndex].comments.unshift(comment);
+        createComments(bookIndex);
+        commentRef.value = "";
+        saveBooks();
+    }
 }
 
 function addLike(bookIndex){
@@ -46,11 +55,39 @@ function saveBooks(){
     localStorage.setItem("books", JSON.stringify(books));
 }
 
+function getBooks(){
+    let myArr = JSON.parse(localStorage.getItem("books"));
+
+    if(myArr){
+        books = myArr; 
+    }
+}
+
 function loadHearts(bookIndex){
     const likedRef = document.getElementById(`like-icon${bookIndex}`);
 
     if(books[bookIndex].liked == true){
         likedRef.src="./assets/icons/heart-icon.png";
         likedRef.classList.add("make-red");
+    }
+}
+
+function removeError(bookIndex){
+    let inputFieldRef = document.getElementById(`comment-input${bookIndex}`);
+    inputFieldRef.classList.remove("red-border");
+    inputFieldRef.placeholder="Dein Kommentar :)";
+
+}
+
+function loadFav(){
+    const galleryRef = document.getElementById("books-gallery");
+    galleryRef.innerHTML = "";
+
+        for(let bookIndex = 0; bookIndex < books.length; bookIndex++){
+            if(books[bookIndex].liked == true){
+                galleryRef.innerHTML += createBookCard(bookIndex);
+                createComments(bookIndex);
+                loadHearts(bookIndex);
+            }
     }
 }

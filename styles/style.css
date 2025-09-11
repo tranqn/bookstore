@@ -1,17 +1,21 @@
 :root {
     --primary-color: white;
-    --large-font-size: 28px;
-    --medium-font-size: 24px;
+    --large-font-size: 24px;
+    --medium-font-size: 20px;
     --minimal-font-size: 16px;
 }
 
+@font-face {
+  font-family: "Jakarat";
+  src: url("../assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+}
+
 body{
+    font-family: "Jakarat";
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    background-image: url("../assets/imgs/bg.png");
+    /* align-items: center; */
+    background-color: rgb(20 14 54);
+    background-image: url("../assets/imgs/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,6 +44,10 @@ footer{
 
 .main-div{
     flex-grow: 1;
+}
+
+.header-title{
+    padding: 24px;
 }
 
 .books-gallery{
@@ -99,7 +107,6 @@ footer{
 
 .price{
     font-size: var(--large-font-size);
-    font-weight: 600;
     color: rgb(255 137 112);
     display: flex;
     justify-content: center;
@@ -136,27 +143,30 @@ footer{
 
 .book-card-left-side{
     font-size: var(--minimal-font-size);
-    font-weight: 100;
+    font-weight: 300;
     height: 20px;
     width: 128px;
 }
 
 .book-card-right-side{
     font-size: var(--minimal-font-size);
-    font-weight: 100;
+    font-weight: 300;
     width: 100%;
 }
 
 
 .font-bold{
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .comments-display{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 20px;
     flex-grow: 1;
     padding: 8px;
+    gap: 8px;
 }
 
 .comments{
@@ -201,4 +211,20 @@ footer{
 .make-red{
     filter: invert(18%) sepia(99%) saturate(7496%) hue-rotate(1deg)
             brightness(102%) contrast(106%);
+}
+
+.red-border{
+    border: 3px solid red;
+}
+
+.favoriten{
+    font-size: var(--medium-font-size);
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 10px;
+    border: none;
+}
+
+.favoriten:hover{
+    color: rgb(255 137 112);
+    box-shadow: 0 0px 18px rgb(255 137 112);
 }
