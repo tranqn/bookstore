@@ -58,17 +58,6 @@ footer{
     gap: 16px;
 }
 
-/* ---------- Card --------------------------------------------------------- */
-/* .book-display{
-    background: linear-gradient(90deg,rgba(255, 0, 13, 1) 0%, rgba(250, 204, 0, 1) 50%, rgba(255, 0, 13, 1) 100%);
-    width: 280px;
-    height: 500px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .book-card{
     background-color: rgb(70 61 178);
     width: 280px;
@@ -201,11 +190,6 @@ footer{
 .comment-icon{
     width: 24px;
     height: 24px;
-}
-
-.seperator{
-    text-align: left;
-    width: 10px;
 }
 
 .make-red{
