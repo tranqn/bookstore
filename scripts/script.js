@@ -5,6 +5,7 @@ function loadBookCards(){
 
     for(let bookIndex = 0; bookIndex < books.length; bookIndex++){
             galleryRef.innerHTML += createBookCard(bookIndex);
+            document.getElementById(`like-icon${bookIndex}`).classList.remove("like-flag");
             createComments(bookIndex);
             loadHearts(bookIndex);
     }
@@ -34,22 +35,34 @@ function addLike(bookIndex){
     const likeIconRef = document.getElementById(`like-icon${bookIndex}`);
     const likesRef = document.getElementById(`likes${bookIndex}`);
 
-    if(likeIconRef.classList.contains("make-red")){
-
-        likeIconRef.src="./assets/icons/heart-thin-icon.png";
-        likeIconRef.classList.remove("make-red");
-        books[bookIndex].likes = books[bookIndex].likes - 1;
-        books[bookIndex].liked = false;
-        likesRef.innerHTML = books[bookIndex].likes;
-        saveBooks();
+    if(likeIconRef.classList.contains("like-flag")){
+            likeIconRef.src="./assets/icons/heart-thin-icon.png";
+            likeIconRef.classList.remove("make-red");
+            books[bookIndex].likes = books[bookIndex].likes - 1;
+            books[bookIndex].liked = false;
+            likeIconRef.classList.remove("like-flag");
+            likesRef.innerHTML = books[bookIndex].likes;
+            saveBooks();
+            loadFav();
     }
     else{
-        likeIconRef.src="./assets/icons/heart-icon.png";
-        likeIconRef.classList.add("make-red");
-        books[bookIndex].likes = books[bookIndex].likes + 1;
-        books[bookIndex].liked = true;
-        likesRef.innerHTML = books[bookIndex].likes;
-        saveBooks();
+        if(likeIconRef.classList.contains("make-red")){
+
+            likeIconRef.src="./assets/icons/heart-thin-icon.png";
+            likeIconRef.classList.remove("make-red");
+            books[bookIndex].likes = books[bookIndex].likes - 1;
+            books[bookIndex].liked = false;
+            likesRef.innerHTML = books[bookIndex].likes;
+            saveBooks();
+        }
+        else{
+            likeIconRef.src="./assets/icons/heart-icon.png";
+            likeIconRef.classList.add("make-red");
+            books[bookIndex].likes = books[bookIndex].likes + 1;
+            books[bookIndex].liked = true;
+            likesRef.innerHTML = books[bookIndex].likes;
+            saveBooks();
+        }
     }
 }
 
@@ -86,10 +99,24 @@ function loadFav(){
     galleryRef.innerHTML = "";
 
         for(let bookIndex = 0; bookIndex < books.length; bookIndex++){
-            if(books[bookIndex].liked == true){
+            if(books[bookIndex].liked){
                 galleryRef.innerHTML += createBookCard(bookIndex);
+                document.getElementById(`like-icon${bookIndex}`).classList.add("like-flag");
                 createComments(bookIndex);
                 loadHearts(bookIndex);
             }
     }
+}
+
+function createComments(bookIndex){
+    const commentsRef = document.getElementById(`comments${bookIndex}`);
+    commentsRef.innerHTML = "";
+
+    for(let commentsIndex = 0; commentsIndex < books[bookIndex].comments.length; commentsIndex++){
+        commentsRef.innerHTML += createComment(bookIndex, commentsIndex);
+    }
+}
+
+function addLikeFlag(){
+
 }

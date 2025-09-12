@@ -44,15 +44,6 @@ function createBookCard(bookIndex){
             `
 }
 
-function createComments(bookIndex){
-    const commentsRef = document.getElementById(`comments${bookIndex}`);
-    commentsRef.innerHTML = "";
-
-    for(let commentsIndex = 0; commentsIndex < books[bookIndex].comments.length; commentsIndex++){
-        commentsRef.innerHTML += createComment(bookIndex, commentsIndex);
-    }
-}
-
 function createComment(bookIndex, commentsIndex){
     return `
             <div class="comment">
