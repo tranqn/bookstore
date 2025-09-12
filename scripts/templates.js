@@ -1,5 +1,5 @@
 function createBookCard(bookIndex){
-    return `<div id="book-card${bookIndex}" class="book-card">
+    return `<article id="book-card${bookIndex}" class="book-card">
                 <h2 class="book-title">${books[bookIndex].name}</h2>
                 <img class="book-image" src="./assets/imgs/book-cover.png" alt="">
                 <div class="price-likes">
@@ -40,7 +40,7 @@ function createBookCard(bookIndex){
                             alt="add comment icon"
                             onclick="addComment(${bookIndex})">
                 </div>
-            </div>
+            </article>
             `
 }
 
