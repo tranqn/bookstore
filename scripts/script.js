@@ -39,6 +39,7 @@ function addLike(bookIndex){
         likeIconRef.src="./assets/icons/heart-thin-icon.png";
         likeIconRef.classList.remove("make-red");
         books[bookIndex].likes = books[bookIndex].likes - 1;
+        books[bookIndex].liked = false;
         likesRef.innerHTML = books[bookIndex].likes;
         saveBooks();
     }
@@ -46,6 +47,7 @@ function addLike(bookIndex){
         likeIconRef.src="./assets/icons/heart-icon.png";
         likeIconRef.classList.add("make-red");
         books[bookIndex].likes = books[bookIndex].likes + 1;
+        books[bookIndex].liked = true;
         likesRef.innerHTML = books[bookIndex].likes;
         saveBooks();
     }
