@@ -1,0 +1,15 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# One-click deploy: New + → Blueprint → point at this repo.
+services:
+  - type: web
+    name: bookstore
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npm run build
+    startCommand: node dist/bookstore/server/server.mjs
+    healthCheckPath: /
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false # set in the Render dashboard; app falls back to local recommender if absent
+      - key: NODE_VERSION
+        value: '22'
