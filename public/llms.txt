@@ -1,0 +1,16 @@
+# Bookstore
+
+> A bilingual (German/English) demo bookstore and portfolio piece built with Angular. It features an interactive 3D book shelf (WebGL/Three.js), a full commerce flow, and an AI book recommender that suggests titles from a described mood.
+
+## Pages
+
+- [Home](/): Cinematic landing with the brand hero.
+- [Catalog](/catalog): Searchable, filterable, sortable grid of real books with covers.
+- [3D Shelf](/gallery): Interactive WebGL shelf; rotate, hover and click books.
+- [AI Picks](/recommender): Describe a mood and get ranked book recommendations.
+- [Favorites](/favorites): Saved books.
+
+## Notes
+
+- Book metadata and covers are sourced from Open Library.
+- The AI recommender uses the Google Gemini API server-side, with a deterministic local fallback.
