@@ -1,0 +1,843 @@
+[
+  {
+    "id": "die-unendliche-geschichte",
+    "isbn": "9780525457589",
+    "title": "Die unendliche Geschichte",
+    "author": "Michael Ende",
+    "description": {
+      "de": "Bastian flüchtet sich in ein Buch – und wird selbst Teil der Rettung des untergehenden Reiches Phantásien.",
+      "en": "Bastian escapes into a book and becomes the only hope for the vanishing realm of Fantastica."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Klassiker",
+      "Abenteuer",
+      "Phantásien",
+      "Kindheit"
+    ],
+    "price": {
+      "amount": 16.99,
+      "currency": "EUR"
+    },
+    "publishedYear": 1979,
+    "rating": 4.8,
+    "likeCount": 4210,
+    "cover": {
+      "id": 7383413,
+      "small": "https://covers.openlibrary.org/b/id/7383413-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/7383413-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/7383413-L.jpg"
+    },
+    "pageCount": 480
+  },
+  {
+    "id": "momo",
+    "isbn": "9781592394142",
+    "title": "Momo",
+    "author": "Michael Ende",
+    "description": {
+      "de": "Ein Mädchen mit der Gabe des Zuhörens stellt sich den grauen Herren, die den Menschen ihre Zeit stehlen.",
+      "en": "A girl who truly listens takes on the grey men stealing humanity’s time."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Klassiker",
+      "Zeit",
+      "Freundschaft"
+    ],
+    "price": {
+      "amount": 14,
+      "currency": "EUR"
+    },
+    "publishedYear": 1973,
+    "rating": 4.7,
+    "likeCount": 3105,
+    "cover": {
+      "id": 8574580,
+      "small": "https://covers.openlibrary.org/b/id/8574580-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/8574580-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/8574580-L.jpg"
+    },
+    "pageCount": 304
+  },
+  {
+    "id": "tintenherz",
+    "isbn": "9789955247852",
+    "title": "Tintenherz",
+    "author": "Cornelia Funke",
+    "description": {
+      "de": "Meggies Vater kann Figuren aus Büchern herauslesen – bis ein Schurke der Wirklichkeit entkommt.",
+      "en": "Meggie’s father can read characters out of books — until a villain escapes into the real world."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Bücher",
+      "Abenteuer",
+      "Jugend"
+    ],
+    "price": {
+      "amount": 12.99,
+      "currency": "EUR"
+    },
+    "publishedYear": 2003,
+    "rating": 4.5,
+    "likeCount": 2540,
+    "cover": {
+      "id": 3330314,
+      "small": "https://covers.openlibrary.org/b/id/3330314-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/3330314-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/3330314-L.jpg"
+    },
+    "pageCount": 576
+  },
+  {
+    "id": "der-herr-der-ringe",
+    "isbn": "9780618345847",
+    "title": "Der Herr der Ringe",
+    "author": "J. R. R. Tolkien",
+    "description": {
+      "de": "Ein Hobbit trägt den Einen Ring quer durch Mittelerde, um die Macht des Dunklen Herrschers zu brechen.",
+      "en": "A hobbit carries the One Ring across Middle-earth to unmake the Dark Lord’s power."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Epos",
+      "Mittelerde",
+      "Klassiker"
+    ],
+    "price": {
+      "amount": 28,
+      "currency": "EUR"
+    },
+    "publishedYear": 1954,
+    "rating": 4.9,
+    "likeCount": 8800,
+    "cover": {
+      "id": 14625765,
+      "small": "https://covers.openlibrary.org/b/id/14625765-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/14625765-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/14625765-L.jpg"
+    },
+    "pageCount": 1280
+  },
+  {
+    "id": "harry-potter-und-der-stein-der-weisen",
+    "isbn": "9782070619177",
+    "title": "Harry Potter und der Stein der Weisen",
+    "author": "J. K. Rowling",
+    "description": {
+      "de": "Ein Waisenjunge erfährt an seinem elften Geburtstag, dass er ein Zauberer ist – und ein Schicksal hat.",
+      "en": "On his eleventh birthday an orphan learns he is a wizard — and that destiny awaits at Hogwarts."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Zauberei",
+      "Internat",
+      "Jugend"
+    ],
+    "price": {
+      "amount": 9.99,
+      "currency": "EUR"
+    },
+    "publishedYear": 1997,
+    "rating": 4.8,
+    "likeCount": 9600,
+    "cover": {
+      "id": 15155833,
+      "small": "https://covers.openlibrary.org/b/id/15155833-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/15155833-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/15155833-L.jpg"
+    },
+    "pageCount": 336
+  },
+  {
+    "id": "der-name-des-windes",
+    "isbn": "9781956000689",
+    "title": "Der Name des Windes",
+    "author": "Patrick Rothfuss",
+    "description": {
+      "de": "Der berüchtigte Kvothe erzählt selbst, wie aus einem Gauklerkind eine Legende wurde.",
+      "en": "The infamous Kvothe recounts how a travelling player’s child became a living legend."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Magie",
+      "Musik",
+      "Erzählung"
+    ],
+    "price": {
+      "amount": 15,
+      "currency": "EUR"
+    },
+    "publishedYear": 2007,
+    "rating": 4.6,
+    "likeCount": 3320,
+    "cover": {
+      "id": 11480483,
+      "small": "https://covers.openlibrary.org/b/id/11480483-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/11480483-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/11480483-L.jpg"
+    },
+    "pageCount": 864
+  },
+  {
+    "id": "stolz-und-vorurteil",
+    "isbn": "9798360092476",
+    "title": "Stolz und Vorurteil",
+    "author": "Jane Austen",
+    "description": {
+      "de": "Elizabeth Bennet und der hochmütige Mr. Darcy ringen zwischen Vorurteil und wachsender Zuneigung.",
+      "en": "Elizabeth Bennet and the proud Mr Darcy spar their way from prejudice to love."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Klassiker",
+      "England",
+      "Gesellschaft"
+    ],
+    "price": {
+      "amount": 8,
+      "currency": "EUR"
+    },
+    "publishedYear": 1813,
+    "rating": 4.7,
+    "likeCount": 6100,
+    "cover": {
+      "id": 14348537,
+      "small": "https://covers.openlibrary.org/b/id/14348537-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/14348537-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/14348537-L.jpg"
+    },
+    "pageCount": 480
+  },
+  {
+    "id": "wie-ein-einziger-tag",
+    "isbn": "9781568652429",
+    "title": "Wie ein einziger Tag",
+    "author": "Nicholas Sparks",
+    "description": {
+      "de": "Eine große Liebe trotzt der Zeit – und einer Krankheit, die alle Erinnerung auszulöschen droht.",
+      "en": "A lifelong love endures against time and an illness threatening to erase every memory."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Liebe",
+      "Erinnerung",
+      "Drama"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 1996,
+    "rating": 4.3,
+    "likeCount": 2870,
+    "cover": {
+      "id": 7382153,
+      "small": "https://covers.openlibrary.org/b/id/7382153-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/7382153-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/7382153-L.jpg"
+    },
+    "pageCount": 256
+  },
+  {
+    "id": "vom-winde-verweht",
+    "isbn": "9798731280778",
+    "title": "Vom Winde verweht",
+    "author": "Margaret Mitchell",
+    "description": {
+      "de": "Scarlett O’Hara kämpft im zerfallenden Süden um Land, Liebe und das eigene Überleben.",
+      "en": "Scarlett O’Hara fights for land, love and survival in the collapsing American South."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Klassiker",
+      "Epos",
+      "Südstaaten"
+    ],
+    "price": {
+      "amount": 13.5,
+      "currency": "EUR"
+    },
+    "publishedYear": 1936,
+    "rating": 4.4,
+    "likeCount": 3450,
+    "cover": {
+      "id": 14817133,
+      "small": "https://covers.openlibrary.org/b/id/14817133-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/14817133-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/14817133-L.jpg"
+    },
+    "pageCount": 1024
+  },
+  {
+    "id": "der-vorleser",
+    "isbn": "9788433902351",
+    "title": "Der Vorleser",
+    "author": "Bernhard Schlink",
+    "description": {
+      "de": "Eine Affäre zwischen einem Jungen und einer älteren Frau führt Jahre später in einen Kriegsverbrecherprozess.",
+      "en": "A teenager’s affair with an older woman resurfaces years later in a war-crimes trial."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Nachkriegszeit",
+      "Schuld",
+      "Deutschland"
+    ],
+    "price": {
+      "amount": 10,
+      "currency": "EUR"
+    },
+    "publishedYear": 1995,
+    "rating": 4.2,
+    "likeCount": 1980,
+    "cover": {
+      "id": 998445,
+      "small": "https://covers.openlibrary.org/b/id/998445-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/998445-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/998445-L.jpg"
+    },
+    "pageCount": 208
+  },
+  {
+    "id": "schokolade-zum-fruhstuck",
+    "isbn": "9781405911566",
+    "title": "Schokolade zum Frühstück",
+    "author": "Marian Keyes",
+    "description": {
+      "de": "Nach dem Ende ihrer Ehe sucht Rachel zwischen Chaos und Komik einen Weg zurück ins Leben.",
+      "en": "After her marriage falls apart, Rachel finds her way back to life through chaos and comedy."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Humor",
+      "Familie",
+      "Neuanfang"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 1997,
+    "rating": 4.1,
+    "likeCount": 1420,
+    "cover": {
+      "id": 433130,
+      "small": "https://covers.openlibrary.org/b/id/433130-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/433130-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/433130-L.jpg"
+    },
+    "pageCount": 624
+  },
+  {
+    "id": "per-anhalter-durch-die-galaxis",
+    "isbn": "9780385347303",
+    "title": "Per Anhalter durch die Galaxis",
+    "author": "Douglas Adams",
+    "description": {
+      "de": "Kurz vor der Sprengung der Erde wird Arthur Dent ins absurdeste Abenteuer der Galaxis gerissen.",
+      "en": "Moments before Earth is demolished, Arthur Dent is swept into the galaxy’s most absurd adventure."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Humor",
+      "Weltraum",
+      "Kult"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2012,
+    "rating": 4.7,
+    "likeCount": 5400,
+    "cover": {
+      "id": 11972784,
+      "small": "https://covers.openlibrary.org/b/id/11972784-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/11972784-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/11972784-L.jpg"
+    },
+    "pageCount": 256
+  },
+  {
+    "id": "der-marsianer",
+    "isbn": "9789045207957",
+    "title": "Der Marsianer",
+    "author": "Andy Weir",
+    "description": {
+      "de": "Allein auf dem Mars zurückgelassen, kämpft ein Astronaut mit Ingenieurskunst und Humor ums Überleben.",
+      "en": "Stranded alone on Mars, an astronaut science-and-jokes his way toward survival."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Mars",
+      "Survival",
+      "Wissenschaft"
+    ],
+    "price": {
+      "amount": 13,
+      "currency": "EUR"
+    },
+    "publishedYear": 2011,
+    "rating": 4.6,
+    "likeCount": 4720,
+    "cover": {
+      "id": 11447888,
+      "small": "https://covers.openlibrary.org/b/id/11447888-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/11447888-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/11447888-L.jpg"
+    },
+    "pageCount": 416
+  },
+  {
+    "id": "dune-der-wustenplanet",
+    "isbn": "9785237030778",
+    "title": "Dune – Der Wüstenplanet",
+    "author": "Frank Herbert",
+    "description": {
+      "de": "Auf dem Wüstenplaneten Arrakis entscheidet das kostbare Gewürz über Macht, Glauben und das Schicksal eines jungen Erben.",
+      "en": "On the desert world Arrakis, the precious spice decides power, faith and the fate of a young heir."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Epos",
+      "Politik",
+      "Wüste"
+    ],
+    "price": {
+      "amount": 16,
+      "currency": "EUR"
+    },
+    "publishedYear": 1965,
+    "rating": 4.7,
+    "likeCount": 6300,
+    "cover": {
+      "id": 11481354,
+      "small": "https://covers.openlibrary.org/b/id/11481354-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/11481354-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/11481354-L.jpg"
+    },
+    "pageCount": 816
+  },
+  {
+    "id": "1984",
+    "isbn": "9781405862417",
+    "title": "1984",
+    "author": "George Orwell",
+    "description": {
+      "de": "In einem totalitären Staat wagt Winston Smith das Verbotene: einen eigenen Gedanken.",
+      "en": "In a totalitarian state, Winston Smith dares the forbidden — a thought of his own."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Dystopie",
+      "Überwachung",
+      "Klassiker"
+    ],
+    "price": {
+      "amount": 9,
+      "currency": "EUR"
+    },
+    "publishedYear": 2003,
+    "rating": 4.7,
+    "likeCount": 7100,
+    "cover": {
+      "id": 8745958,
+      "small": "https://covers.openlibrary.org/b/id/8745958-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/8745958-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/8745958-L.jpg"
+    },
+    "pageCount": 352
+  },
+  {
+    "id": "ready-player-one",
+    "isbn": "9780307887436",
+    "title": "Ready Player One",
+    "author": "Ernest Cline",
+    "description": {
+      "de": "In einer virtuellen Welt jagt ein Teenager nach einem Erbe, das über die Zukunft der Menschheit entscheidet.",
+      "en": "Inside a vast virtual world, a teenager hunts an Easter egg that could reshape humanity’s future."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Virtual Reality",
+      "80er",
+      "Abenteuer"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2008,
+    "rating": 4.4,
+    "likeCount": 3890,
+    "cover": {
+      "id": 8737626,
+      "small": "https://covers.openlibrary.org/b/id/8737626-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/8737626-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/8737626-L.jpg"
+    },
+    "pageCount": 544
+  },
+  {
+    "id": "die-tribute-von-panem-todliche-spiele",
+    "isbn": "9789655177183",
+    "title": "Die Tribute von Panem – Tödliche Spiele",
+    "author": "Suzanne Collins",
+    "description": {
+      "de": "Katniss meldet sich freiwillig für ein tödliches Spiel, das im ganzen Land live übertragen wird.",
+      "en": "Katniss volunteers for a deadly televised game and becomes the spark of a rebellion."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Dystopie",
+      "Jugend",
+      "Rebellion"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2008,
+    "rating": 4.5,
+    "likeCount": 6900,
+    "cover": {
+      "id": 12646537,
+      "small": "https://covers.openlibrary.org/b/id/12646537-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/12646537-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/12646537-L.jpg"
+    },
+    "pageCount": 416
+  },
+  {
+    "id": "das-schweigen-der-lammer",
+    "isbn": "9783453051362",
+    "title": "Das Schweigen der Lämmer",
+    "author": "Thomas Harris",
+    "description": {
+      "de": "Eine junge FBI-Agentin sucht Rat beim genialen Kannibalen Hannibal Lecter, um einen Serienmörder zu fassen.",
+      "en": "A young FBI trainee bargains with the brilliant cannibal Hannibal Lecter to catch a serial killer."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Psychothriller",
+      "FBI",
+      "Kult"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 1988,
+    "rating": 4.6,
+    "likeCount": 4100,
+    "cover": {
+      "id": 8580475,
+      "small": "https://covers.openlibrary.org/b/id/8580475-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/8580475-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/8580475-L.jpg"
+    },
+    "pageCount": 448
+  },
+  {
+    "id": "gone-girl-das-perfekte-opfer",
+    "isbn": "9780297859390",
+    "title": "Gone Girl – Das perfekte Opfer",
+    "author": "Gillian Flynn",
+    "description": {
+      "de": "Als Amy spurlos verschwindet, gerät ihr Mann unter Verdacht – und nichts ist, wie es scheint.",
+      "en": "When Amy vanishes, her husband falls under suspicion — and nothing is what it seems."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Psychothriller",
+      "Ehe",
+      "Wendung"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2011,
+    "rating": 4.4,
+    "likeCount": 3760,
+    "cover": {
+      "id": 8368314,
+      "small": "https://covers.openlibrary.org/b/id/8368314-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/8368314-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/8368314-L.jpg"
+    },
+    "pageCount": 576
+  },
+  {
+    "id": "verblendung",
+    "isbn": "9781401235581",
+    "title": "Verblendung",
+    "author": "Stieg Larsson",
+    "description": {
+      "de": "Ein Journalist und die Hackerin Lisbeth Salander rollen einen jahrzehntealten Vermisstenfall auf.",
+      "en": "A journalist and the hacker Lisbeth Salander reopen a decades-old disappearance."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Skandinavien",
+      "Ermittlung",
+      "Hacker"
+    ],
+    "price": {
+      "amount": 13,
+      "currency": "EUR"
+    },
+    "publishedYear": 2012,
+    "rating": 4.5,
+    "likeCount": 4200,
+    "cover": {
+      "id": 10567897,
+      "small": "https://covers.openlibrary.org/b/id/10567897-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/10567897-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/10567897-L.jpg"
+    },
+    "pageCount": 704
+  },
+  {
+    "id": "shutter-island",
+    "isbn": "9780063072930",
+    "title": "Shutter Island",
+    "author": "Dennis Lehane",
+    "description": {
+      "de": "Zwei Marshals ermitteln auf einer abgeschotteten Gefängnisinsel – und verlieren den Boden unter den Füßen.",
+      "en": "Two marshals investigate a locked-down island asylum and lose their grip on what is real."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Psychothriller",
+      "Insel",
+      "Wendung"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2003,
+    "rating": 4.4,
+    "likeCount": 2650,
+    "cover": {
+      "id": 28990,
+      "small": "https://covers.openlibrary.org/b/id/28990-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/28990-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/28990-L.jpg"
+    },
+    "pageCount": 432
+  },
+  {
+    "id": "sakrileg-the-da-vinci-code",
+    "isbn": "9782709628532",
+    "title": "Sakrileg – The Da Vinci Code",
+    "author": "Dan Brown",
+    "description": {
+      "de": "Ein Mord im Louvre führt den Symbolforscher Robert Langdon auf die Spur eines jahrhundertealten Geheimnisses.",
+      "en": "A murder in the Louvre sends symbologist Robert Langdon chasing a centuries-old secret."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Verschwörung",
+      "Kunst",
+      "Rätsel"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2003,
+    "rating": 4,
+    "likeCount": 5200,
+    "cover": {
+      "id": 9255229,
+      "small": "https://covers.openlibrary.org/b/id/9255229-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/9255229-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/9255229-L.jpg"
+    },
+    "pageCount": 608
+  },
+  {
+    "id": "eine-kurze-geschichte-der-zeit",
+    "isbn": "9782277233619",
+    "title": "Eine kurze Geschichte der Zeit",
+    "author": "Stephen Hawking",
+    "description": {
+      "de": "Vom Urknall bis zu schwarzen Löchern – Hawking erklärt das Universum für alle, die fragen wollen.",
+      "en": "From the Big Bang to black holes, Hawking explains the universe for everyone who dares to ask."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Physik",
+      "Kosmos",
+      "Wissenschaft"
+    ],
+    "price": {
+      "amount": 14,
+      "currency": "EUR"
+    },
+    "publishedYear": 1988,
+    "rating": 4.5,
+    "likeCount": 3900,
+    "cover": {
+      "id": 10432365,
+      "small": "https://covers.openlibrary.org/b/id/10432365-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/10432365-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/10432365-L.jpg"
+    },
+    "pageCount": 256
+  },
+  {
+    "id": "sapiens-eine-kurze-geschichte-der-menschheit",
+    "isbn": "9782226479822",
+    "title": "Sapiens – Eine kurze Geschichte der Menschheit",
+    "author": "Yuval Noah Harari",
+    "description": {
+      "de": "Wie wurde aus einem unscheinbaren Affen der Herrscher der Erde? Eine kühne Geschichte der Menschheit.",
+      "en": "How did an unremarkable ape come to rule the planet? A bold history of humankind."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Geschichte",
+      "Anthropologie",
+      "Bestseller"
+    ],
+    "price": {
+      "amount": 18,
+      "currency": "EUR"
+    },
+    "publishedYear": 2011,
+    "rating": 4.6,
+    "likeCount": 7400,
+    "cover": {
+      "id": 8634250,
+      "small": "https://covers.openlibrary.org/b/id/8634250-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/8634250-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/8634250-L.jpg"
+    },
+    "pageCount": 528
+  },
+  {
+    "id": "schnelles-denken-langsames-denken",
+    "isbn": "9787508633558",
+    "title": "Schnelles Denken, langsames Denken",
+    "author": "Daniel Kahneman",
+    "description": {
+      "de": "Der Nobelpreisträger zeigt, wie zwei Denksysteme unser Urteilen lenken – und täuschen.",
+      "en": "The Nobel laureate reveals the two systems that drive — and deceive — how we think."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Psychologie",
+      "Entscheidungen",
+      "Denken"
+    ],
+    "price": {
+      "amount": 16,
+      "currency": "EUR"
+    },
+    "publishedYear": 2011,
+    "rating": 4.4,
+    "likeCount": 4300,
+    "cover": {
+      "id": 13290711,
+      "small": "https://covers.openlibrary.org/b/id/13290711-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/13290711-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/13290711-L.jpg"
+    },
+    "pageCount": 624
+  },
+  {
+    "id": "die-kunst-des-klaren-denkens",
+    "isbn": "9781444794878",
+    "title": "Die Kunst des klaren Denkens",
+    "author": "Rolf Dobelli",
+    "description": {
+      "de": "52 Denkfehler, die jeder macht – und wie man sie elegant umgeht.",
+      "en": "52 thinking errors we all make — and how to sidestep them with ease."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Denkfehler",
+      "Ratgeber",
+      "Psychologie"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2013,
+    "rating": 4.2,
+    "likeCount": 2600,
+    "cover": {
+      "id": 8270423,
+      "small": "https://covers.openlibrary.org/b/id/8270423-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/8270423-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/8270423-L.jpg"
+    },
+    "pageCount": 248
+  },
+  {
+    "id": "factfulness",
+    "isbn": "9783548060415",
+    "title": "Factfulness",
+    "author": "Hans Rosling",
+    "description": {
+      "de": "Warum die Welt besser ist, als wir denken – und wie wir lernen, in Fakten statt Ängsten zu denken.",
+      "en": "Why the world is better than we think — and how to reason with facts instead of fear."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Statistik",
+      "Weltbild",
+      "Optimismus"
+    ],
+    "price": {
+      "amount": 13,
+      "currency": "EUR"
+    },
+    "publishedYear": 2018,
+    "rating": 4.6,
+    "likeCount": 3100,
+    "cover": {
+      "id": 8186237,
+      "small": "https://covers.openlibrary.org/b/id/8186237-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/8186237-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/8186237-L.jpg"
+    },
+    "pageCount": 400
+  },
+  {
+    "id": "der-junge-der-maulwurf-der-fuchs-und-das-pferd",
+    "isbn": "9780063137363",
+    "title": "Der Junge, der Maulwurf, der Fuchs und das Pferd",
+    "author": "Charlie Mackesy",
+    "description": {
+      "de": "Vier ungleiche Freunde und ihre Gespräche über Mut, Freundschaft und das Nachhausekommen.",
+      "en": "Four unlikely friends and their gentle conversations about courage, kindness and coming home."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Illustriert",
+      "Achtsamkeit",
+      "Geschenk"
+    ],
+    "price": {
+      "amount": 20,
+      "currency": "EUR"
+    },
+    "publishedYear": 2019,
+    "rating": 4.8,
+    "likeCount": 5600,
+    "cover": {
+      "id": 10523448,
+      "small": "https://covers.openlibrary.org/b/id/10523448-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/10523448-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/10523448-L.jpg"
+    },
+    "pageCount": 128
+  }
+]
