@@ -1,0 +1,18 @@
+<ng-container *transloco="let t">
+  <a
+    href="#main"
+    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-coral-500 focus:px-4 focus:py-2 focus:font-semibold focus:text-ink-950"
+  >
+    {{ t('a11y.skipToContent') }}
+  </a>
+
+  <app-header />
+
+  <main id="main" class="mx-auto w-full max-w-[1440px] px-4 sm:px-6">
+    <router-outlet />
+  </main>
+
+  <app-footer />
+
+  <app-cart-drawer />
+</ng-container>

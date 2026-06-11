@@ -1,0 +1,112 @@
+{
+  "brand": "Bookstore",
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "gallery": "3D Shelf",
+    "recommender": "AI Picks",
+    "favorites": "Favorites",
+    "cart": "Cart"
+  },
+  "a11y": {
+    "toggleTheme": "Toggle colour theme",
+    "toggleLanguage": "Switch language",
+    "skipToContent": "Skip to content"
+  },
+  "home": {
+    "kicker": "A bookstore, reimagined",
+    "title": "Stories you can reach out and touch",
+    "subtitle": "Browse an interactive 3D shelf, get AI recommendations by mood, and find your next favourite read.",
+    "ctaCatalog": "Browse the catalog",
+    "ctaGallery": "Enter the 3D shelf"
+  },
+  "catalog": {
+    "title": "Catalog",
+    "searchPlaceholder": "Search title, author or topic…",
+    "all": "All",
+    "sortLabel": "Sort",
+    "sort": {
+      "relevance": "Most popular",
+      "price-asc": "Price, low to high",
+      "price-desc": "Price, high to low",
+      "year-desc": "Newest",
+      "rating-desc": "Top rated"
+    },
+    "results": "{{count}} books",
+    "noResults": "No books found.",
+    "clear": "Clear filters"
+  },
+  "detail": {
+    "back": "Back to catalog",
+    "published": "Published",
+    "pages": "Pages",
+    "genre": "Genre",
+    "addToCart": "Add to cart",
+    "inCart": "In cart",
+    "like": "Save",
+    "liked": "Saved",
+    "notFound": "Book not found."
+  },
+  "recommender": {
+    "kicker": "AI book concierge",
+    "title": "Describe your mood",
+    "subtitle": "Tell us what you're in the mood for and we'll find the right books.",
+    "placeholder": "e.g. “I want to escape into another world on a rainy day…”",
+    "submit": "Find recommendations",
+    "thinking": "Thinking…",
+    "match": "Match",
+    "none": "No matches — try different words.",
+    "viaGemini": "Recommended by Gemini",
+    "viaLocal": "Recommended by the local model"
+  },
+  "gallery": {
+    "hint": "Spin the shelf, hover a book, and click through to its page.",
+    "controls": "Drag to rotate · scroll to zoom · click to open the book",
+    "loading": "Loading the shelf…",
+    "viewGrid": "View as grid",
+    "view3d": "View in 3D"
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty.",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free",
+    "total": "Total",
+    "checkout": "Checkout",
+    "remove": "Remove",
+    "continue": "Continue shopping",
+    "qty": "Quantity",
+    "close": "Close cart"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "steps": { "cart": "Cart", "details": "Address", "payment": "Payment", "done": "Confirmation" },
+    "name": "Name",
+    "email": "Email",
+    "address": "Street and number",
+    "city": "City",
+    "zip": "Postcode",
+    "card": "Card number",
+    "back": "Back",
+    "next": "Next",
+    "pay": "Pay now",
+    "successTitle": "Thank you for your order!",
+    "successBody": "A confirmation is on its way to {{email}}.",
+    "orderId": "Order number",
+    "backToShop": "Back to the shop",
+    "demoNote": "Demo checkout — no real payment is processed."
+  },
+  "reviews": {
+    "title": "Reviews",
+    "none": "No reviews yet — be the first!",
+    "yourName": "Your name",
+    "yourReview": "Your review…",
+    "submit": "Submit review",
+    "anonymous": "Anonymous",
+    "empty": "Please write something before submitting."
+  },
+  "footer": {
+    "designed": "designed by Nam"
+  }
+}

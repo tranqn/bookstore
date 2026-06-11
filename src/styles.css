@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+/* Dark is the signature look; toggling .light on <html> flips the palette. */
+@custom-variant light (&:where(.light, .light *));
+
+/* ── Brand font ───────────────────────────────────────────── */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans.ttf') format('truetype');
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+/* ── Design tokens (carried forward from the legacy bookstore) ─
+   purple bg rgb(20 14 54) · card rgb(70 61 178) · coral rgb(255 137 112) */
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink-950: rgb(20 14 54);
+  --color-ink-900: rgb(28 20 70);
+  --color-ink-800: rgb(40 30 96);
+  --color-ink-700: rgb(70 61 178);
+  --color-ink-600: rgb(96 86 210);
+
+  --color-coral-500: rgb(255 137 112);
+  --color-coral-400: rgb(255 160 138);
+  --color-coral-600: rgb(232 110 86);
+
+  --color-cream-50: rgb(244 241 234);
+
+  --shadow-glow: 0 0 18px rgb(255 137 112 / 0.55);
+  --radius-card: 1rem;
+}
+
+/* ── Theme surface variables (consumed via .surface utilities) ── */
+:root {
+  --surface: rgb(20 14 54);
+  /* Dark elevated panel — kept dark enough that coral accent text clears
+     WCAG AA (4.5:1) on cards, drawers and summaries. */
+  --surface-raised: rgb(44 34 92);
+  --on-surface: white;
+  --on-surface-muted: rgb(255 255 255 / 0.72);
+  --accent: rgb(255 137 112);
+}
+
+.light {
+  --surface: rgb(244 241 234);
+  --surface-raised: white;
+  --on-surface: rgb(28 20 70);
+  --on-surface-muted: rgb(40 28 78 / 0.78);
+  /* Darkened terracotta so accent text clears WCAG AA (4.5:1) on white/cream. */
+  --accent: rgb(176 54 24);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scrollbar-gutter: stable;
+  }
+  html.light {
+    color-scheme: light;
+  }
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background-color: var(--surface);
+    color: var(--on-surface);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Reusable surface utilities bound to the theme vars above. */
+@utility surface {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+@utility surface-raised {
+  background-color: var(--surface-raised);
+}
+@utility text-muted {
+  color: var(--on-surface-muted);
+}
+@utility accent {
+  color: var(--accent);
+}

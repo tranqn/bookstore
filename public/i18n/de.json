@@ -1,0 +1,112 @@
+{
+  "brand": "Bücherei",
+  "nav": {
+    "home": "Start",
+    "catalog": "Katalog",
+    "gallery": "3D-Regal",
+    "recommender": "KI-Empfehlung",
+    "favorites": "Favoriten",
+    "cart": "Warenkorb"
+  },
+  "a11y": {
+    "toggleTheme": "Farbschema wechseln",
+    "toggleLanguage": "Sprache wechseln",
+    "skipToContent": "Zum Inhalt springen"
+  },
+  "home": {
+    "kicker": "Eine Buchhandlung, neu gedacht",
+    "title": "Geschichten, die man anfassen möchte",
+    "subtitle": "Stöbere durch ein interaktives 3D-Regal, lass dir von KI nach Stimmung empfehlen und finde dein nächstes Lieblingsbuch.",
+    "ctaCatalog": "Katalog ansehen",
+    "ctaGallery": "Ins 3D-Regal"
+  },
+  "catalog": {
+    "title": "Katalog",
+    "searchPlaceholder": "Titel, Autor oder Thema suchen…",
+    "all": "Alle",
+    "sortLabel": "Sortieren",
+    "sort": {
+      "relevance": "Beliebtheit",
+      "price-asc": "Preis aufsteigend",
+      "price-desc": "Preis absteigend",
+      "year-desc": "Neueste",
+      "rating-desc": "Beste Bewertung"
+    },
+    "results": "{{count}} Bücher",
+    "noResults": "Keine Bücher gefunden.",
+    "clear": "Filter zurücksetzen"
+  },
+  "recommender": {
+    "kicker": "KI-Buchberatung",
+    "title": "Beschreib deine Stimmung",
+    "subtitle": "Sag uns, worauf du Lust hast – wir finden die passenden Bücher.",
+    "placeholder": "z. B. „Ich will an einem Regentag in eine andere Welt eintauchen…“",
+    "submit": "Empfehlungen finden",
+    "thinking": "Denke nach…",
+    "match": "Passung",
+    "none": "Keine Treffer – versuch es mit anderen Worten.",
+    "viaGemini": "Empfohlen von Gemini",
+    "viaLocal": "Empfohlen vom lokalen Modell"
+  },
+  "gallery": {
+    "hint": "Dreh das Regal, fahr über ein Buch und klick dich zum Titel.",
+    "controls": "Ziehen zum Drehen · Scrollen zum Zoomen · Klick öffnet das Buch",
+    "loading": "Regal wird geladen…",
+    "viewGrid": "Als Raster ansehen",
+    "view3d": "In 3D ansehen"
+  },
+  "cart": {
+    "title": "Warenkorb",
+    "empty": "Dein Warenkorb ist leer.",
+    "subtotal": "Zwischensumme",
+    "shipping": "Versand",
+    "free": "Kostenlos",
+    "total": "Gesamt",
+    "checkout": "Zur Kasse",
+    "remove": "Entfernen",
+    "continue": "Weiter einkaufen",
+    "qty": "Menge",
+    "close": "Warenkorb schließen"
+  },
+  "checkout": {
+    "title": "Kasse",
+    "steps": { "cart": "Warenkorb", "details": "Adresse", "payment": "Zahlung", "done": "Bestätigung" },
+    "name": "Name",
+    "email": "E-Mail",
+    "address": "Straße und Hausnummer",
+    "city": "Stadt",
+    "zip": "PLZ",
+    "card": "Kartennummer",
+    "back": "Zurück",
+    "next": "Weiter",
+    "pay": "Jetzt bezahlen",
+    "successTitle": "Vielen Dank für deine Bestellung!",
+    "successBody": "Eine Bestätigung ist unterwegs zu {{email}}.",
+    "orderId": "Bestellnummer",
+    "backToShop": "Zurück zum Shop",
+    "demoNote": "Demo-Checkout – es wird keine echte Zahlung ausgeführt."
+  },
+  "reviews": {
+    "title": "Rezensionen",
+    "none": "Noch keine Rezensionen – sei die oder der Erste!",
+    "yourName": "Dein Name",
+    "yourReview": "Deine Rezension…",
+    "submit": "Rezension absenden",
+    "anonymous": "Anonym",
+    "empty": "Bitte schreibe etwas, bevor du absendest."
+  },
+  "detail": {
+    "back": "Zurück zum Katalog",
+    "published": "Erschienen",
+    "pages": "Seiten",
+    "genre": "Genre",
+    "addToCart": "In den Warenkorb",
+    "inCart": "Im Warenkorb",
+    "like": "Merken",
+    "liked": "Gemerkt",
+    "notFound": "Buch nicht gefunden."
+  },
+  "footer": {
+    "designed": "gestaltet von Nam"
+  }
+}

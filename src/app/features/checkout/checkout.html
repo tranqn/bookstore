@@ -1,0 +1,134 @@
+<section *transloco="let t" class="py-10">
+  <h1 class="mb-8 text-3xl font-extrabold sm:text-4xl">{{ t('checkout.title') }}</h1>
+
+  <!-- Stepper -->
+  <ol class="mb-10 flex flex-wrap gap-2 text-sm">
+    @for (key of stepKeys; track key; let i = $index) {
+      <li
+        class="flex items-center gap-2 rounded-full px-3 py-1.5"
+        [class]="i === step() ? 'bg-coral-500 text-ink-950 font-semibold' : (i < step() ? 'accent' : 'text-muted')"
+      >
+        <span class="grid h-5 w-5 place-items-center rounded-full border border-current text-xs">
+          {{ i < step() ? '✓' : i + 1 }}
+        </span>
+        {{ t('checkout.steps.' + key) }}
+      </li>
+    }
+  </ol>
+
+  <div class="grid gap-10 lg:grid-cols-[1fr_320px]">
+    <div>
+      <!-- Step 0: cart review -->
+      @if (step() === 0) {
+        @if (cart.isEmpty()) {
+          <p class="text-muted">{{ t('cart.empty') }}</p>
+        } @else {
+          <ul class="divide-y divide-white/10">
+            @for (line of cart.lines(); track line.book.id) {
+              <li class="flex items-center gap-4 py-4">
+                <img [src]="line.book.cover.small" [alt]="line.book.title" class="h-16 w-11 rounded object-cover" />
+                <div class="min-w-0 flex-1">
+                  <p class="truncate font-semibold">{{ line.book.title }}</p>
+                  <p class="text-sm text-muted">{{ t('cart.qty') }}: {{ line.qty }}</p>
+                </div>
+                <span class="font-semibold accent">{{ money(line.lineTotal) }}</span>
+              </li>
+            }
+          </ul>
+        }
+      }
+
+      <!-- Step 1: address -->
+      @if (step() === 1) {
+        <form [formGroup]="form" class="grid gap-4 sm:grid-cols-2">
+          <label class="sm:col-span-2 grid gap-1 text-sm">
+            <span class="text-muted">{{ t('checkout.name') }}</span>
+            <input formControlName="name" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+          </label>
+          <label class="sm:col-span-2 grid gap-1 text-sm">
+            <span class="text-muted">{{ t('checkout.email') }}</span>
+            <input formControlName="email" type="email" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+          </label>
+          <label class="sm:col-span-2 grid gap-1 text-sm">
+            <span class="text-muted">{{ t('checkout.address') }}</span>
+            <input formControlName="address" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+          </label>
+          <label class="grid gap-1 text-sm">
+            <span class="text-muted">{{ t('checkout.zip') }}</span>
+            <input formControlName="zip" inputmode="numeric" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+          </label>
+          <label class="grid gap-1 text-sm">
+            <span class="text-muted">{{ t('checkout.city') }}</span>
+            <input formControlName="city" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+          </label>
+        </form>
+      }
+
+      <!-- Step 2: payment -->
+      @if (step() === 2) {
+        <form [formGroup]="form" class="grid max-w-md gap-4">
+          <label class="grid gap-1 text-sm">
+            <span class="text-muted">{{ t('checkout.card') }}</span>
+            <input formControlName="card" inputmode="numeric" placeholder="4242 4242 4242 4242" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 tracking-widest outline-none focus:border-coral-500" />
+          </label>
+          <p class="text-sm text-muted">⚠ {{ t('checkout.demoNote') }}</p>
+        </form>
+      }
+
+      <!-- Step 3: confirmation -->
+      @if (step() === 3) {
+        <div class="rounded-2xl surface-raised p-8 text-center ring-1 ring-white/10">
+          <p class="text-5xl">🎉</p>
+          <h2 class="mt-4 text-2xl font-bold">{{ t('checkout.successTitle') }}</h2>
+          <p class="mt-2 text-muted">{{ t('checkout.successBody', { email: form.controls.email.value }) }}</p>
+          <p class="mt-4 text-sm">
+            {{ t('checkout.orderId') }}: <span class="font-bold accent">{{ orderId() }}</span>
+          </p>
+          <a routerLink="/catalog" class="mt-6 inline-block rounded-xl bg-coral-500 px-5 py-2.5 font-semibold text-ink-950 transition-transform hover:-translate-y-0.5">
+            {{ t('checkout.backToShop') }}
+          </a>
+        </div>
+      }
+
+      <!-- Nav buttons -->
+      @if (step() < 3) {
+        <div class="mt-8 flex items-center justify-between">
+          @if (step() > 0) {
+            <button type="button" (click)="back()" class="rounded-xl border border-white/20 px-5 py-2.5 text-sm transition-colors hover:accent">
+              {{ t('checkout.back') }}
+            </button>
+          } @else {
+            <a routerLink="/catalog" class="text-sm text-muted transition-colors hover:accent">{{ t('cart.continue') }}</a>
+          }
+          <button
+            type="button"
+            (click)="next()"
+            [disabled]="!canAdvance()"
+            class="rounded-xl bg-coral-500 px-6 py-2.5 font-semibold text-ink-950 transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            {{ step() === 2 ? t('checkout.pay') : t('checkout.next') }}
+          </button>
+        </div>
+      }
+    </div>
+
+    <!-- Order summary -->
+    @if (step() < 3 && !cart.isEmpty()) {
+      <aside class="h-fit rounded-2xl surface-raised p-6 ring-1 ring-white/10">
+        <h2 class="mb-4 font-bold">{{ t('cart.title') }}</h2>
+        <div class="flex justify-between text-sm text-muted">
+          <span>{{ t('cart.subtotal') }}</span>
+          <span>{{ money(cart.subtotal()) }}</span>
+        </div>
+        <div class="mt-1 flex justify-between text-sm text-muted">
+          <span>{{ t('cart.shipping') }}</span>
+          <span>{{ t('cart.free') }}</span>
+        </div>
+        <div class="mt-4 flex justify-between border-t border-white/10 pt-4 text-lg font-bold">
+          <span>{{ t('cart.total') }}</span>
+          <span class="accent">{{ money(cart.subtotal()) }}</span>
+        </div>
+      </aside>
+    }
+  </div>
+</section>
