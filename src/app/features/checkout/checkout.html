@@ -43,23 +43,38 @@
         <form [formGroup]="form" class="grid gap-4 sm:grid-cols-2">
           <label class="sm:col-span-2 grid gap-1 text-sm">
             <span class="text-muted">{{ t('checkout.name') }}</span>
-            <input formControlName="name" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+            <input formControlName="name" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" [class.border-coral-600]="showError('name')" />
+            @if (showError('name')) {
+              <span class="text-coral-400">{{ t('checkout.errRequired') }}</span>
+            }
           </label>
           <label class="sm:col-span-2 grid gap-1 text-sm">
             <span class="text-muted">{{ t('checkout.email') }}</span>
-            <input formControlName="email" type="email" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+            <input formControlName="email" type="email" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" [class.border-coral-600]="showError('email')" />
+            @if (showError('email')) {
+              <span class="text-coral-400">{{ t('checkout.errEmail') }}</span>
+            }
           </label>
           <label class="sm:col-span-2 grid gap-1 text-sm">
             <span class="text-muted">{{ t('checkout.address') }}</span>
-            <input formControlName="address" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+            <input formControlName="address" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" [class.border-coral-600]="showError('address')" />
+            @if (showError('address')) {
+              <span class="text-coral-400">{{ t('checkout.errRequired') }}</span>
+            }
           </label>
           <label class="grid gap-1 text-sm">
             <span class="text-muted">{{ t('checkout.zip') }}</span>
-            <input formControlName="zip" inputmode="numeric" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+            <input formControlName="zip" inputmode="numeric" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" [class.border-coral-600]="showError('zip')" />
+            @if (showError('zip')) {
+              <span class="text-coral-400">{{ t('checkout.errZip') }}</span>
+            }
           </label>
           <label class="grid gap-1 text-sm">
             <span class="text-muted">{{ t('checkout.city') }}</span>
-            <input formControlName="city" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" />
+            <input formControlName="city" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 outline-none focus:border-coral-500" [class.border-coral-600]="showError('city')" />
+            @if (showError('city')) {
+              <span class="text-coral-400">{{ t('checkout.errRequired') }}</span>
+            }
           </label>
         </form>
       }
@@ -69,7 +84,10 @@
         <form [formGroup]="form" class="grid max-w-md gap-4">
           <label class="grid gap-1 text-sm">
             <span class="text-muted">{{ t('checkout.card') }}</span>
-            <input formControlName="card" inputmode="numeric" placeholder="4242 4242 4242 4242" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 tracking-widest outline-none focus:border-coral-500" />
+            <input formControlName="card" inputmode="numeric" placeholder="4242 4242 4242 4242" class="rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 tracking-widest outline-none focus:border-coral-500" [class.border-coral-600]="showError('card')" />
+            @if (showError('card')) {
+              <span class="text-coral-400">{{ t('checkout.errCard') }}</span>
+            }
           </label>
           <p class="text-sm text-muted">⚠ {{ t('checkout.demoNote') }}</p>
         </form>
