@@ -9,6 +9,8 @@
     "test": "ng test",
     "test:ci": "ng test --watch=false",
     "seed": "tsx scripts/fetch-seed.ts",
+    "optimize:covers": "tsx scripts/optimize-covers.ts",
+    "sitemap": "tsx scripts/generate-sitemap.ts",
     "serve:ssr:bookstore": "node dist/bookstore/server/server.mjs"
   },
   "private": true,
@@ -45,6 +47,7 @@
     "jsdom": "^28.0.0",
     "postcss": "^8.5.15",
     "prettier": "^3.8.1",
+    "sharp": "^0.35.1",
     "tailwindcss": "^4.3.0",
     "tsx": "^4.22.4",
     "typescript": "~5.9.2",

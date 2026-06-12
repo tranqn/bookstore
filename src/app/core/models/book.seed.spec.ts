@@ -17,10 +17,16 @@ describe('books.seed.json', () => {
     expect(genres.size).toBeGreaterThanOrEqual(4); // breadth across genres
   });
 
-  it('uses real cover URLs (no placeholders)', () => {
+  it('uses self-hosted, optimized covers with LQIP and dimensions', () => {
     const books = BookSeedSchema.parse(seed);
     for (const b of books) {
-      expect(b.cover.large).toMatch(/^https:\/\//);
+      // scripts/optimize-covers.ts rewrites every cover to a local rendition.
+      expect(b.cover.small).toBe(`/covers/${b.id}-96.webp`);
+      expect(b.cover.medium).toBe(`/covers/${b.id}-320.webp`);
+      expect(b.cover.large).toBe(`/covers/${b.id}-640.webp`);
+      expect(b.cover.lqip).toMatch(/^data:image\/webp;base64,/);
+      expect(b.cover.width).toBeGreaterThan(0);
+      expect(b.cover.height).toBeGreaterThan(0);
     }
   });
 });

@@ -18,6 +18,11 @@ export interface BookCover {
   small: string;
   medium: string;
   large: string;
+  /** base64 WebP micro-thumbnail used as NgOptimizedImage blur-up placeholder */
+  lqip?: string;
+  /** intrinsic dimensions of the `large` rendition (prevents CLS) */
+  width?: number;
+  height?: number;
   blurhash?: string;
 }
 

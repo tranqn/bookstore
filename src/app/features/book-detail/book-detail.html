@@ -12,14 +12,16 @@
     <article class="grid gap-10 md:grid-cols-[minmax(0,320px)_1fr]">
       <div class="md:sticky md:top-24 md:self-start">
         <div
-          class="overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-glow)] ring-1 ring-white/10"
+          class="relative aspect-2/3 overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-glow)] ring-1 ring-white/10"
         >
           <img
-            [src]="b.cover.large"
+            [ngSrc]="b.cover.large"
             [alt]="b.title"
-            class="aspect-2/3 w-full object-cover"
+            fill
+            priority
+            [placeholder]="b.cover.lqip ?? false"
+            class="object-cover"
             style="view-transition-name: book-cover"
-            fetchpriority="high"
           />
         </div>
       </div>

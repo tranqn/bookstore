@@ -95,8 +95,8 @@ const SORT_KEYS: SortKey[] = [
         <ul
           class="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
         >
-          @for (book of store.filtered(); track book.id) {
-            <li><app-book-card [book]="book" /></li>
+          @for (book of store.filtered(); track book.id; let i = $index) {
+            <li><app-book-card [book]="book" [priority]="i < 5" /></li>
           }
         </ul>
       } @else {

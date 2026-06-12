@@ -4,6 +4,7 @@ import {
   inject,
   signal,
 } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import {
   FormBuilder,
@@ -21,7 +22,7 @@ type Step = 0 | 1 | 2 | 3;
 @Component({
   selector: 'app-checkout',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, ReactiveFormsModule, TranslocoDirective],
+  imports: [NgOptimizedImage, RouterLink, ReactiveFormsModule, TranslocoDirective],
   templateUrl: './checkout.html',
 })
 export class Checkout {

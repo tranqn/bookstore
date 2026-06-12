@@ -24,9 +24,12 @@
     "likeCount": 4210,
     "cover": {
       "id": 7383413,
-      "small": "https://covers.openlibrary.org/b/id/7383413-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/7383413-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/7383413-L.jpg"
+      "small": "/covers/die-unendliche-geschichte-96.webp",
+      "medium": "/covers/die-unendliche-geschichte-320.webp",
+      "large": "/covers/die-unendliche-geschichte-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACQBACdASoQABkAPxFysVCsJqSisAgBgCIJbACdMoRwACWyrh3TfeHX2d+dfwAA9ryPk7JvKhGsroLkwcP2nZ/rENpL4JQ1Aa9XuzLobccWbJ3rktOXv10TRE1DhzqRblfGthp2H0GzoHOU+bzDWx+kFDEGdZI+tL2MqcOMl44WUFZlwVVZKZbjGdcgAA==",
+      "width": 259,
+      "height": 400
     },
     "pageCount": 480
   },
@@ -54,9 +57,12 @@
     "likeCount": 3105,
     "cover": {
       "id": 8574580,
-      "small": "https://covers.openlibrary.org/b/id/8574580-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/8574580-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/8574580-L.jpg"
+      "small": "/covers/momo-96.webp",
+      "medium": "/covers/momo-320.webp",
+      "large": "/covers/momo-640.webp",
+      "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACQBACdASoQABkAPxFysFAsJqSisAgBgCIJbACdMoKNmArk9fT669AXlDcWmwAA/tDNgyIMd3Pand8kkuv90hi1KiZB2xx2NOr5yfjxYH+3X2JwiAGH3X3fNvd/HYi0cGZPTv8jKdNJ47XmVqMy+cGUB+B8wO0Dw6IftIba8hZpVkfzjC2cqa/LXFJB30cEjj2R7mmM3jhNRBzHJufOHmdilewIor6wIkuqvp0FaPDAAA==",
+      "width": 312,
+      "height": 500
     },
     "pageCount": 304
   },
@@ -84,9 +90,12 @@
     "likeCount": 2540,
     "cover": {
       "id": 3330314,
-      "small": "https://covers.openlibrary.org/b/id/3330314-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/3330314-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/3330314-L.jpg"
+      "small": "/covers/tintenherz-96.webp",
+      "medium": "/covers/tintenherz-320.webp",
+      "large": "/covers/tintenherz-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwAwCdASoQABkAPxFysFAsJqSisAgBgCIJbACdMoMljB3Tk0fTUKkEAOtUdvAKGCbUZh+Yyh3WrvgFCr3Q8+IQiUpqDSLu/twOT9teUXnuISNcWYIf6lPamNMpqsDd5FgfQpvDsZ+b5EuSvXYYIeg2lHO21OKZ5L3lWLNx0+cN7dOTlVW4qboNKAA=",
+      "width": 315,
+      "height": 500
     },
     "pageCount": 576
   },
@@ -114,9 +123,12 @@
     "likeCount": 8800,
     "cover": {
       "id": 14625765,
-      "small": "https://covers.openlibrary.org/b/id/14625765-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/14625765-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/14625765-L.jpg"
+      "small": "/covers/der-herr-der-ringe-96.webp",
+      "medium": "/covers/der-herr-der-ringe-320.webp",
+      "large": "/covers/der-herr-der-ringe-640.webp",
+      "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACQAwCdASoQAB4APxF2sVCsJySisAgBgCIJQBdgBaPupJK14WAAAP7uHEFzl1OrWJYIMttiPjxI9rNOXbpfvhu60AA=",
+      "width": 269,
+      "height": 500
     },
     "pageCount": 1280
   },
@@ -144,9 +156,12 @@
     "likeCount": 9600,
     "cover": {
       "id": 15155833,
-      "small": "https://covers.openlibrary.org/b/id/15155833-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/15155833-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/15155833-L.jpg"
+      "small": "/covers/harry-potter-und-der-stein-der-weisen-96.webp",
+      "medium": "/covers/harry-potter-und-der-stein-der-weisen-320.webp",
+      "large": "/covers/harry-potter-und-der-stein-der-weisen-640.webp",
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABQBACdASoQABoAPxFysFAsJqSisAgBgCIJbACdOUAKk7PvEW5ItcbazergAO/LbkjcDmt3k52rqIZvvGIw0RHfbDIx9kEbgxMa7BtvfgEtJgzWsSDw/vpoPh3u3luORBZa0wTeqmV7m5XcWFa+sm/wnISeuyLyWInMnY9shQrLeLs3RZfvyvqQaU5uk8WrbKox+ko/dQRMkqTmKccrgzv1oAA=",
+      "width": 307,
+      "height": 500
     },
     "pageCount": 336
   },
@@ -174,9 +189,12 @@
     "likeCount": 3320,
     "cover": {
       "id": 11480483,
-      "small": "https://covers.openlibrary.org/b/id/11480483-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/11480483-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/11480483-L.jpg"
+      "small": "/covers/der-name-des-windes-96.webp",
+      "medium": "/covers/der-name-des-windes-320.webp",
+      "large": "/covers/der-name-des-windes-640.webp",
+      "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoQABgAPxFysFAsJqSisAgBgCIJQBibA9Xw4yKRX5gO2DOoAAD+2aT9QGJnp1wR5dn5r+SycxwDshPIsBco9GYPpYeEpE353Cwmzgfv/3rPtSEeY6gFd0AAAAA=",
+      "width": 340,
+      "height": 500
     },
     "pageCount": 864
   },
@@ -204,9 +222,12 @@
     "likeCount": 6100,
     "cover": {
       "id": 14348537,
-      "small": "https://covers.openlibrary.org/b/id/14348537-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/14348537-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/14348537-L.jpg"
+      "small": "/covers/stolz-und-vorurteil-96.webp",
+      "medium": "/covers/stolz-und-vorurteil-320.webp",
+      "large": "/covers/stolz-und-vorurteil-640.webp",
+      "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoQABkAPxF0sFCsJqSisAgBgCIJZACdMoADQHHzIifkAAD+yz84n/DeSL25WYr9tua3UiTN3J/cFqBEQWBIoxiiDgAAAA==",
+      "width": 313,
+      "height": 500
     },
     "pageCount": 480
   },
@@ -234,9 +255,12 @@
     "likeCount": 2870,
     "cover": {
       "id": 7382153,
-      "small": "https://covers.openlibrary.org/b/id/7382153-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/7382153-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/7382153-L.jpg"
+      "small": "/covers/wie-ein-einziger-tag-96.webp",
+      "medium": "/covers/wie-ein-einziger-tag-320.webp",
+      "large": "/covers/wie-ein-einziger-tag-640.webp",
+      "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABwBACdASoQABgAPxFysFAsJqSisAgBgCIJYgC7AYxOyt0o2SQsRpuP2nKkAAD+4cTzIpW04zKf8fPtg142Ep3J7CqwG5TCliM8zcoFuxG4+nsrJrOG89tMFPenuBSElyf481oW1lFGb6Q6+eGNpmGPwGTHnQb2IUx+HZr//3hXQbRol6xxiGAK8L1zAP2OIfgAAA==",
+      "width": 329,
+      "height": 499
     },
     "pageCount": 256
   },
@@ -264,9 +288,12 @@
     "likeCount": 3450,
     "cover": {
       "id": 14817133,
-      "small": "https://covers.openlibrary.org/b/id/14817133-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/14817133-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/14817133-L.jpg"
+      "small": "/covers/vom-winde-verweht-96.webp",
+      "medium": "/covers/vom-winde-verweht-320.webp",
+      "large": "/covers/vom-winde-verweht-640.webp",
+      "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABwBACdASoQABgAPxFysFAsJqSisAgBgCIJbAC7LwABpcVxo7JRxbiJV8VAgAD+fGJK9KmNoFg3Pal3q8z9madQ9TJXYA2v2q1kXcqmLDFfoml6pcEHCy+CuDg6C/1uE/gFJw2LBIN386D+G+ckhOPw+na1Egfz5qJ1JiGYWYcFeunQp+knRfZJdMy8iIKS03JmPE0AAAA=",
+      "width": 337,
+      "height": 500
     },
     "pageCount": 1024
   },
@@ -294,9 +321,12 @@
     "likeCount": 1980,
     "cover": {
       "id": 998445,
-      "small": "https://covers.openlibrary.org/b/id/998445-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/998445-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/998445-L.jpg"
+      "small": "/covers/der-vorleser-96.webp",
+      "medium": "/covers/der-vorleser-320.webp",
+      "large": "/covers/der-vorleser-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAwCdASoQABkAPxFysFAsJqSisAgBgCIJYwC7ACG58292w8mjzFYsAP7n7E7FOpJG+avuOFoddSh7w+nTEehNnc4Le+hJU6N4rkE4nvm+AgYT00y8CZYco+HYgF4yoRFD/RyCW1Phk7oaPS5hoAAA",
+      "width": 316,
+      "height": 500
     },
     "pageCount": 208
   },
@@ -324,9 +354,12 @@
     "likeCount": 1420,
     "cover": {
       "id": 433130,
-      "small": "https://covers.openlibrary.org/b/id/433130-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/433130-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/433130-L.jpg"
+      "small": "/covers/schokolade-zum-fruhstuck-96.webp",
+      "medium": "/covers/schokolade-zum-fruhstuck-320.webp",
+      "large": "/covers/schokolade-zum-fruhstuck-640.webp",
+      "lqip": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAAAwBACdASoQABkAPxFwsFAsJiSisAgBgCIJYgCdAYyy7W6jWkk7Fh/1anwA/Wzz4LUwfUJlq/4YSbPad0mb3l7NmFjDd57Mn8hXPGtdP7OMxwXI71ARU6pt+VecyJQpGW62N43NoNJwArEMZSI5SXzdh0viXErBBesh77xa8tF3pRYbbKFU9j9J2H9KrwOtJbxV3VvM6fO6H+u/PMv1TQhSAv5vOMqeuYHbiEE/Nw+nhUQH8AAAAA==",
+      "width": 310,
+      "height": 475
     },
     "pageCount": 624
   },
@@ -354,9 +387,12 @@
     "likeCount": 5400,
     "cover": {
       "id": 11972784,
-      "small": "https://covers.openlibrary.org/b/id/11972784-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/11972784-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/11972784-L.jpg"
+      "small": "/covers/per-anhalter-durch-die-galaxis-96.webp",
+      "medium": "/covers/per-anhalter-durch-die-galaxis-320.webp",
+      "large": "/covers/per-anhalter-durch-die-galaxis-640.webp",
+      "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABQBACdASoQABgAPxFysFAsJqSisAgBgCIJbACdOUAAuU54N7lPpdfnSoFAAP46Ku5uBpef8aeTuBUyfiGS+9lYEqPaOmSNX8EX6bFWwxeLd9+s8anTvAcE8f7Qhr2vaXjcw+ouaf+WMTKRNc/EPWu54m/3ydSTR0sMbkoa91wAAA==",
+      "width": 332,
+      "height": 500
     },
     "pageCount": 256
   },
@@ -384,9 +420,12 @@
     "likeCount": 4720,
     "cover": {
       "id": 11447888,
-      "small": "https://covers.openlibrary.org/b/id/11447888-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/11447888-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/11447888-L.jpg"
+      "small": "/covers/der-marsianer-96.webp",
+      "medium": "/covers/der-marsianer-320.webp",
+      "large": "/covers/der-marsianer-640.webp",
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoQABkAPxFysFAsJqSisAgBgCIJbACdL175WAQ/vDSj1hwWIAD51qhPeFnnD06zniaso0z/YaIn1vqo+W01IekAdm1HxD/U/3phD9tkty6R4n4Vuwf50ogA",
+      "width": 321,
+      "height": 500
     },
     "pageCount": 416
   },
@@ -414,9 +453,12 @@
     "likeCount": 6300,
     "cover": {
       "id": 11481354,
-      "small": "https://covers.openlibrary.org/b/id/11481354-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/11481354-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/11481354-L.jpg"
+      "small": "/covers/dune-der-wustenplanet-96.webp",
+      "medium": "/covers/dune-der-wustenplanet-320.webp",
+      "large": "/covers/dune-der-wustenplanet-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAwCdASoQABkAPxFwsFAsJiSisAgBgCIJQAALehzFOSJQYAD+6/JOcTeUI+3kJoV1k0lUfR476TrisOcYVzSg+20jXS1yzKVU33XSCurLaq/8yJLGnyriu9jiJPuOK9fAyHoPEZn9+ja5ttagAA==",
+      "width": 317,
+      "height": 500
     },
     "pageCount": 816
   },
@@ -444,9 +486,12 @@
     "likeCount": 7100,
     "cover": {
       "id": 8745958,
-      "small": "https://covers.openlibrary.org/b/id/8745958-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/8745958-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/8745958-L.jpg"
+      "small": "/covers/1984-96.webp",
+      "medium": "/covers/1984-320.webp",
+      "large": "/covers/1984-640.webp",
+      "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAACwAwCdASoQABkAPxFysFAsJqSisAgBgCIJbACdMoADLVbrkeUsAAD+eJcU1gUN/ySKUVTFPqX60jZg9Fg1kzEvTFMUL2FzjYkndtIOj7GKH5C/HMYrvDXPVsDj/UU3Ybj7zCbydZdm66jIr1c/i7Nh2m3Zsuae2vXUxvzLkklDrdO/N9EHfVASj1XE+Qhhv7IxJ0FDJtRMy4AA",
+      "width": 327,
+      "height": 500
     },
     "pageCount": 352
   },
@@ -474,9 +519,12 @@
     "likeCount": 3890,
     "cover": {
       "id": 8737626,
-      "small": "https://covers.openlibrary.org/b/id/8737626-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/8737626-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/8737626-L.jpg"
+      "small": "/covers/ready-player-one-96.webp",
+      "medium": "/covers/ready-player-one-320.webp",
+      "large": "/covers/ready-player-one-640.webp",
+      "lqip": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABQBACdASoQABgAPxFysFAsJqSisAgBgCIJQBdhxAA5T5VfVSTK0v9wDZNQAP7HO6/evYVv3m0MrLpV4ISiph1El23CRmgCdb7VTTFBhO/ye7vIkTz3JGKYzv85504JIfW2orICrpP/8MdFi7NS+F6UPzWRqPjNB5IwFsSydKg7THZtd2FznSIdz6NHTXRnjidg1/s+6qWL58aICSi8Xg/GMTUfc8OdUzE3kuLEfbB6VY/Su+AAAA==",
+      "width": 331,
+      "height": 500
     },
     "pageCount": 544
   },
@@ -504,9 +552,12 @@
     "likeCount": 6900,
     "cover": {
       "id": 12646537,
-      "small": "https://covers.openlibrary.org/b/id/12646537-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/12646537-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/12646537-L.jpg"
+      "small": "/covers/die-tribute-von-panem-todliche-spiele-96.webp",
+      "medium": "/covers/die-tribute-von-panem-todliche-spiele-320.webp",
+      "large": "/covers/die-tribute-von-panem-todliche-spiele-640.webp",
+      "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAwCdASoQABgAPxFysFAsJqSisAgBgCIJZwAAUz6RGQ9xOPVDAAD+6PFjEy1ou2LWD4R2lSgZxhLoMFIzjAAA",
+      "width": 328,
+      "height": 500
     },
     "pageCount": 416
   },
@@ -534,9 +585,12 @@
     "likeCount": 4100,
     "cover": {
       "id": 8580475,
-      "small": "https://covers.openlibrary.org/b/id/8580475-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/8580475-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/8580475-L.jpg"
+      "small": "/covers/das-schweigen-der-lammer-96.webp",
+      "medium": "/covers/das-schweigen-der-lammer-320.webp",
+      "large": "/covers/das-schweigen-der-lammer-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAQBACdASoQABkAPxFysFAsJqSisAgBgCIJQBhmgr5Qc7Eflh93YvoQYADMEAGQAdRaTw8GC/nX5mMXDr9znhAu0TPgORWjS9b1cn5RmHQacHBppXoKxARhvVIEQNlWtRlF7GRVhq4tqhjEOPn99/zOfM9w1GZu5fDIfTSI3ioqfA5gmu6jJ+OsAAA=",
+      "width": 319,
+      "height": 500
     },
     "pageCount": 448
   },
@@ -564,9 +618,12 @@
     "likeCount": 3760,
     "cover": {
       "id": 8368314,
-      "small": "https://covers.openlibrary.org/b/id/8368314-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/8368314-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/8368314-L.jpg"
+      "small": "/covers/gone-girl-das-perfekte-opfer-96.webp",
+      "medium": "/covers/gone-girl-das-perfekte-opfer-320.webp",
+      "large": "/covers/gone-girl-das-perfekte-opfer-640.webp",
+      "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoQABgAPxFysVCsJqSisAgBgCIJYwDE2CP/2JGJbPuj70gA/trNb818AYU6dLybqvySy8jc6nPBpv3iKlFEMw+y1j3vSSGi2th/+LfxNvzl3mn+YPucqSiAAAA=",
+      "width": 328,
+      "height": 500
     },
     "pageCount": 576
   },
@@ -594,9 +651,12 @@
     "likeCount": 4200,
     "cover": {
       "id": 10567897,
-      "small": "https://covers.openlibrary.org/b/id/10567897-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/10567897-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/10567897-L.jpg"
+      "small": "/covers/verblendung-96.webp",
+      "medium": "/covers/verblendung-320.webp",
+      "large": "/covers/verblendung-640.webp",
+      "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwAwCdASoQABkAPxFysFAsJqSisAgBgCIJaQAD5XGolveIDH385rIAAP6msNJvQA4SZAak2RyRUkZm7j+sDQMD+GK1nWaX2rWRWZ8s+BH/PtV+JhAprumJyrpM8FaJfdZuSxdVu8xMOc+X8fMWlPK2ncizJTn2TtfrtZFuItSqSZIrMLSTyYd75NqU1pxqzCAAAA==",
+      "width": 312,
+      "height": 500
     },
     "pageCount": 704
   },
@@ -624,9 +684,12 @@
     "likeCount": 2650,
     "cover": {
       "id": 28990,
-      "small": "https://covers.openlibrary.org/b/id/28990-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/28990-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/28990-L.jpg"
+      "small": "/covers/shutter-island-96.webp",
+      "medium": "/covers/shutter-island-320.webp",
+      "large": "/covers/shutter-island-640.webp",
+      "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAACwBACdASoQABoAPxFysFAsJqSisAgBgCIJbACdMoCGAe/A9DIHYMMbrgJ/NgKAAPhXkEaMjJijkFzgc/gMmpOtTWqu7nZlAF9pgIxKQBw6lEf8EtkGz2/0EwbBe1d38s1ILXfjTquKxi0PbP4QL5HgZBowGCLjHJy0qFk9DwBtFcyO/veMkmvp38Lcu860N9MExjR1dLJwe8Nm6imavSzz0S/O1G+anYUrFP+wdybQ237jaFEQDt+VLfNPh9sCAAA=",
+      "width": 293,
+      "height": 475
     },
     "pageCount": 432
   },
@@ -654,9 +717,12 @@
     "likeCount": 5200,
     "cover": {
       "id": 9255229,
-      "small": "https://covers.openlibrary.org/b/id/9255229-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/9255229-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/9255229-L.jpg"
+      "small": "/covers/sakrileg-the-da-vinci-code-96.webp",
+      "medium": "/covers/sakrileg-the-da-vinci-code-320.webp",
+      "large": "/covers/sakrileg-the-da-vinci-code-640.webp",
+      "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACwBACdASoQABgAPxFysFAsJqSisAgBgCIJbACdMoMYJn/LsAT+9FfdruCTH4YAAP7QtP3YCQI1FxKTT889Mtg5XiiO4SatbKhbNM+AXejWaz5u3uyc+pmp9Xqbpu4Mmg5lF5dvLJ+qVhj0VgFdx7iuXzkNJ0/ucNuTZmru6Z02ODvv83G1rR65XUT/zFC0cp54whR0IYBSsz43iW9voAAA",
+      "width": 343,
+      "height": 500
     },
     "pageCount": 608
   },
@@ -684,9 +750,12 @@
     "likeCount": 3900,
     "cover": {
       "id": 10432365,
-      "small": "https://covers.openlibrary.org/b/id/10432365-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/10432365-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/10432365-L.jpg"
+      "small": "/covers/eine-kurze-geschichte-der-zeit-96.webp",
+      "medium": "/covers/eine-kurze-geschichte-der-zeit-320.webp",
+      "large": "/covers/eine-kurze-geschichte-der-zeit-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoQABsAPxFwsFAsJiSisAgBgCIJYwAUYAI0GtE1BHn4ZAAA/hc014BH/uUQ188SWJOexcCEI9Rv4A30phESXecvVIqv5cRdXQq8di/wB6CitpMA6NzXvpn0mnUeWpAQWDlGZQ+b4zyGAAAA",
+      "width": 301,
+      "height": 500
     },
     "pageCount": 256
   },
@@ -714,9 +783,12 @@
     "likeCount": 7400,
     "cover": {
       "id": 8634250,
-      "small": "https://covers.openlibrary.org/b/id/8634250-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/8634250-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/8634250-L.jpg"
+      "small": "/covers/sapiens-eine-kurze-geschichte-der-menschheit-96.webp",
+      "medium": "/covers/sapiens-eine-kurze-geschichte-der-menschheit-320.webp",
+      "large": "/covers/sapiens-eine-kurze-geschichte-der-menschheit-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoQABkAPxFysFAsJqSisAgBgCIJZQAAW+MCWo4T9+j8Qf9gAP7rIcC89BHgUwSpoS5rj3QYyUwev+B6kMIAn9N5DKv0cM+BoURevttWjTjrQ4L87/cVfdBxN5yd6K1EPhmAAA==",
+      "width": 326,
+      "height": 500
     },
     "pageCount": 528
   },
@@ -744,9 +816,12 @@
     "likeCount": 4300,
     "cover": {
       "id": 13290711,
-      "small": "https://covers.openlibrary.org/b/id/13290711-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/13290711-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/13290711-L.jpg"
+      "small": "/covers/schnelles-denken-langsames-denken-96.webp",
+      "medium": "/covers/schnelles-denken-langsames-denken-320.webp",
+      "large": "/covers/schnelles-denken-langsames-denken-640.webp",
+      "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAwCdASoQABUAPxFysFAsJqSisAgBgCIJZwDE2CHfk9G+FVHbgAD+7TdK1muPA1w1oRFcgmENzB70IqtgAA==",
+      "width": 386,
+      "height": 500
     },
     "pageCount": 624
   },
@@ -774,9 +849,12 @@
     "likeCount": 2600,
     "cover": {
       "id": 8270423,
-      "small": "https://covers.openlibrary.org/b/id/8270423-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/8270423-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/8270423-L.jpg"
+      "small": "/covers/die-kunst-des-klaren-denkens-96.webp",
+      "medium": "/covers/die-kunst-des-klaren-denkens-320.webp",
+      "large": "/covers/die-kunst-des-klaren-denkens-640.webp",
+      "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAwCdASoQABkAPxF4slEsJ6SisAgBgCIJaQAAewdjaCrgAP7vsIsERxlr7s7xa0QaxfXSibWf108LR9zxbX/SCzHGBMPZUeFAgAAA",
+      "width": 192,
+      "height": 298
     },
     "pageCount": 248
   },
@@ -804,9 +882,12 @@
     "likeCount": 3100,
     "cover": {
       "id": 8186237,
-      "small": "https://covers.openlibrary.org/b/id/8186237-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/8186237-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/8186237-L.jpg"
+      "small": "/covers/factfulness-96.webp",
+      "medium": "/covers/factfulness-320.webp",
+      "large": "/covers/factfulness-640.webp",
+      "lqip": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAACwBACdASoQABkAPxFysFAsJqSisAgBgCIJbACdLwAagJn/SABaC2Daubcf5bCgAP3irKQ+FU9Ax0FU46KQ37JiiIk7uqe8iA33nvDgohhaABiRaOZZsPv2a7hD4GHtuy+KKyteKh+po5Scq2FcIfHX/gcQookcL/u2yT/pMb87WImBnaZ+h6pwwdefMhA4/92VoKu7pnNzjFaL9t0iBrERIc/kh7gH5vRuEXhKbzMNjbgpzHuCt7IbVbisoe0w/S3PeiAA",
+      "width": 324,
+      "height": 499
     },
     "pageCount": 400
   },
@@ -834,9 +915,12 @@
     "likeCount": 5600,
     "cover": {
       "id": 10523448,
-      "small": "https://covers.openlibrary.org/b/id/10523448-S.jpg",
-      "medium": "https://covers.openlibrary.org/b/id/10523448-M.jpg",
-      "large": "https://covers.openlibrary.org/b/id/10523448-L.jpg"
+      "small": "/covers/der-junge-der-maulwurf-der-fuchs-und-das-pferd-96.webp",
+      "medium": "/covers/der-junge-der-maulwurf-der-fuchs-und-das-pferd-320.webp",
+      "large": "/covers/der-junge-der-maulwurf-der-fuchs-und-das-pferd-640.webp",
+      "lqip": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoQABAABABoJaQAAoa9yYAAANnLmyRZDDSkMr5MOAA=",
+      "width": 500,
+      "height": 500
     },
     "pageCount": 128
   }

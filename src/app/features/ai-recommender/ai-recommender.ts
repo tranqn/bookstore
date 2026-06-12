@@ -5,6 +5,7 @@ import {
   inject,
   signal,
 } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { AiStore } from '../../stores/ai.store';
@@ -14,7 +15,7 @@ import { RatingStars } from '../../shared/ui/rating-stars';
 @Component({
   selector: 'app-ai-recommender',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, TranslocoDirective, RatingStars],
+  imports: [NgOptimizedImage, RouterLink, TranslocoDirective, RatingStars],
   template: `
     <section *transloco="let t" class="mx-auto max-w-3xl py-12">
       <header class="text-center">
@@ -73,11 +74,15 @@ import { RatingStars } from '../../shared/ui/rating-stars';
           <ul class="space-y-4">
             @for (card of ai.cards(); track card.book.id; let i = $index) {
               <li class="flex gap-4 rounded-2xl surface-raised p-4 ring-1 ring-white/10">
-                <a [routerLink]="['/book', card.book.id]" class="shrink-0">
+                <a
+                  [routerLink]="['/book', card.book.id]"
+                  class="relative block h-24 w-16 shrink-0 overflow-hidden rounded"
+                >
                   <img
-                    [src]="card.book.cover.small"
+                    [ngSrc]="card.book.cover.small"
                     [alt]="card.book.title"
-                    class="h-24 w-16 rounded object-cover"
+                    fill
+                    class="object-cover"
                   />
                 </a>
                 <div class="min-w-0 flex-1">

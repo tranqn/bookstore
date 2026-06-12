@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { formatMoney } from '../util/format';
@@ -8,7 +9,7 @@ import { UiStore } from '../../stores/ui.store';
 @Component({
   selector: 'app-cart-drawer',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, TranslocoDirective],
+  imports: [NgOptimizedImage, RouterLink, TranslocoDirective],
   host: {
     '(document:keydown.escape)': 'ui.closeCart()',
   },
@@ -57,11 +58,14 @@ import { UiStore } from '../../stores/ui.store';
             <ul class="flex-1 divide-y divide-white/10 overflow-y-auto px-5">
               @for (line of cart.lines(); track line.book.id) {
                 <li class="flex gap-3 py-4">
-                  <img
-                    [src]="line.book.cover.small"
-                    [alt]="line.book.title"
-                    class="h-20 w-14 shrink-0 rounded object-cover"
-                  />
+                  <div class="relative h-20 w-14 shrink-0 overflow-hidden rounded">
+                    <img
+                      [ngSrc]="line.book.cover.small"
+                      [alt]="line.book.title"
+                      fill
+                      class="object-cover"
+                    />
+                  </div>
                   <div class="flex min-w-0 flex-1 flex-col">
                     <p class="truncate font-semibold">{{ line.book.title }}</p>
                     <p class="truncate text-sm text-muted">{{ line.book.author }}</p>

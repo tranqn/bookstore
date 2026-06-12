@@ -29,9 +29,14 @@ export const BookSchema = z.object({
   likeCount: z.number().int().nonnegative(),
   cover: z.object({
     id: z.number().int(),
-    small: z.string().url(),
-    medium: z.string().url(),
-    large: z.string().url(),
+    // Either a remote https URL (fresh seed) or a local /covers/… path
+    // (after scripts/optimize-covers.ts has run).
+    small: z.string().min(1),
+    medium: z.string().min(1),
+    large: z.string().min(1),
+    lqip: z.string().optional(),
+    width: z.number().int().positive().optional(),
+    height: z.number().int().positive().optional(),
     blurhash: z.string().optional(),
   }),
   pageCount: z.number().int().positive().optional(),
