@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   computed,
+  DestroyRef,
   effect,
   inject,
   input,
@@ -9,9 +10,10 @@ import {
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { DatePipe } from '@angular/common';
+import { DatePipe, NgOptimizedImage } from '@angular/common';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { SeoService } from '../../core/services/seo';
 import { ViewTransitionService } from '../../core/services/view-transition';
 import { formatMoney } from '../../core/util/format';
 import { CatalogStore } from '../../stores/catalog.store';
@@ -29,6 +31,7 @@ import { ReadingProgress } from '../../shared/ui/reading-progress';
   imports: [
     RouterLink,
     DatePipe,
+    NgOptimizedImage,
     ReactiveFormsModule,
     TranslocoDirective,
     RatingInput,
@@ -46,6 +49,7 @@ export class BookDetail {
   private readonly title = inject(Title);
   private readonly fb = inject(FormBuilder);
   private readonly viewTransition = inject(ViewTransitionService);
+  private readonly seo = inject(SeoService);
 
   /** Route param bound via withComponentInputBinding(). */
   readonly id = input.required<string>();
@@ -72,9 +76,11 @@ export class BookDetail {
     effect(() => {
       const b = this.book();
       this.title.setTitle(b ? `${b.title} — Bookstore` : 'Bookstore');
+      if (b) this.seo.setBookMeta(b, this.ui.locale());
     });
     // Remember the viewed book so its catalog card morphs on back-navigation.
     effect(() => this.viewTransition.activeBookId.set(this.id()));
+    inject(DestroyRef).onDestroy(() => this.seo.clearBookMeta());
   }
 
   protected addToCart(): void {
