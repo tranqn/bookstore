@@ -5,18 +5,21 @@ import {
   effect,
   inject,
   input,
+  signal,
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { DatePipe } from '@angular/common';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { ViewTransitionService } from '../../core/services/view-transition';
 import { formatMoney } from '../../core/util/format';
 import { CatalogStore } from '../../stores/catalog.store';
 import { CartStore } from '../../stores/cart.store';
 import { FavoritesStore } from '../../stores/favorites.store';
 import { ReviewsStore } from '../../stores/reviews.store';
 import { UiStore } from '../../stores/ui.store';
+import { RatingInput } from '../../shared/ui/rating-input';
 import { RatingStars } from '../../shared/ui/rating-stars';
 import { ReadingProgress } from '../../shared/ui/reading-progress';
 
@@ -28,6 +31,7 @@ import { ReadingProgress } from '../../shared/ui/reading-progress';
     DatePipe,
     ReactiveFormsModule,
     TranslocoDirective,
+    RatingInput,
     RatingStars,
     ReadingProgress,
   ],
@@ -41,6 +45,7 @@ export class BookDetail {
   private readonly catalog = inject(CatalogStore);
   private readonly title = inject(Title);
   private readonly fb = inject(FormBuilder);
+  private readonly viewTransition = inject(ViewTransitionService);
 
   /** Route param bound via withComponentInputBinding(). */
   readonly id = input.required<string>();
@@ -61,12 +66,15 @@ export class BookDetail {
     name: [''],
     body: ['', Validators.required],
   });
+  protected readonly reviewRating = signal(0);
 
   constructor() {
     effect(() => {
       const b = this.book();
       this.title.setTitle(b ? `${b.title} — Bookstore` : 'Bookstore');
     });
+    // Remember the viewed book so its catalog card morphs on back-navigation.
+    effect(() => this.viewTransition.activeBookId.set(this.id()));
   }
 
   protected addToCart(): void {
@@ -84,7 +92,8 @@ export class BookDetail {
       return;
     }
     const { name, body } = this.reviewForm.getRawValue();
-    this.reviews.add(this.id(), name, body);
+    this.reviews.add(this.id(), name, body, this.reviewRating() || undefined);
     this.reviewForm.reset({ name: '', body: '' });
+    this.reviewRating.set(0);
   }
 }

@@ -18,6 +18,7 @@
             [src]="b.cover.large"
             [alt]="b.title"
             class="aspect-2/3 w-full object-cover"
+            style="view-transition-name: book-cover"
             fetchpriority="high"
           />
         </div>
@@ -103,6 +104,13 @@
             @if (reviewForm.controls.body.touched && reviewForm.controls.body.invalid) {
               <p class="text-sm text-coral-400">{{ t('reviews.empty') }}</p>
             }
+            <div class="flex items-center gap-3 text-sm">
+              <span class="text-muted">{{ t('reviews.yourRating') }}</span>
+              <app-rating-input
+                [label]="t('reviews.yourRating')"
+                [(value)]="reviewRating"
+              />
+            </div>
             <button
               type="submit"
               class="justify-self-start rounded-xl border border-white/20 px-5 py-2.5 text-sm font-semibold transition-colors hover:accent"
@@ -116,7 +124,12 @@
               @for (r of bookReviews(); track r.id) {
                 <li class="rounded-xl surface-raised p-4 ring-1 ring-white/10">
                   <div class="flex items-center justify-between">
-                    <span class="font-semibold">{{ r.author }}</span>
+                    <span class="flex items-center gap-3 font-semibold">
+                      {{ r.author }}
+                      @if (r.rating) {
+                        <app-rating-stars [value]="r.rating" />
+                      }
+                    </span>
                     <time class="text-xs text-muted" [attr.datetime]="r.createdAt">
                       {{ r.createdAt | date: 'mediumDate' : undefined : ui.locale() }}
                     </time>

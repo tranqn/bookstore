@@ -95,13 +95,26 @@
     "successBody": "A confirmation is on its way to {{email}}.",
     "orderId": "Order number",
     "backToShop": "Back to the shop",
-    "demoNote": "Demo checkout — no real payment is processed."
+    "demoNote": "Demo checkout — no real payment is processed.",
+    "errRequired": "This field is required",
+    "errEmail": "Please enter a valid email address.",
+    "errZip": "Postcode must be 4–5 digits.",
+    "errCard": "Card number must be 12–19 digits."
+  },
+  "palette": {
+    "title": "Quick search",
+    "placeholder": "Search books, genres or actions…",
+    "noResults": "No matches.",
+    "action": "Action",
+    "hintNavigate": "navigate",
+    "hintSelect": "open"
   },
   "reviews": {
     "title": "Reviews",
     "none": "No reviews yet — be the first!",
     "yourName": "Your name",
     "yourReview": "Your review…",
+    "yourRating": "Your rating",
     "submit": "Submit review",
     "anonymous": "Anonymous",
     "empty": "Please write something before submitting."

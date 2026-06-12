@@ -7,6 +7,7 @@ import {
   provideRouter,
   withComponentInputBinding,
   withInMemoryScrolling,
+  withViewTransitions,
 } from '@angular/router';
 import {
   provideClientHydration,
@@ -30,6 +31,7 @@ export const appConfig: ApplicationConfig = {
       routes,
       withComponentInputBinding(),
       withInMemoryScrolling({ scrollPositionRestoration: 'enabled' }),
+      withViewTransitions({ skipInitialTransition: true }),
     ),
     provideClientHydration(withEventReplay()),
     provideHttpClient(withFetch()),

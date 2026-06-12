@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import type { Book } from '../../core/models/book';
+import { ViewTransitionService } from '../../core/services/view-transition';
 import { formatMoney } from '../../core/util/format';
 import { UiStore } from '../../stores/ui.store';
 import { RatingStars } from './rating-stars';
@@ -19,6 +20,7 @@ import { RatingStars } from './rating-stars';
   template: `
     <a
       [routerLink]="['/book', book().id]"
+      (click)="markTransitionSource()"
       class="group flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] surface-raised shadow-lg ring-1 ring-white/5 transition-[transform,box-shadow] duration-300 will-change-transform hover:-translate-y-2 hover:shadow-[var(--shadow-glow)] focus-visible:-translate-y-2"
     >
       <div class="relative aspect-2/3 overflow-hidden bg-ink-800">
@@ -27,6 +29,9 @@ import { RatingStars } from './rating-stars';
           [alt]="book().title"
           loading="lazy"
           decoding="async"
+          [style.view-transition-name]="
+            viewTransition.activeBookId() === book().id ? 'book-cover' : null
+          "
           class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <span
@@ -49,8 +54,14 @@ import { RatingStars } from './rating-stars';
 })
 export class BookCard {
   private readonly ui = inject(UiStore);
+  protected readonly viewTransition = inject(ViewTransitionService);
   readonly book = input.required<Book>();
   protected readonly price = computed(() =>
     formatMoney(this.book().price, this.ui.locale()),
   );
+
+  /** Tag this card's cover as the morph source before the route changes. */
+  protected markTransitionSource(): void {
+    this.viewTransition.activeBookId.set(this.book().id);
+  }
 }

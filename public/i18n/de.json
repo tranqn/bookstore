@@ -84,13 +84,26 @@
     "successBody": "Eine Bestätigung ist unterwegs zu {{email}}.",
     "orderId": "Bestellnummer",
     "backToShop": "Zurück zum Shop",
-    "demoNote": "Demo-Checkout – es wird keine echte Zahlung ausgeführt."
+    "demoNote": "Demo-Checkout – es wird keine echte Zahlung ausgeführt.",
+    "errRequired": "Pflichtfeld",
+    "errEmail": "Bitte eine gültige E-Mail-Adresse angeben.",
+    "errZip": "PLZ muss aus 4–5 Ziffern bestehen.",
+    "errCard": "Kartennummer muss aus 12–19 Ziffern bestehen."
+  },
+  "palette": {
+    "title": "Schnellsuche",
+    "placeholder": "Bücher, Genres oder Aktionen suchen…",
+    "noResults": "Keine Treffer.",
+    "action": "Aktion",
+    "hintNavigate": "navigieren",
+    "hintSelect": "öffnen"
   },
   "reviews": {
     "title": "Rezensionen",
     "none": "Noch keine Rezensionen – sei die oder der Erste!",
     "yourName": "Dein Name",
     "yourReview": "Deine Rezension…",
+    "yourRating": "Deine Bewertung",
     "submit": "Rezension absenden",
     "anonymous": "Anonym",
     "empty": "Bitte schreibe etwas, bevor du absendest."
