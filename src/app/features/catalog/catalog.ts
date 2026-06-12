@@ -51,17 +51,27 @@ const SORT_KEYS: SortKey[] = [
 
           <label class="flex items-center gap-2 text-sm">
             <span class="text-muted">{{ t('catalog.sortLabel') }}</span>
-            <select
-              [value]="store.sort()"
-              (change)="onSort($event)"
-              class="rounded-xl border border-white/15 bg-white/5 px-3 py-2.5 text-sm outline-none focus:border-coral-500"
-            >
-              @for (key of sortKeys; track key) {
-                <option [value]="key" class="text-ink-950">
-                  {{ t('catalog.sort.' + key) }}
-                </option>
-              }
-            </select>
+            <span class="relative">
+              <!-- field-sizing hugs the selected option, so the chevron sits
+                   right next to the text instead of at the widest-option edge. -->
+              <select
+                [value]="store.sort()"
+                (change)="onSort($event)"
+                class="appearance-none rounded-xl border border-white/15 bg-white/5 py-2.5 pl-3 pr-8 text-sm outline-none [field-sizing:content] focus:border-coral-500"
+              >
+                @for (key of sortKeys; track key) {
+                  <option [value]="key" class="text-ink-950">
+                    {{ t('catalog.sort.' + key) }}
+                  </option>
+                }
+              </select>
+              <span
+                aria-hidden="true"
+                class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted"
+              >
+                ▾
+              </span>
+            </span>
           </label>
         </div>
 

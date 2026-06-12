@@ -17,7 +17,7 @@ import { RatingStars } from './rating-stars';
   selector: 'app-book-card',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgOptimizedImage, RouterLink, RatingStars],
-  host: { class: 'block' },
+  host: { class: 'block h-full' },
   template: `
     <a
       [routerLink]="['/book', book().id]"
