@@ -35,6 +35,8 @@ interface PaletteItem {
     '(document:keydown)': 'onGlobalKeydown($event)',
   },
   template: `
+    <!-- Backdrop click-to-dismiss; keyboard users close via native Esc on <dialog>. -->
+    <!-- eslint-disable-next-line @angular-eslint/template/click-events-have-key-events, @angular-eslint/template/interactive-supports-focus -->
     <dialog
       #dialog
       *transloco="let t"
@@ -66,6 +68,9 @@ interface PaletteItem {
 
         <ul id="palette-options" role="listbox" class="max-h-[55vh] overflow-y-auto p-2">
           @for (item of items(); track item.kind + item.id; let i = $index) {
+            <!-- Combobox pattern: options are not focusable; keyboard runs through
+                 the input via aria-activedescendant + ArrowUp/Down/Enter. -->
+            <!-- eslint-disable-next-line @angular-eslint/template/click-events-have-key-events, @angular-eslint/template/interactive-supports-focus -->
             <li
               [id]="'palette-item-' + i"
               role="option"
