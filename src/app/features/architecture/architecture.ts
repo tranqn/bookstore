@@ -125,8 +125,8 @@ export class Architecture {
         en: 'BFF instead of client-side AI',
       },
       body: {
-        de: 'Der Gemini-Schlüssel bleibt auf dem Server. Antworten werden gegen ein zod-Schema validiert und halluzinierte Buch-IDs verworfen — gestreamt als NDJSON, Karte für Karte.',
-        en: 'The Gemini key never leaves the server. Responses are zod-validated and hallucinated book ids dropped — streamed as NDJSON, card by card.',
+        de: 'Drei Stufen: Gemini streamt NDJSON (zod-validiert, halluzinierte IDs verworfen) → ohne API-Key rankt ein lokales EmbeddingGemma semantisch auf der Server-CPU → notfalls ein deterministischer Keyword-Recommender.',
+        en: 'Three tiers: Gemini streams NDJSON (zod-validated, hallucinated ids dropped) → without an API key a local EmbeddingGemma ranks semantically on the server CPU → a deterministic keyword recommender as the last resort.',
       },
       file: 'src/server/recommender.ts',
     },

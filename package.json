@@ -11,6 +11,7 @@
     "e2e": "playwright test",
     "seed": "tsx scripts/fetch-seed.ts",
     "optimize:covers": "tsx scripts/optimize-covers.ts",
+    "embed": "tsx scripts/embed-books.ts",
     "sitemap": "tsx scripts/generate-sitemap.ts",
     "serve:ssr:bookstore": "node dist/bookstore/server/server.mjs",
     "lint": "ng lint"
@@ -28,6 +29,7 @@
     "@angular/service-worker": "^21.2.0",
     "@angular/ssr": "^21.2.6",
     "@google/genai": "^1.52.0",
+    "@huggingface/transformers": "^4.2.0",
     "@jsverse/transloco": "^7.6.1",
     "@ngrx/signals": "^21.1.1",
     "compression": "^1.8.1",

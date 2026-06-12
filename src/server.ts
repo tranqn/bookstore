@@ -116,6 +116,14 @@ if (isMainModule(import.meta.url) || process.env['pm_id']) {
     }
 
     console.log(`Node Express server listening on http://localhost:${port}`);
+
+    // Pre-load EmbeddingGemma in the background so the first recommender
+    // query doesn't pay the model-load cost (first deploy also downloads it).
+    if (!process.env['DISABLE_SEMANTIC']) {
+      import('./server/semantic-recommender')
+        .then((m) => m.warmup())
+        .catch(() => {});
+    }
   });
 }
 

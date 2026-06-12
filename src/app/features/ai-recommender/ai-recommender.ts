@@ -106,7 +106,17 @@ import { RatingStars } from '../../shared/ui/rating-stars';
           </ul>
           @if (ai.source(); as src) {
             <p class="mt-4 text-center text-xs text-muted">
-              {{ src === 'gemini' ? t('recommender.viaGemini') : t('recommender.viaLocal') }}
+              @switch (src) {
+                @case ('gemini') {
+                  {{ t('recommender.viaGemini') }}
+                }
+                @case ('semantic') {
+                  {{ t('recommender.viaSemantic') }}
+                }
+                @default {
+                  {{ t('recommender.viaLocal') }}
+                }
+              }
             </p>
           }
         } @else if (ai.status() === 'success') {

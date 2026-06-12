@@ -12,12 +12,13 @@ import { CatalogStore } from './catalog.store';
 import { UiStore } from './ui.store';
 
 type Status = 'idle' | 'loading' | 'streaming' | 'success' | 'error';
+type Source = 'gemini' | 'semantic' | 'local';
 
 interface AiState {
   query: string;
   status: Status;
   results: Recommendation[];
-  source: 'gemini' | 'local' | null;
+  source: Source | null;
 }
 
 export interface RecommendationCard {
@@ -28,7 +29,7 @@ export interface RecommendationCard {
 
 type StreamEvent =
   | { type: 'rec'; bookId: string; reason: string; score: number }
-  | { type: 'done'; source: 'gemini' | 'local' };
+  | { type: 'done'; source: Source };
 
 export const AiStore = signalStore(
   { providedIn: 'root' },
@@ -83,7 +84,7 @@ export const AiStore = signalStore(
           } else {
             const data = (await res.json()) as {
               results: Recommendation[];
-              source: 'gemini' | 'local';
+              source: Source;
             };
             patchState(store, { results: data.results, source: data.source });
           }

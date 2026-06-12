@@ -6,10 +6,29 @@ import seed from '../assets/data/books.seed.json';
 const books = seed as Book[];
 const validIds = new Set(books.map((b) => b.id));
 
+export type RecommendSource = 'gemini' | 'semantic' | 'local';
+
 /** One NDJSON line of the streaming protocol. */
 export type RecommendEvent =
   | { type: 'rec'; bookId: string; reason: string; score: number }
-  | { type: 'done'; source: 'gemini' | 'local' };
+  | { type: 'done'; source: RecommendSource };
+
+/** Tier 2: local EmbeddingGemma. Skipped in unit tests (model download) and
+ *  optionally on hosts that can't spare the RAM (DISABLE_SEMANTIC=1). */
+async function trySemantic(
+  query: string,
+  locale: Locale,
+  limit: number,
+): Promise<Recommendation[] | null> {
+  if (process.env['VITEST'] || process.env['DISABLE_SEMANTIC']) return null;
+  try {
+    const { semanticRecommend } = await import('./semantic-recommender');
+    const results = await semanticRecommend(query, books, locale, limit);
+    return results.length > 0 ? results : null;
+  } catch {
+    return null;
+  }
+}
 
 const RecLineSchema = z.object({
   bookId: z.string(),
@@ -160,10 +179,11 @@ export async function* streamRecommendations(
   }
 
   if (emitted === 0) {
-    for (const r of localRecommend(query, books, locale, limit)) {
+    const semantic = await trySemantic(query, locale, limit);
+    for (const r of semantic ?? localRecommend(query, books, locale, limit)) {
       yield { type: 'rec', ...r };
     }
-    yield { type: 'done', source: 'local' };
+    yield { type: 'done', source: semantic ? 'semantic' : 'local' };
     return;
   }
   yield { type: 'done', source: 'gemini' };
@@ -190,17 +210,20 @@ function parseRecLine(
   }
 }
 
-/** Try Gemini; fall back to the deterministic local recommender on any miss. */
+/** Three-tier cascade: Gemini API → local EmbeddingGemma (semantic) →
+ *  deterministic keyword recommender. Each tier degrades gracefully. */
 export async function getRecommendations(
   query: string,
   locale: Locale,
   limit = 4,
-): Promise<{ results: Recommendation[]; source: 'gemini' | 'local' }> {
+): Promise<{ results: Recommendation[]; source: RecommendSource }> {
   try {
     const ai = await gemini(query, locale, limit);
     if (ai) return { results: ai, source: 'gemini' };
   } catch {
-    /* fall through to local */
+    /* fall through */
   }
+  const semantic = await trySemantic(query, locale, limit);
+  if (semantic) return { results: semantic, source: 'semantic' };
   return { results: localRecommend(query, books, locale, limit), source: 'local' };
 }

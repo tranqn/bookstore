@@ -17,7 +17,10 @@ export default defineConfig({
   },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: {
-    command: 'npm run build && PORT=4287 node dist/bookstore/server/server.mjs',
+    // DISABLE_SEMANTIC: don't download EmbeddingGemma in CI — /api/recommend
+    // is always mocked in E2E.
+    command:
+      'npm run build && DISABLE_SEMANTIC=1 PORT=4287 node dist/bookstore/server/server.mjs',
     url: 'http://localhost:4287',
     reuseExistingServer: !process.env['CI'],
     timeout: 240_000,

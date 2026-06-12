@@ -58,6 +58,7 @@
     "match": "Match",
     "none": "No matches — try different words.",
     "viaGemini": "Recommended by Gemini",
+    "viaSemantic": "Recommended by EmbeddingGemma (local, semantic)",
     "viaLocal": "Recommended by the local model"
   },
   "gallery": {

@@ -46,6 +46,7 @@
     "match": "Passung",
     "none": "Keine Treffer – versuch es mit anderen Worten.",
     "viaGemini": "Empfohlen von Gemini",
+    "viaSemantic": "Empfohlen von EmbeddingGemma (lokal, semantisch)",
     "viaLocal": "Empfohlen vom lokalen Modell"
   },
   "gallery": {
