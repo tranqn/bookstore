@@ -17,4 +17,20 @@
   <app-cart-drawer />
 
   <app-command-palette />
+
+  @if (update.updateReady()) {
+    <div
+      role="status"
+      class="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 items-center gap-3 rounded-xl surface-raised px-4 py-3 text-sm shadow-2xl ring-1 ring-white/15"
+    >
+      {{ t('update.available') }}
+      <button
+        type="button"
+        (click)="update.reload()"
+        class="rounded-lg bg-coral-500 px-3 py-1.5 font-semibold text-ink-950"
+      >
+        {{ t('update.reload') }}
+      </button>
+    </div>
+  }
 </ng-container>

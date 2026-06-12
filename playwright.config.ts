@@ -11,6 +11,9 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:4287',
     trace: 'on-first-retry',
+    // ngsw would swallow route mocks (requests go through the SW fetch
+    // handler); E2E targets the app, the SW is covered by manual testing.
+    serviceWorkers: 'block',
   },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: {

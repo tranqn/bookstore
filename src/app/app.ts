@@ -12,6 +12,7 @@ import { Footer } from './core/layout/footer';
 import { CartDrawer } from './core/layout/cart-drawer';
 import { CommandPalette } from './shared/ui/command-palette';
 import { ScrollService } from './core/services/scroll';
+import { UpdateService } from './core/services/update';
 import { UiStore } from './stores/ui.store';
 
 @Component({
@@ -31,6 +32,7 @@ import { UiStore } from './stores/ui.store';
 export class App {
   // Eagerly instantiate the UI store so theme/locale hydrate on first paint.
   protected readonly ui = inject(UiStore);
+  protected readonly update = inject(UpdateService);
   private readonly scroll = inject(ScrollService);
 
   constructor() {
