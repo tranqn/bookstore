@@ -6,6 +6,8 @@ import {
 } from '@angular/ssr/node';
 import compression from 'compression';
 import express from 'express';
+import rateLimit from 'express-rate-limit';
+import helmet from 'helmet';
 import { join } from 'node:path';
 import type { Locale } from './app/core/models/book';
 import { getRecommendations, streamRecommendations } from './server/recommender';
@@ -29,14 +31,43 @@ const allowedHosts = [
 ];
 const angularApp = new AngularNodeAppEngine({ allowedHosts });
 
+// Security headers. CSP stays off: Angular hydration relies on inline
+// scripts/event-replay attributes that a strict policy would break; the
+// remaining helmet defaults (nosniff, frame-deny, referrer policy, HSTS
+// behind TLS) are all safe for this app.
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
+  }),
+);
+
+// Behind one proxy hop in production (Render LB / nginx on the VM) so the
+// rate limiter sees real client IPs from X-Forwarded-For.
+app.set('trust proxy', 1);
+
 // gzip/brotli for HTML, JS, CSS and JSON (covers are already-compressed WebP).
 app.use(compression());
+
+/** Liveness probe for load balancers / uptime monitors. */
+app.get('/healthz', (_req, res) => {
+  res.json({ status: 'ok' });
+});
+
+/** The recommender calls a metered API — keep one client from draining it. */
+const recommendLimiter = rateLimit({
+  windowMs: 60_000,
+  limit: 10,
+  standardHeaders: 'draft-8',
+  legacyHeaders: false,
+  message: { error: 'too many requests — try again in a minute' },
+});
 
 /**
  * AI recommender BFF. Keeps GEMINI_API_KEY server-side; degrades to a local
  * deterministic recommender when no key is configured.
  */
-app.post('/api/recommend', express.json({ limit: '4kb' }), async (req, res) => {
+app.post('/api/recommend', recommendLimiter, express.json({ limit: '4kb' }), async (req, res) => {
   const body = (req.body ?? {}) as { query?: unknown; locale?: unknown };
   const query = typeof body.query === 'string' ? body.query.trim().slice(0, 280) : '';
   const locale: Locale = body.locale === 'en' ? 'en' : 'de';
@@ -110,7 +141,7 @@ app.use((req, res, next) => {
  */
 if (isMainModule(import.meta.url) || process.env['pm_id']) {
   const port = process.env['PORT'] || 4000;
-  app.listen(port, (error) => {
+  const server = app.listen(port, (error) => {
     if (error) {
       throw error;
     }
@@ -125,6 +156,15 @@ if (isMainModule(import.meta.url) || process.env['pm_id']) {
         .catch(() => {});
     }
   });
+
+  // Graceful shutdown: finish in-flight requests, then exit (orchestrators
+  // send SIGTERM on deploy/scale-down; the fallback timer guards hangs).
+  for (const signal of ['SIGTERM', 'SIGINT'] as const) {
+    process.on(signal, () => {
+      server.close(() => process.exit(0));
+      setTimeout(() => process.exit(1), 10_000).unref();
+    });
+  }
 }
 
 /**

@@ -1,6 +1,6 @@
 # 📚 Bookstore — Stories you can touch
 
-A bilingual (DE/EN) bookstore experience built with **Angular 21**: server-side rendering, signal-based state, an interactive **Three.js 3D bookshelf**, and an **AI book recommender** powered by Gemini behind a server-side BFF.
+A bilingual (DE/EN) bookstore with a **74-book curated catalog**, built with **Angular 21**: server-side rendering, signal-based state, an interactive **Three.js 3D bookshelf**, and a **three-tier AI book recommender** (Gemini → local EmbeddingGemma → keyword fallback) behind a server-side BFF.
 
 **🔗 Live demo:** _deploying to Render — link coming shortly_
 
@@ -86,7 +86,30 @@ GEMINI_API_KEY=your-key npm start
 
 ## Deployment
 
-Deployed on [Render](https://render.com) as a Node web service — see [`render.yaml`](render.yaml). `GEMINI_API_KEY` is configured in the Render dashboard; the app degrades gracefully without it.
+The production server is a single Node process (Express + SSR) with security headers (helmet), gzip, rate-limited AI endpoint, `/healthz` liveness probe and graceful shutdown.
+
+**Docker (any VM, e.g. a GCP e2-medium):**
+
+```bash
+docker build -t bookstore .
+docker run -d -p 80:4000 \
+  -e NG_ALLOWED_HOSTS=your-domain.example \
+  -e GEMINI_API_KEY=…            # optional — tier 2/3 work without it \
+  -v hf-cache:/app/.cache/huggingface \
+  bookstore
+```
+
+**Render:** one-click via [`render.yaml`](render.yaml) (Blueprint), `GEMINI_API_KEY` set in the dashboard.
+
+| Env var | Purpose |
+| --- | --- |
+| `PORT` | Listen port (default `4000`) |
+| `NG_ALLOWED_HOSTS` | Comma-separated hostnames for Angular's SSRF guard (your domain) |
+| `GEMINI_API_KEY` | Optional — enables tier-1 streamed Gemini recommendations |
+| `DISABLE_SEMANTIC` | Set to `1` to skip the local EmbeddingGemma tier (low-RAM hosts) |
+| `GOOGLE_BOOKS_API_KEY` | Build-time only — raises the quota for `npm run seed` |
+
+Data pipeline after changing the catalog: `npm run seed && npm run optimize:covers && npm run embed && npm run sitemap`.
 
 ## Project history
 

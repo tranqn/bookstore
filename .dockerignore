@@ -1,0 +1,14 @@
+node_modules
+dist
+.angular
+.git
+.claude
+.vscode
+.playwright-mcp
+test-results
+playwright-report
+.lighthouseci
+docs
+legacy
+*.md
+.DS_Store
