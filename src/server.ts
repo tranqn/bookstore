@@ -12,7 +12,21 @@ import { getRecommendations } from './server/recommender';
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
 const app = express();
-const angularApp = new AngularNodeAppEngine();
+
+/** Angular's SSRF guard rejects unknown Host headers (and silently falls back
+ *  to the CSR shell — losing prerendered HTML), so allow local dev hosts plus
+ *  whatever hostname the platform reports (Render sets
+ *  RENDER_EXTERNAL_HOSTNAME). Extra hosts via NG_ALLOWED_HOSTS. */
+const allowedHosts = [
+  'localhost',
+  '127.0.0.1',
+  '*.onrender.com',
+  ...(process.env['RENDER_EXTERNAL_HOSTNAME']
+    ? [process.env['RENDER_EXTERNAL_HOSTNAME']]
+    : []),
+  ...(process.env['NG_ALLOWED_HOSTS']?.split(',') ?? []),
+];
+const angularApp = new AngularNodeAppEngine({ allowedHosts });
 
 /**
  * AI recommender BFF. Keeps GEMINI_API_KEY server-side; degrades to a local
