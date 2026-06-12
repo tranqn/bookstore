@@ -20,8 +20,10 @@ A bilingual (DE/EN) bookstore experience built with **Angular 21**: server-side 
 
 - **Angular 21 SSR + hydration with event replay** — Express server, all routes prerendered at build time (every book detail page ships as static HTML), `withEventReplay()` so no click is lost before hydration.
 - **Signal-based state management** — six `@ngrx/signals` stores (catalog with entities, cart, favorites, reviews, UI, AI) with `computed()` pipelines and localStorage persistence via effects.
-- **AI recommender with a real fallback story** — the browser never sees an API key: a server-side BFF (`POST /api/recommend`) calls Gemini 2.5 Flash with the catalog as grounding context, validates the response with zod, and filters hallucinated book IDs. No key or API failure? A deterministic local recommender takes over seamlessly.
-- **Three.js 3D bookshelf** — raycaster hover, orbit controls, genre-tinted spines, loaded via `@defer (on viewport)`; falls back to a regular grid under SSR, missing WebGL, or `prefers-reduced-motion`.
+- **Streaming AI recommender with a real fallback story** — the browser never sees an API key: a server-side BFF (`POST /api/recommend`) calls Gemini 2.5 Flash with the catalog as grounding context and **streams results as NDJSON** — each card is zod-validated, filtered against real catalog IDs, and animates in while the model is still thinking. No key or API failure? A deterministic local recommender takes over seamlessly.
+- **Three.js 3D bookshelf** — raycaster hover, orbit controls, genre-tinted spines, loaded via `@defer (on viewport)`; falls back to a regular grid under SSR, missing WebGL, or `prefers-reduced-motion`. Deep-linkable: `/gallery?focus=<book>` flies the camera to that book.
+- **Installable PWA** — service worker with offline asset caching, update toast on new deploys (`SwUpdate`), `/api/**` explicitly excluded from caching.
+- **Self-documenting** — an in-app [`/architecture`](https://bookstore-tranqn.onrender.com/architecture) page walks through the stack and engineering decisions, each card deep-linking into the source.
 - **Motion that respects users** — GSAP entrance timelines + Lenis smooth scrolling, dynamically imported after hydration and fully disabled for reduced-motion users.
 - **Bilingual & themeable** — Transloco (DE/EN) with persisted locale, dark/light theme on Tailwind v4 design tokens with WCAG AA contrast.
 - **Typed end to end** — strict TypeScript, zod-validated seed data, no `any`.
@@ -97,10 +99,11 @@ This is a ground-up remake of a vanilla-JS bookstore (preserved in [`legacy/`](l
 - [x] Self-hosted WebP covers with LQIP placeholders + `NgOptimizedImage`
 - [x] schema.org `Book` JSON-LD, Open Graph cards, sitemap
 - [x] Playwright E2E + automated axe accessibility audits in CI
-- [ ] Streaming AI recommendations (NDJSON)
-- [ ] In-app "How it's built" page for the technically curious
-- [ ] Installable PWA with offline catalog
-- [ ] 3D shelf deep-linking from search
+- [x] Streaming AI recommendations (NDJSON)
+- [x] In-app "How it's built" page (`/architecture`)
+- [x] Installable PWA with update toast
+- [x] 3D shelf deep-linking (`/gallery?focus=…`)
+- [ ] Order history with a real backend (the current checkout is intentionally a mock)
 
 ---
 
