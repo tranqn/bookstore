@@ -37,13 +37,24 @@ app.post('/api/recommend', express.json({ limit: '4kb' }), async (req, res) => {
 });
 
 /**
- * Serve static files from /browser
+ * Serve static files from /browser.
+ * Only build outputs carry a content hash (e.g. main-ODBXN7N6.js) and may be
+ * cached forever; unhashed files from public/ (i18n, robots, covers) must
+ * revalidate via ETag or deploys would serve stale copies for a year.
  */
+const HASHED_ASSET = /-[A-Z0-9]{8}\.\w+$/;
 app.use(
   express.static(browserDistFolder, {
-    maxAge: '1y',
     index: false,
     redirect: false,
+    setHeaders: (res, path) => {
+      res.setHeader(
+        'Cache-Control',
+        HASHED_ASSET.test(path)
+          ? 'public, max-age=31536000, immutable'
+          : 'no-cache',
+      );
+    },
   }),
 );
 
