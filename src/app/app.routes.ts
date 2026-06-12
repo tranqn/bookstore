@@ -40,6 +40,14 @@ export const routes: Routes = [
     title: 'Kasse · Bookstore',
   },
   {
+    path: 'architecture',
+    loadComponent: () =>
+      import('./features/architecture/architecture').then(
+        (m) => m.Architecture,
+      ),
+    title: 'How it’s built · Bookstore',
+  },
+  {
     path: 'book/:id',
     loadComponent: () =>
       import('./features/book-detail/book-detail').then((m) => m.BookDetail),

@@ -12,7 +12,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const SEED = resolve(__dirname, '../src/assets/data/books.seed.json');
 const OUT = resolve(__dirname, '../public/sitemap.xml');
 
-const STATIC_ROUTES = ['/', '/catalog', '/gallery', '/recommender'];
+const STATIC_ROUTES = ['/', '/catalog', '/gallery', '/recommender', '/architecture'];
 
 async function run(): Promise<void> {
   const seed = BookSeedSchema.parse(JSON.parse(await readFile(SEED, 'utf8')));

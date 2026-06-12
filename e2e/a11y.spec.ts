@@ -8,6 +8,7 @@ const ROUTES = [
   '/recommender',
   '/favorites',
   '/checkout',
+  '/architecture',
 ];
 
 async function audit(page: Page): Promise<void> {
