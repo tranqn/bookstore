@@ -1,7 +1,6 @@
 [
   {
     "id": "die-unendliche-geschichte",
-    "isbn": "9780525457589",
     "title": "Die unendliche Geschichte",
     "author": "Michael Ende",
     "description": {
@@ -19,7 +18,7 @@
       "amount": 16.99,
       "currency": "EUR"
     },
-    "publishedYear": 1979,
+    "publishedYear": 2000,
     "rating": 4.8,
     "likeCount": 4210,
     "cover": {
@@ -35,7 +34,6 @@
   },
   {
     "id": "momo",
-    "isbn": "9781592394142",
     "title": "Momo",
     "author": "Michael Ende",
     "description": {
@@ -52,7 +50,7 @@
       "amount": 14,
       "currency": "EUR"
     },
-    "publishedYear": 1973,
+    "publishedYear": 2000,
     "rating": 4.7,
     "likeCount": 3105,
     "cover": {
@@ -68,7 +66,6 @@
   },
   {
     "id": "tintenherz",
-    "isbn": "9789955247852",
     "title": "Tintenherz",
     "author": "Cornelia Funke",
     "description": {
@@ -85,7 +82,7 @@
       "amount": 12.99,
       "currency": "EUR"
     },
-    "publishedYear": 2003,
+    "publishedYear": 2000,
     "rating": 4.5,
     "likeCount": 2540,
     "cover": {
@@ -101,7 +98,6 @@
   },
   {
     "id": "der-herr-der-ringe",
-    "isbn": "9780618345847",
     "title": "Der Herr der Ringe",
     "author": "J. R. R. Tolkien",
     "description": {
@@ -118,7 +114,7 @@
       "amount": 28,
       "currency": "EUR"
     },
-    "publishedYear": 1954,
+    "publishedYear": 2000,
     "rating": 4.9,
     "likeCount": 8800,
     "cover": {
@@ -134,7 +130,6 @@
   },
   {
     "id": "harry-potter-und-der-stein-der-weisen",
-    "isbn": "9782070619177",
     "title": "Harry Potter und der Stein der Weisen",
     "author": "J. K. Rowling",
     "description": {
@@ -151,7 +146,7 @@
       "amount": 9.99,
       "currency": "EUR"
     },
-    "publishedYear": 1997,
+    "publishedYear": 2000,
     "rating": 4.8,
     "likeCount": 9600,
     "cover": {
@@ -167,7 +162,6 @@
   },
   {
     "id": "der-name-des-windes",
-    "isbn": "9781956000689",
     "title": "Der Name des Windes",
     "author": "Patrick Rothfuss",
     "description": {
@@ -184,7 +178,7 @@
       "amount": 15,
       "currency": "EUR"
     },
-    "publishedYear": 2007,
+    "publishedYear": 2000,
     "rating": 4.6,
     "likeCount": 3320,
     "cover": {
@@ -200,7 +194,6 @@
   },
   {
     "id": "stolz-und-vorurteil",
-    "isbn": "9798360092476",
     "title": "Stolz und Vorurteil",
     "author": "Jane Austen",
     "description": {
@@ -217,7 +210,7 @@
       "amount": 8,
       "currency": "EUR"
     },
-    "publishedYear": 1813,
+    "publishedYear": 2000,
     "rating": 4.7,
     "likeCount": 6100,
     "cover": {
@@ -233,7 +226,6 @@
   },
   {
     "id": "wie-ein-einziger-tag",
-    "isbn": "9781568652429",
     "title": "Wie ein einziger Tag",
     "author": "Nicholas Sparks",
     "description": {
@@ -250,7 +242,7 @@
       "amount": 11,
       "currency": "EUR"
     },
-    "publishedYear": 1996,
+    "publishedYear": 2000,
     "rating": 4.3,
     "likeCount": 2870,
     "cover": {
@@ -266,7 +258,6 @@
   },
   {
     "id": "vom-winde-verweht",
-    "isbn": "9798731280778",
     "title": "Vom Winde verweht",
     "author": "Margaret Mitchell",
     "description": {
@@ -283,7 +274,7 @@
       "amount": 13.5,
       "currency": "EUR"
     },
-    "publishedYear": 1936,
+    "publishedYear": 2000,
     "rating": 4.4,
     "likeCount": 3450,
     "cover": {
@@ -299,7 +290,6 @@
   },
   {
     "id": "der-vorleser",
-    "isbn": "9788433902351",
     "title": "Der Vorleser",
     "author": "Bernhard Schlink",
     "description": {
@@ -316,7 +306,7 @@
       "amount": 10,
       "currency": "EUR"
     },
-    "publishedYear": 1995,
+    "publishedYear": 2000,
     "rating": 4.2,
     "likeCount": 1980,
     "cover": {
@@ -332,7 +322,6 @@
   },
   {
     "id": "schokolade-zum-fruhstuck",
-    "isbn": "9781405911566",
     "title": "Schokolade zum Frühstück",
     "author": "Marian Keyes",
     "description": {
@@ -349,7 +338,7 @@
       "amount": 11,
       "currency": "EUR"
     },
-    "publishedYear": 1997,
+    "publishedYear": 2000,
     "rating": 4.1,
     "likeCount": 1420,
     "cover": {
@@ -365,7 +354,6 @@
   },
   {
     "id": "per-anhalter-durch-die-galaxis",
-    "isbn": "9780385347303",
     "title": "Per Anhalter durch die Galaxis",
     "author": "Douglas Adams",
     "description": {
@@ -382,7 +370,7 @@
       "amount": 12,
       "currency": "EUR"
     },
-    "publishedYear": 2012,
+    "publishedYear": 2000,
     "rating": 4.7,
     "likeCount": 5400,
     "cover": {
@@ -398,7 +386,6 @@
   },
   {
     "id": "der-marsianer",
-    "isbn": "9789045207957",
     "title": "Der Marsianer",
     "author": "Andy Weir",
     "description": {
@@ -415,7 +402,7 @@
       "amount": 13,
       "currency": "EUR"
     },
-    "publishedYear": 2011,
+    "publishedYear": 2000,
     "rating": 4.6,
     "likeCount": 4720,
     "cover": {
@@ -431,7 +418,6 @@
   },
   {
     "id": "dune-der-wustenplanet",
-    "isbn": "9785237030778",
     "title": "Dune – Der Wüstenplanet",
     "author": "Frank Herbert",
     "description": {
@@ -448,7 +434,7 @@
       "amount": 16,
       "currency": "EUR"
     },
-    "publishedYear": 1965,
+    "publishedYear": 2000,
     "rating": 4.7,
     "likeCount": 6300,
     "cover": {
@@ -464,7 +450,6 @@
   },
   {
     "id": "1984",
-    "isbn": "9781405862417",
     "title": "1984",
     "author": "George Orwell",
     "description": {
@@ -481,7 +466,7 @@
       "amount": 9,
       "currency": "EUR"
     },
-    "publishedYear": 2003,
+    "publishedYear": 2000,
     "rating": 4.7,
     "likeCount": 7100,
     "cover": {
@@ -497,7 +482,6 @@
   },
   {
     "id": "ready-player-one",
-    "isbn": "9780307887436",
     "title": "Ready Player One",
     "author": "Ernest Cline",
     "description": {
@@ -514,7 +498,7 @@
       "amount": 12,
       "currency": "EUR"
     },
-    "publishedYear": 2008,
+    "publishedYear": 2000,
     "rating": 4.4,
     "likeCount": 3890,
     "cover": {
@@ -530,7 +514,6 @@
   },
   {
     "id": "die-tribute-von-panem-todliche-spiele",
-    "isbn": "9789655177183",
     "title": "Die Tribute von Panem – Tödliche Spiele",
     "author": "Suzanne Collins",
     "description": {
@@ -547,7 +530,7 @@
       "amount": 11,
       "currency": "EUR"
     },
-    "publishedYear": 2008,
+    "publishedYear": 2000,
     "rating": 4.5,
     "likeCount": 6900,
     "cover": {
@@ -563,7 +546,6 @@
   },
   {
     "id": "das-schweigen-der-lammer",
-    "isbn": "9783453051362",
     "title": "Das Schweigen der Lämmer",
     "author": "Thomas Harris",
     "description": {
@@ -580,7 +562,7 @@
       "amount": 12,
       "currency": "EUR"
     },
-    "publishedYear": 1988,
+    "publishedYear": 2000,
     "rating": 4.6,
     "likeCount": 4100,
     "cover": {
@@ -596,7 +578,6 @@
   },
   {
     "id": "gone-girl-das-perfekte-opfer",
-    "isbn": "9780297859390",
     "title": "Gone Girl – Das perfekte Opfer",
     "author": "Gillian Flynn",
     "description": {
@@ -613,7 +594,7 @@
       "amount": 11,
       "currency": "EUR"
     },
-    "publishedYear": 2011,
+    "publishedYear": 2000,
     "rating": 4.4,
     "likeCount": 3760,
     "cover": {
@@ -629,7 +610,6 @@
   },
   {
     "id": "verblendung",
-    "isbn": "9781401235581",
     "title": "Verblendung",
     "author": "Stieg Larsson",
     "description": {
@@ -646,7 +626,7 @@
       "amount": 13,
       "currency": "EUR"
     },
-    "publishedYear": 2012,
+    "publishedYear": 2000,
     "rating": 4.5,
     "likeCount": 4200,
     "cover": {
@@ -654,15 +634,14 @@
       "small": "/covers/verblendung-96.webp",
       "medium": "/covers/verblendung-320.webp",
       "large": "/covers/verblendung-640.webp",
-      "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwAwCdASoQABkAPxFysFAsJqSisAgBgCIJaQAD5XGolveIDH385rIAAP6msNJvQA4SZAak2RyRUkZm7j+sDQMD+GK1nWaX2rWRWZ8s+BH/PtV+JhAprumJyrpM8FaJfdZuSxdVu8xMOc+X8fMWlPK2ncizJTn2TtfrtZFuItSqSZIrMLSTyYd75NqU1pxqzCAAAA==",
-      "width": 312,
-      "height": 500
+      "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADwAwCdASoQABkAPxFysFAsJqSisAgBgCIJaQAD5VmtGDI205EVvYKgAP6mp2+khrEm240BlidfP+EgcRBlCgrmGd/1cNWis7KHO8qTHWcl8nWrLyCKhP373DuQq5LhYElIFLznaNrcP8QXZV52pVcsWWZelI32TrgzvoNK3XmmZVsPVKBswX+jAQhZzCgA",
+      "width": 180,
+      "height": 287
     },
     "pageCount": 704
   },
   {
     "id": "shutter-island",
-    "isbn": "9780063072930",
     "title": "Shutter Island",
     "author": "Dennis Lehane",
     "description": {
@@ -679,7 +658,7 @@
       "amount": 11,
       "currency": "EUR"
     },
-    "publishedYear": 2003,
+    "publishedYear": 2000,
     "rating": 4.4,
     "likeCount": 2650,
     "cover": {
@@ -695,7 +674,6 @@
   },
   {
     "id": "sakrileg-the-da-vinci-code",
-    "isbn": "9782709628532",
     "title": "Sakrileg – The Da Vinci Code",
     "author": "Dan Brown",
     "description": {
@@ -712,7 +690,7 @@
       "amount": 12,
       "currency": "EUR"
     },
-    "publishedYear": 2003,
+    "publishedYear": 2000,
     "rating": 4,
     "likeCount": 5200,
     "cover": {
@@ -728,7 +706,6 @@
   },
   {
     "id": "eine-kurze-geschichte-der-zeit",
-    "isbn": "9782277233619",
     "title": "Eine kurze Geschichte der Zeit",
     "author": "Stephen Hawking",
     "description": {
@@ -745,7 +722,7 @@
       "amount": 14,
       "currency": "EUR"
     },
-    "publishedYear": 1988,
+    "publishedYear": 2000,
     "rating": 4.5,
     "likeCount": 3900,
     "cover": {
@@ -753,15 +730,14 @@
       "small": "/covers/eine-kurze-geschichte-der-zeit-96.webp",
       "medium": "/covers/eine-kurze-geschichte-der-zeit-320.webp",
       "large": "/covers/eine-kurze-geschichte-der-zeit-640.webp",
-      "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoQABsAPxFwsFAsJiSisAgBgCIJYwAUYAI0GtE1BHn4ZAAA/hc014BH/uUQ188SWJOexcCEI9Rv4A30phESXecvVIqv5cRdXQq8di/wB6CitpMA6NzXvpn0mnUeWpAQWDlGZQ+b4zyGAAAA",
-      "width": 301,
-      "height": 500
+      "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQAwCdASoQABsAPxFysFAsJqSisAgBgCIJYwAAW1jCZddHVaNsAP4W1rUcPIJIIoTWfBGQXBiFsyoDpzuze03PSt+Z17u2nJsQLHqYiT9KynnJ6lCzjByNuVWLa75qrnTmtAAA",
+      "width": 180,
+      "height": 298
     },
     "pageCount": 256
   },
   {
     "id": "sapiens-eine-kurze-geschichte-der-menschheit",
-    "isbn": "9782226479822",
     "title": "Sapiens – Eine kurze Geschichte der Menschheit",
     "author": "Yuval Noah Harari",
     "description": {
@@ -778,7 +754,7 @@
       "amount": 18,
       "currency": "EUR"
     },
-    "publishedYear": 2011,
+    "publishedYear": 2000,
     "rating": 4.6,
     "likeCount": 7400,
     "cover": {
@@ -794,7 +770,6 @@
   },
   {
     "id": "schnelles-denken-langsames-denken",
-    "isbn": "9787508633558",
     "title": "Schnelles Denken, langsames Denken",
     "author": "Daniel Kahneman",
     "description": {
@@ -811,7 +786,7 @@
       "amount": 16,
       "currency": "EUR"
     },
-    "publishedYear": 2011,
+    "publishedYear": 2000,
     "rating": 4.4,
     "likeCount": 4300,
     "cover": {
@@ -827,7 +802,6 @@
   },
   {
     "id": "die-kunst-des-klaren-denkens",
-    "isbn": "9781444794878",
     "title": "Die Kunst des klaren Denkens",
     "author": "Rolf Dobelli",
     "description": {
@@ -844,7 +818,7 @@
       "amount": 12,
       "currency": "EUR"
     },
-    "publishedYear": 2013,
+    "publishedYear": 2000,
     "rating": 4.2,
     "likeCount": 2600,
     "cover": {
@@ -860,7 +834,6 @@
   },
   {
     "id": "factfulness",
-    "isbn": "9783548060415",
     "title": "Factfulness",
     "author": "Hans Rosling",
     "description": {
@@ -877,7 +850,7 @@
       "amount": 13,
       "currency": "EUR"
     },
-    "publishedYear": 2018,
+    "publishedYear": 2000,
     "rating": 4.6,
     "likeCount": 3100,
     "cover": {
@@ -893,7 +866,6 @@
   },
   {
     "id": "der-junge-der-maulwurf-der-fuchs-und-das-pferd",
-    "isbn": "9780063137363",
     "title": "Der Junge, der Maulwurf, der Fuchs und das Pferd",
     "author": "Charlie Mackesy",
     "description": {
@@ -910,7 +882,7 @@
       "amount": 20,
       "currency": "EUR"
     },
-    "publishedYear": 2019,
+    "publishedYear": 2000,
     "rating": 4.8,
     "likeCount": 5600,
     "cover": {
@@ -918,10 +890,1482 @@
       "small": "/covers/der-junge-der-maulwurf-der-fuchs-und-das-pferd-96.webp",
       "medium": "/covers/der-junge-der-maulwurf-der-fuchs-und-das-pferd-320.webp",
       "large": "/covers/der-junge-der-maulwurf-der-fuchs-und-das-pferd-640.webp",
-      "lqip": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoQABAABABoJaQAAoa9yYAAANnLmyRZDDSkMr5MOAA=",
+      "lqip": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoQABAABABoJaQAAobx1oAAANq9SYuNnEDxvpKvrDgAAA==",
+      "width": 180,
+      "height": 180
+    },
+    "pageCount": 128
+  },
+  {
+    "id": "der-hobbit",
+    "title": "Der Hobbit",
+    "author": "J. R. R. Tolkien",
+    "description": {
+      "de": "Bilbo Beutlin wird aus seiner Höhle gelockt und findet zwischen Trollen, Drachen und einem Ring sein Abenteuer.",
+      "en": "Bilbo Baggins is swept out of his hobbit-hole into an adventure of trolls, dragons and one fateful ring."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Mittelerde",
+      "Abenteuer",
+      "Klassiker"
+    ],
+    "price": {
+      "amount": 14,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.8,
+    "likeCount": 7400,
+    "cover": {
+      "id": 14627509,
+      "small": "/covers/der-hobbit-96.webp",
+      "medium": "/covers/der-hobbit-320.webp",
+      "large": "/covers/der-hobbit-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwBACdASoQABsAPxFwsFAsJiSisAgBgCIJQBWGUABp255nW3Bfi6lAaAAA/tAQtYXZluXgPGlP25P3q5JqkTrIPxrLpzreXEe+Dae3WOiXvEb6/KSTXKeW6hjUHzH16V69/Aou4AA=",
+      "width": 301,
+      "height": 500
+    },
+    "pageCount": 416
+  },
+  {
+    "id": "die-herren-von-winterfell",
+    "title": "Die Herren von Winterfell",
+    "author": "George R. R. Martin",
+    "description": {
+      "de": "Im Ringen um den Eisernen Thron sind Ehre und Loyalität die gefährlichsten Schwächen.",
+      "en": "In the game for the Iron Throne, honour and loyalty are the deadliest weaknesses."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Epos",
+      "Intrigen",
+      "Westeros"
+    ],
+    "price": {
+      "amount": 18,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.7,
+    "likeCount": 6900,
+    "cover": {
+      "id": 9269962,
+      "small": "/covers/die-herren-von-winterfell-96.webp",
+      "medium": "/covers/die-herren-von-winterfell-320.webp",
+      "large": "/covers/die-herren-von-winterfell-640.webp",
+      "lqip": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADQBACdASoQABwAPxFysFAsJqSisAgBgCIJYwCo9ywTnAdae09p5G1IFj7qFiy0CADMmh1A7ynfwndjBe3kjlJLI9Z3fionQ4/9bEn8px87xY+sCszd8jX5gsSgIJhqm77RcS45/sR1hryiT3xxvgvnlevOuscx9ugtLEVEHkHAgwN6SVa5SPN+WuqK/q3z4PydoAxHnDmViwDrwjd69RS6vvCOPZ6mEtKIfRT+AzmNjdRkx8M9bP6HAweAAA==",
+      "width": 295,
+      "height": 500
+    },
+    "pageCount": 576
+  },
+  {
+    "id": "der-konig-von-narnia",
+    "title": "Der König von Narnia",
+    "author": "C. S. Lewis",
+    "description": {
+      "de": "Vier Geschwister treten durch einen Kleiderschrank in ein verzaubertes Land im ewigen Winter.",
+      "en": "Four siblings step through a wardrobe into an enchanted land trapped in eternal winter."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Klassiker",
+      "Kindheit",
+      "Wintermärchen"
+    ],
+    "price": {
+      "amount": 10,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.6,
+    "likeCount": 3900,
+    "cover": {
+      "id": 8441376,
+      "small": "/covers/der-konig-von-narnia-96.webp",
+      "medium": "/covers/der-konig-von-narnia-320.webp",
+      "large": "/covers/der-konig-von-narnia-640.webp",
+      "lqip": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAACwBACdASoQABwAPxFysFAsJqSisAgBgCIJbACdGaAoAA3wA8Ux069rUizLXQwAAPx2fMwAHM2qxuiJX+qlzIh4o/iLAbEICHDjxaOJgzLj8lx+NMn0bXVl6roqRtlaF/n6m25y38wV32A/AAkUNhUoFLazyAQPDF3xiySNXODJD/mC60dCsZZs2y2YYNN1AvF/xgrSevP6Al4IRAEFzFYEBoVgscawcwxRDd3e/hGKh3Lc2Xb+GxwiQzjtcFzwejnpDcgAAAA=",
+      "width": 294,
+      "height": 500
+    },
+    "pageCount": 208
+  },
+  {
+    "id": "eragon-das-vermachtnis-der-drachenreiter",
+    "title": "Eragon – Das Vermächtnis der Drachenreiter",
+    "author": "Christopher Paolini",
+    "description": {
+      "de": "Ein Bauernjunge findet ein Drachenei – und wird zum letzten Hoffnungsträger gegen einen tyrannischen König.",
+      "en": "A farm boy finds a dragon egg and becomes the last hope against a tyrant king."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Drachen",
+      "Jugend",
+      "Abenteuer"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.3,
+    "likeCount": 2800,
+    "cover": {
+      "id": 13921600,
+      "small": "/covers/eragon-das-vermachtnis-der-drachenreiter-96.webp",
+      "medium": "/covers/eragon-das-vermachtnis-der-drachenreiter-320.webp",
+      "large": "/covers/eragon-das-vermachtnis-der-drachenreiter-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwAwCdASoQABgAPxFysFAsJqSisAgBgCIJYwAAVJsd9i3UyiihYEpgAM44Fq++9bF3Rqi352KWzEEaHWKHtZRhjM4tVG8b0jSToS4BZ52RJcllW90+CTfcyQmWfetJPw9HpAnnj1ZudcLIhpEfab8D0uxzfqu00/xaT6oVRXbKe9BNPgipSxAA",
+      "width": 329,
+      "height": 500
+    },
+    "pageCount": 736
+  },
+  {
+    "id": "die-zwerge",
+    "title": "Die Zwerge",
+    "author": "Markus Heitz",
+    "description": {
+      "de": "Tungdil, bei Menschen aufgewachsen, muss beweisen, was wirklich in einem Zwerg steckt.",
+      "en": "Raised among humans, Tungdil must prove what truly lives in the heart of a dwarf."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Zwerge",
+      "Schlachten",
+      "Deutsche Fantasy"
+    ],
+    "price": {
+      "amount": 13,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 2100,
+    "cover": {
+      "id": 13296257,
+      "small": "/covers/die-zwerge-96.webp",
+      "medium": "/covers/die-zwerge-320.webp",
+      "large": "/covers/die-zwerge-640.webp",
+      "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQABAABABoJZwAApKfZxBAAP73gjiqd/Wcfvt8NjFR4dYA0m8MlXlvccfttc79i9Fls17ycUTuvQFHIAA=",
       "width": 500,
       "height": 500
     },
+    "pageCount": 544
+  },
+  {
+    "id": "der-alchimist",
+    "title": "Der Alchimist",
+    "author": "Paulo Coelho",
+    "description": {
+      "de": "Der Hirte Santiago folgt einem wiederkehrenden Traum bis zu den Pyramiden – und zu sich selbst.",
+      "en": "Shepherd Santiago follows a recurring dream to the pyramids — and to himself."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Fabel",
+      "Lebensweg",
+      "Wüste"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.3,
+    "likeCount": 5100,
+    "cover": {
+      "id": 11556106,
+      "small": "/covers/der-alchimist-96.webp",
+      "medium": "/covers/der-alchimist-320.webp",
+      "large": "/covers/der-alchimist-640.webp",
+      "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAACwBACdASoQABgAPxFysFAsJqSisAgBgCIJagCdMoR3ACnGnk5DNeI5RWMTziPAAP6uYIe3ngClJ/Fwmj/CLUokh+UpzNrG1S9pI/ldaR9dVRLGkP/BF2opJzzw1JNMeXyNSMaUD+JLBpk3LxGdun8xPvkNwZ3GN99OJBKqAAA=",
+      "width": 278,
+      "height": 420
+    },
+    "pageCount": 224
+  },
+  {
+    "id": "percy-jackson-diebe-im-olymp",
+    "title": "Percy Jackson – Diebe im Olymp",
+    "author": "Rick Riordan",
+    "description": {
+      "de": "Percy erfährt, dass sein Vater ein griechischer Gott ist – und Zeus’ Blitz gestohlen wurde.",
+      "en": "Percy learns his father is a Greek god — and that Zeus’ master bolt has been stolen."
+    },
+    "genre": "Fantasy",
+    "tags": [
+      "Mythologie",
+      "Jugend",
+      "Humor"
+    ],
+    "price": {
+      "amount": 10,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 3100,
+    "cover": {
+      "id": 7239831,
+      "small": "/covers/percy-jackson-diebe-im-olymp-96.webp",
+      "medium": "/covers/percy-jackson-diebe-im-olymp-320.webp",
+      "large": "/covers/percy-jackson-diebe-im-olymp-640.webp",
+      "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBACdASoQABYAPxFysFAsJqSisAgBgCIJZgC/OCKTi6/Skd/AVGOlIAD+zDC7jkGe68mONZF7bM9RzA82rbbQofGvhnbqHpq5SZZz/IIYQ8aMVxSRQnb8oPtCEjvFBoHRhcya7qPN1fNUW6IW8FzJAAA=",
+      "width": 238,
+      "height": 315
+    },
+    "pageCount": 448
+  },
+  {
+    "id": "gut-gegen-nordwind",
+    "title": "Gut gegen Nordwind",
+    "author": "Daniel Glattauer",
+    "description": {
+      "de": "Eine falsch adressierte E-Mail wird zum Beginn einer Liebe, die nur aus Worten besteht.",
+      "en": "A misaddressed email sparks a love affair made entirely of words."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "E-Mail-Roman",
+      "Modern",
+      "Wien"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.3,
+    "likeCount": 2300,
+    "cover": {
+      "id": 10783350,
+      "small": "/covers/gut-gegen-nordwind-96.webp",
+      "medium": "/covers/gut-gegen-nordwind-320.webp",
+      "large": "/covers/gut-gegen-nordwind-640.webp",
+      "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoQABkAPxFysFAsJqSisAgBgCIJZAAAW++PoZ55pzKVkSRMAAD+7K6tcIPLJSQAoohPlUQjHaopKRj+oFIlHVk9l+AHr/fp0l/d4Gwvtyr6MM0eahQNPR+jPduh036cO/gxCWO/OlK6VQ9dsM3ltk57aOgAAA==",
+      "width": 180,
+      "height": 285
+    },
+    "pageCount": 224
+  },
+  {
+    "id": "jane-eyre",
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "description": {
+      "de": "Eine Gouvernante mit eisernem Willen verliebt sich in einen Mann mit einem dunklen Geheimnis.",
+      "en": "A governess of iron will falls for a man with a dark secret in his attic."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Klassiker",
+      "Gothic",
+      "Selbstbestimmung"
+    ],
+    "price": {
+      "amount": 9,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.6,
+    "likeCount": 4400,
+    "cover": {
+      "id": 8235363,
+      "small": "/covers/jane-eyre-96.webp",
+      "medium": "/covers/jane-eyre-320.webp",
+      "large": "/covers/jane-eyre-640.webp",
+      "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwBACdASoQABoAPxF0sVCsJqSisAgBgCIJZACdMoMljEtGaeju0xq2W7cRAAD9OqvWHL5jUhXWL1bERQ1593TSL2tLMxvrxNdO08V1Gtgn7OQ6Bditw72zZwvDyAerw6YVONIhV78NHoUPIAA=",
+      "width": 306,
+      "height": 500
+    },
+    "pageCount": 592
+  },
+  {
+    "id": "sturmhohe",
+    "title": "Sturmhöhe",
+    "author": "Emily Brontë",
+    "description": {
+      "de": "Heathcliff und Catherine – eine Liebe wie das Moor: wild, dunkel und unbarmherzig.",
+      "en": "Heathcliff and Catherine — a love like the moors: wild, dark and merciless."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Klassiker",
+      "Moor",
+      "Besessenheit"
+    ],
+    "price": {
+      "amount": 9,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 3600,
+    "cover": {
+      "id": 12818862,
+      "small": "/covers/sturmhohe-96.webp",
+      "medium": "/covers/sturmhohe-320.webp",
+      "large": "/covers/sturmhohe-640.webp",
+      "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAQAwCdASoQABoAPxFOv1osIqgkmAGAIglnAAB7k6A0p4AA/u6DCMcwylMy76vudll4AA==",
+      "width": 309,
+      "height": 500
+    },
+    "pageCount": 528
+  },
+  {
+    "id": "die-liebe-in-den-zeiten-der-cholera",
+    "title": "Die Liebe in den Zeiten der Cholera",
+    "author": "Gabriel García Márquez",
+    "description": {
+      "de": "Florentino wartet einundfünfzig Jahre, neun Monate und vier Tage auf seine große Liebe.",
+      "en": "Florentino waits fifty-one years, nine months and four days for his one great love."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Klassiker",
+      "Lateinamerika",
+      "Lebenslang"
+    ],
+    "price": {
+      "amount": 14,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.5,
+    "likeCount": 3000,
+    "cover": {
+      "id": 10518348,
+      "small": "/covers/die-liebe-in-den-zeiten-der-cholera-96.webp",
+      "medium": "/covers/die-liebe-in-den-zeiten-der-cholera-320.webp",
+      "large": "/covers/die-liebe-in-den-zeiten-der-cholera-640.webp",
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQABAABABoJZwAApF6f9qq2HEAAP7uUY+g3gLqRioq0n2pVvgmPtqAKLg90CH50Z3v29I1DXd06vQ+tU47yze448Oj/oKJl4HMgeAA",
+      "width": 180,
+      "height": 180
+    },
+    "pageCount": 512
+  },
+  {
+    "id": "ein-ganzes-halbes-jahr",
+    "title": "Ein ganzes halbes Jahr",
+    "author": "Jojo Moyes",
+    "description": {
+      "de": "Lou soll Will nur pflegen – doch sie bringt ihm das Leben zurück, und er ihr den Mut.",
+      "en": "Lou is hired to care for Will — instead she brings him back to life, and he gives her courage."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Tränen",
+      "Modern",
+      "Bestseller"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.5,
+    "likeCount": 5200,
+    "cover": {
+      "id": 14419339,
+      "small": "/covers/ein-ganzes-halbes-jahr-96.webp",
+      "medium": "/covers/ein-ganzes-halbes-jahr-320.webp",
+      "large": "/covers/ein-ganzes-halbes-jahr-640.webp",
+      "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwBACdASoQABkAPxFysFAsJqSisAgBgCIJbACsOUE4D+VgFdbhO+JVLnW52+LqlRAA/o4Xiw7ed1/kc4nooKjY7ZR0SxBV/0wtEVwJOMKDgAXSpx0hJVvy73acLRVfrregUPml+8rnfSC17IhWw7eQZKfV19Kkq9X0ZA3Tf1aQ3h2w/FHKu96tkGknfGen/5AAAA==",
+      "width": 326,
+      "height": 500
+    },
+    "pageCount": 512
+  },
+  {
+    "id": "p-s-ich-liebe-dich",
+    "title": "P.S. Ich liebe Dich",
+    "author": "Cecelia Ahern",
+    "description": {
+      "de": "Gerry ist tot – aber seine Briefe führen Holly Monat für Monat zurück ins Leben.",
+      "en": "Gerry is gone — but his letters guide Holly back to life, one month at a time."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Briefe",
+      "Trauer",
+      "Neuanfang"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.2,
+    "likeCount": 3400,
+    "cover": {
+      "id": 4995410,
+      "small": "/covers/p-s-ich-liebe-dich-96.webp",
+      "medium": "/covers/p-s-ich-liebe-dich-320.webp",
+      "large": "/covers/p-s-ich-liebe-dich-640.webp",
+      "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAQBACdASoQABsAPxFysFAsJqSisAgBgCIJZgCdABhS35XAZBlR0JtiAAD+yV8ykAMsXzpxgysMYgcXUumKxFGd1cpKqHTL/vPM+EK3laXoB/Cjf+d56gsyUKgS182GNRFquy7uD8+8NLvzl6GeLULq1F59sAbvCrjeViAX+LbviS7xgXq6nWbfpSbl851XG0NYwudntqG3K1YBJYSNt2doNIYJkziwAAA=",
+      "width": 128,
+      "height": 213
+    },
+    "pageCount": 432
+  },
+  {
+    "id": "naokos-lacheln",
+    "title": "Naokos Lächeln",
+    "author": "Haruki Murakami",
+    "description": {
+      "de": "Toru zwischen zwei Frauen, Tokio Ende der Sechziger – und der Frage, was Erinnerung mit uns macht.",
+      "en": "Toru, two women, late-sixties Tokyo — and what memory does to us."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Japan",
+      "Melancholie",
+      "Coming-of-Age"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.3,
+    "likeCount": 2600,
+    "cover": {
+      "id": 2237620,
+      "small": "/covers/naokos-lacheln-96.webp",
+      "medium": "/covers/naokos-lacheln-320.webp",
+      "large": "/covers/naokos-lacheln-640.webp",
+      "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBACdASoQABgAPxFwsFAsJiSisAgBgCIJbACsACL6LmUSv1Xsd59b0AD+FM1Y9s2NlVcDn+u5o6JyyhAAY3J2Etrju8YTSWKnl7wst38CHulnimFe6JUywXom/YC6ZkrbCtDx6NaebPgsJXX2tz7j6B/Kfi/s5yHbPZnkALW8W48C6ACnXTYIRNTyDv+YcqFDkKKPHheG38m4eXvYAAAA",
+      "width": 314,
+      "height": 475
+    },
+    "pageCount": 416
+  },
+  {
+    "id": "anna-karenina",
+    "title": "Anna Karenina",
+    "author": "Lew Tolstoi",
+    "description": {
+      "de": "Eine verheiratete Frau folgt ihrer Leidenschaft – und die Gesellschaft stellt ihr die Rechnung.",
+      "en": "A married woman follows her passion — and society makes her pay the price."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Klassiker",
+      "Russland",
+      "Gesellschaft"
+    ],
+    "price": {
+      "amount": 16,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.5,
+    "likeCount": 3800,
+    "cover": {
+      "id": 12327215,
+      "small": "/covers/anna-karenina-96.webp",
+      "medium": "/covers/anna-karenina-320.webp",
+      "large": "/covers/anna-karenina-640.webp",
+      "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABwBACdASoQABgAPxFysFAsJqSisAgBgCIJYgCdAB6C6mLZlyB5T4rGxHQf4AD+zsASP/1wQPZ9iUz5EVTt2ORYt4xm1GKhI/60e8XtwSmeUD6MJtRp6HSDT/tuHmcQMacXbp1nst16MbGLqKSWJ+0c45w5ytK/fney+LVxdV74XJwJH1GGifF4dI6dA02PgwAAAA==",
+      "width": 334,
+      "height": 500
+    },
+    "pageCount": 1024
+  },
+  {
+    "id": "der-gro-e-gatsby",
+    "title": "Der große Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": {
+      "de": "Gatsby feiert rauschende Feste für eine Liebe, die längst Vergangenheit ist.",
+      "en": "Gatsby throws glittering parties for a love that already belongs to the past."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Klassiker",
+      "Zwanziger",
+      "Amerikanischer Traum"
+    ],
+    "price": {
+      "amount": 10,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.3,
+    "likeCount": 4100,
+    "cover": {
+      "id": 10590366,
+      "small": "/covers/der-gro-e-gatsby-96.webp",
+      "medium": "/covers/der-gro-e-gatsby-320.webp",
+      "large": "/covers/der-gro-e-gatsby-640.webp",
+      "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACQAwCdASoQABkAPxFysFAsJqSisAgBgCIJQAALfVEuGvZPqmAAAP7Lgsj8aVd4HE/6qnw//yS9HxAecpDLafxAAAA=",
+      "width": 324,
+      "height": 500
+    },
+    "pageCount": 240
+  },
+  {
+    "id": "emma",
+    "title": "Emma",
+    "author": "Jane Austen",
+    "description": {
+      "de": "Emma verkuppelt halb Highbury – nur ihr eigenes Herz hat sie nicht auf der Rechnung.",
+      "en": "Emma matchmakes half of Highbury — forgetting to account for her own heart."
+    },
+    "genre": "Romantik",
+    "tags": [
+      "Klassiker",
+      "Verkupplung",
+      "Witz"
+    ],
+    "price": {
+      "amount": 9,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 2900,
+    "cover": {
+      "id": 9278312,
+      "small": "/covers/emma-96.webp",
+      "medium": "/covers/emma-320.webp",
+      "large": "/covers/emma-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoQABkAPxFysFAsJqSisAgBgCIJYwCdAYxYyl5mpaXLJ/E6wgAA/tn1fWwPCCOYawrPCrUY6zturX1PxMTedA5uh4d03/2FBStY17kctk2ETBK4h/HNQYsGdYzpGR+wlzH1WGZg8QA+2EF1TSYCJCA5pukQwP8B8UPOlhPAAAA=",
+      "width": 322,
+      "height": 500
+    },
+    "pageCount": 512
+  },
+  {
+    "id": "schone-neue-welt",
+    "title": "Schöne neue Welt",
+    "author": "Aldous Huxley",
+    "description": {
+      "de": "Eine Welt ohne Schmerz, ohne Tiefe, ohne Freiheit – und alle sind glücklich. Fast alle.",
+      "en": "A world without pain, depth or freedom — and everyone is happy. Almost everyone."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Dystopie",
+      "Klassiker",
+      "Gesellschaft"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 4300,
+    "cover": {
+      "id": 8231823,
+      "small": "/covers/schone-neue-welt-96.webp",
+      "medium": "/covers/schone-neue-welt-320.webp",
+      "large": "/covers/schone-neue-welt-640.webp",
+      "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBACdASoQABkAPxFysFAsJqSisAgBgCIJbACdOUAKkYThRHD7qfnQDWuYAADLEUnf2KAn/RywFBRUUSGluz6bRrYw42yGYyS2ODuQg/a7u/l1ZhD48GpN3M/j4x7LQaSTd1LQAN3EI3uCOeE8MwmUA2RXozaWLpZnWN0x00YuTw5FaDDbfje7sJMEoVsYFjlMzibxX1wAAA==",
+      "width": 314,
+      "height": 500
+    },
+    "pageCount": 368
+  },
+  {
+    "id": "fahrenheit-451",
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "description": {
+      "de": "Feuerwehrmann Montag verbrennt Bücher – bis er anfängt, eines zu lesen.",
+      "en": "Fireman Montag burns books — until the day he starts reading one."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Dystopie",
+      "Bücher",
+      "Klassiker"
+    ],
+    "price": {
+      "amount": 10,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 3900,
+    "cover": {
+      "id": 12993656,
+      "small": "/covers/fahrenheit-451-96.webp",
+      "medium": "/covers/fahrenheit-451-320.webp",
+      "large": "/covers/fahrenheit-451-640.webp",
+      "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBACdASoQABkAPxFysFAsJqSisAgBgCIJbACdMoR3ACWSduTzzr2P3Kn7AAD+uhTNtynQZg5WCG8RNxMOQrA+F6N4u+IS+RQDapBLCkk7jn8WrIPFoCamxK5XzGQ9spBLRxyQJo8D8d86KsH76T6HdQ7yrQtguWDTPlQDphgHymQD7XOy3e7mn/yb2P9e+EgZxcH9iswAAA==",
+      "width": 322,
+      "height": 500
+    },
+    "pageCount": 272
+  },
+  {
+    "id": "der-report-der-magd",
+    "title": "Der Report der Magd",
+    "author": "Margaret Atwood",
+    "description": {
+      "de": "In der Republik Gilead ist Desfred nur noch eines: ein Körper, der dem Staat gehört.",
+      "en": "In the Republic of Gilead, Offred is reduced to one thing: a body owned by the state."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Dystopie",
+      "Feminismus",
+      "Gilead"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.5,
+    "likeCount": 4600,
+    "cover": {
+      "id": 8231851,
+      "small": "/covers/der-report-der-magd-96.webp",
+      "medium": "/covers/der-report-der-magd-320.webp",
+      "large": "/covers/der-report-der-magd-640.webp",
+      "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAACQBACdASoQABkAPxFysFAsJqSisAgBgCIJbACdLwABpZgpYN9BMcC1IPv9s0AA/IudplMeILFDTuEQrMQ+nt4WwZNVwpkiE9l4wrqf2NekfW/nznmOO7DLF+xl/oJvv4TE65OQxUZ0ibKSnStMpJDbmTWcy1UR4SntT+W/YoX1sKyHIQ5TzK9OrOz5dfJvQRub5SOfgApV5azjTL+7AE4RpPgXj4AA",
+      "width": 325,
+      "height": 500
+    },
+    "pageCount": 416
+  },
+  {
+    "id": "das-gro-e-spiel",
+    "title": "Das große Spiel",
+    "author": "Orson Scott Card",
+    "description": {
+      "de": "Ender Wiggin wird zum perfekten Befehlshaber ausgebildet – für ein Spiel, das keines ist.",
+      "en": "Ender Wiggin is trained to be the perfect commander — for a game that is no game."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Weltraum",
+      "Strategie",
+      "Jugend"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 3200,
+    "cover": {
+      "id": 12996033,
+      "small": "/covers/das-gro-e-spiel-96.webp",
+      "medium": "/covers/das-gro-e-spiel-320.webp",
+      "large": "/covers/das-gro-e-spiel-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoQABkAPxFysFAsJqSisAgBgCIJZgCdAB2Zs/pT+/8NCo7RRAD+zbpFRXeRYS1kq2RKcHSsIWnAAP9M9qGNf7HJU/KEOmqTepM08sM6Cx77kIHmptzuQrZ9IigpA8r4ay2Oj2hIniqDBwwAbfP1NdTwI3Eco5iq/JDrON9DoAA=",
+      "width": 316,
+      "height": 500
+    },
+    "pageCount": 448
+  },
+  {
+    "id": "krieg-der-welten",
+    "title": "Krieg der Welten",
+    "author": "H. G. Wells",
+    "description": {
+      "de": "Die Marsianer landen in England – und die Krone der Schöpfung wird zur Beute.",
+      "en": "The Martians land in England — and the lords of creation become the prey."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Klassiker",
+      "Invasion",
+      "Mars"
+    ],
+    "price": {
+      "amount": 9,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.1,
+    "likeCount": 2400,
+    "cover": {
+      "id": 36314,
+      "small": "/covers/krieg-der-welten-96.webp",
+      "medium": "/covers/krieg-der-welten-320.webp",
+      "large": "/covers/krieg-der-welten-640.webp",
+      "lqip": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAABwBACdASoQABgAPxFysFAsJqSisAgBgCIJbACdMoRwAdCUt5AyR3KQU7a5SAD+rAuHj25YvG6Ga9BuatBX0dXbi/TYC2GSNu2oquZUWXHsw4eUCeceKTBh2TEycpBJ+VVknxb0B2iq2nL591wbsht/fzj0svdmJWd3jGdEb3qumE0NzUOWZMP9Iklh8WETNPzp1FzbRB78XUmXtLN08Jut0SNk5S/UrixJxKDm+/vUcFlmS+HM9y5JPWKUJhRk7IaAAA==",
+      "width": 336,
+      "height": 500
+    },
+    "pageCount": 288
+  },
+  {
+    "id": "die-zeitmaschine",
+    "title": "Die Zeitmaschine",
+    "author": "H. G. Wells",
+    "description": {
+      "de": "Ein Erfinder reist ins Jahr 802.701 – und findet die Zukunft der Menschheit zweigeteilt.",
+      "en": "An inventor travels to the year 802,701 and finds humanity split in two."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Klassiker",
+      "Zeitreise",
+      "Zukunft"
+    ],
+    "price": {
+      "amount": 8,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.1,
+    "likeCount": 2200,
+    "cover": {
+      "id": 9009316,
+      "small": "/covers/die-zeitmaschine-96.webp",
+      "medium": "/covers/die-zeitmaschine-320.webp",
+      "large": "/covers/die-zeitmaschine-640.webp",
+      "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABwBACdASoQABgAPxFysFAsJqSisAgBgCIJZQAD5LFliPckviNlijUk0v6toAD+5pCWL+3pFT3Qx900BDBOT9fARmaBk0t2NLqOO2v1D/B67motnu4+274QqVvW70Otpnprdia3jZaWLMllaL5k3ysa7vXhikScLVxmhEA/ZnDHGU/GIIR9OPXCMp4xM0CmYPX4fo45CTwCWW6Jp9cmaUai+8c3Jx11gAA=",
+      "width": 333,
+      "height": 500
+    },
+    "pageCount": 208
+  },
+  {
+    "id": "die-foundation-trilogie",
+    "title": "Die Foundation-Trilogie",
+    "author": "Isaac Asimov",
+    "description": {
+      "de": "Hari Seldon sieht den Fall des Imperiums voraus – und plant das Wissen der Menschheit zu retten.",
+      "en": "Hari Seldon foresees the empire’s fall — and plots to save the knowledge of humankind."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Klassiker",
+      "Galaktisches Imperium",
+      "Psychohistorik"
+    ],
+    "price": {
+      "amount": 18,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.5,
+    "likeCount": 3500,
+    "cover": {
+      "id": 9261324,
+      "small": "/covers/die-foundation-trilogie-96.webp",
+      "medium": "/covers/die-foundation-trilogie-320.webp",
+      "large": "/covers/die-foundation-trilogie-640.webp",
+      "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACwBACdASoQABoAPxFysFAsJqSisAgBgCIJbACdMoR3ACfbeGWHwm1OUjS3awAAAP6e6KPKA0NWFQD3M40ItIbWcBhL7eJhQRkHcz4ERxcrEG3OAfne6EJ8jsumSCjDt7yMh9Jzw0xl3Wzr/eiH1Ro59sN4WQer4Jrr3ih+n9THBDDuGgLCYuLe0A/Syn6KbAqgAAAA",
+      "width": 306,
+      "height": 500
+    },
+    "pageCount": 800
+  },
+  {
+    "id": "solaris",
+    "title": "Solaris",
+    "author": "Stanisław Lem",
+    "description": {
+      "de": "Ein denkender Ozean spiegelt den Forschern ihre tiefsten Erinnerungen – Kontakt ist unmöglich.",
+      "en": "A sentient ocean mirrors the researchers’ deepest memories — contact remains impossible."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Klassiker",
+      "Ozean",
+      "Erster Kontakt"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.3,
+    "likeCount": 2000,
+    "cover": {
+      "id": 12313764,
+      "small": "/covers/solaris-96.webp",
+      "medium": "/covers/solaris-320.webp",
+      "large": "/covers/solaris-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoQABgAPxFysFAsJqSisAgBgCIJbACw7CHgrNidHRBNNtBHpsAA/rlSFXSHVt5qaya0bgzTXK7fRMBoD8HlnMe2ysgvrvFNVbJSjiCJ7AFIhXmnq5e6wPLURKIttcwA",
+      "width": 333,
+      "height": 500
+    },
+    "pageCount": 288
+  },
+  {
+    "id": "der-astronaut",
+    "title": "Der Astronaut",
+    "author": "Andy Weir",
+    "description": {
+      "de": "Ryland Grace erwacht allein im All, ohne Gedächtnis – und mit der Rettung der Erde als Auftrag.",
+      "en": "Ryland Grace wakes alone in space with no memory — and Earth’s survival on his to-do list."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Weltraum",
+      "Wissenschaft",
+      "Humor"
+    ],
+    "price": {
+      "amount": 16,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.7,
+    "likeCount": 4800,
+    "cover": {
+      "id": 11200092,
+      "small": "/covers/der-astronaut-96.webp",
+      "medium": "/covers/der-astronaut-320.webp",
+      "large": "/covers/der-astronaut-640.webp",
+      "lqip": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAAAQBACdASoQABkAPxFysFAsJqSisAgBgCIJaADG9YuktbsYuSPBIausWAD+6fejvInLH0XDoe6Iw1NhBNMYkGJlyeltz5WRMbgQz8vw78KtbNwaGL45yCtD8RGOKqDYbKTL4bF2lTXFYjxljI4/C5xXaVxdnDYkdVTR8Gh1q5o4tOOpuo3Z8FeQiaaFfJ+pVtxn8rdMKXCmxGGGI4gErNXZit1U9Za2xCZE199Yhg6m1fXiUI2psyFRK9/8giv9Tf6gAAAA",
+      "width": 325,
+      "height": 500
+    },
+    "pageCount": 560
+  },
+  {
+    "id": "die-drei-sonnen",
+    "title": "Die drei Sonnen",
+    "author": "Cixin Liu",
+    "description": {
+      "de": "Ein Signal ins All wird beantwortet – und die Menschheit erfährt, dass sie nicht allein ist.",
+      "en": "A signal sent into space gets an answer — and humanity learns it is not alone."
+    },
+    "genre": "Science-Fiction",
+    "tags": [
+      "Erster Kontakt",
+      "China",
+      "Physik"
+    ],
+    "price": {
+      "amount": 15,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 3700,
+    "cover": {
+      "id": 10526598,
+      "small": "/covers/die-drei-sonnen-96.webp",
+      "medium": "/covers/die-drei-sonnen-320.webp",
+      "large": "/covers/die-drei-sonnen-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwBACdASoQABkAPxFysFAsJqSisAgBgCIJQBdmUABf5J2cRaIA6TFqcLZ+gAD+6YX7Y554G6FSvFuI5p6HGkuUYiGSRRDbN0kMuQ9mapde4LZ5T3iBzGQa21ea7prkB8rBPW9HPzBFPH375SGp7fqLAncq74sTFZ22++m/r+3VODFT1E2V7EHAAAA=",
+      "width": 316,
+      "height": 500
+    },
+    "pageCount": 592
+  },
+  {
+    "id": "und-dann-gabs-keines-mehr",
+    "title": "Und dann gabs keines mehr",
+    "author": "Agatha Christie",
+    "description": {
+      "de": "Zehn Fremde auf einer Insel, ein Kinderreim – und nach jedem Vers ein Toter mehr.",
+      "en": "Ten strangers on an island, a nursery rhyme — and one more body after every verse."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Klassiker",
+      "Insel",
+      "Whodunit"
+    ],
+    "price": {
+      "amount": 10,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.5,
+    "likeCount": 4000,
+    "cover": {
+      "id": 11172296,
+      "small": "/covers/und-dann-gabs-keines-mehr-96.webp",
+      "medium": "/covers/und-dann-gabs-keines-mehr-320.webp",
+      "large": "/covers/und-dann-gabs-keines-mehr-640.webp",
+      "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAgCdASoQABsAPxFysFAsJqSisAgBgCIJQBOgBbYgAP7uGV8sPI7CG7C5j4SprBXCmOAA",
+      "width": 300,
+      "height": 500
+    },
+    "pageCount": 272
+  },
+  {
+    "id": "mord-im-orientexpress",
+    "title": "Mord im Orientexpress",
+    "author": "Agatha Christie",
+    "description": {
+      "de": "Ein Toter im Schnee festgefahrenen Zug – und zwölf Verdächtige mit perfekten Alibis.",
+      "en": "A body on a train stuck in the snow — and twelve suspects with perfect alibis."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Klassiker",
+      "Poirot",
+      "Zug"
+    ],
+    "price": {
+      "amount": 10,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 3600,
+    "cover": {
+      "id": 11100465,
+      "small": "/covers/mord-im-orientexpress-96.webp",
+      "medium": "/covers/mord-im-orientexpress-320.webp",
+      "large": "/covers/mord-im-orientexpress-640.webp",
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoQABwAPxFysVAsJqSisAgBgCIJZgCdMoAB7Gr736ZladfCsACo7pNQUi71klnfjc/fD8SJSssGe2I7IEmt5VUdPa8GsitN7ACCFqpNSeT7gLc19pk+AAAA",
+      "width": 291,
+      "height": 500
+    },
+    "pageCount": 256
+  },
+  {
+    "id": "die-therapie",
+    "title": "Die Therapie",
+    "author": "Sebastian Fitzek",
+    "description": {
+      "de": "Josys Verschwinden hat keine Zeugen – bis eine Fremde behauptet, seine Geschichte zu kennen.",
+      "en": "Josy vanished without witnesses — until a stranger claims to know the whole story."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Psychothriller",
+      "Deutschland",
+      "Bestseller"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.3,
+    "likeCount": 3100,
+    "cover": {
+      "id": 8220145,
+      "small": "/covers/die-therapie-96.webp",
+      "medium": "/covers/die-therapie-320.webp",
+      "large": "/covers/die-therapie-640.webp",
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoQABsAPxFysVAsJqSisAgBgCIJaQAAUp8BS0/9nVVfFAAA/tld9ZUTruq4odOfWfDhHuOhHjpOFysnNSau5pla7R8whS4EShl4wM+Uc+aV0ytwBYFjgAAA",
+      "width": 300,
+      "height": 500
+    },
+    "pageCount": 336
+  },
+  {
+    "id": "misery",
+    "title": "Misery",
+    "author": "Stephen King",
+    "description": {
+      "de": "Bestsellerautor Paul Sheldon wird von seinem größten Fan gerettet – und gefangen gehalten.",
+      "en": "Novelist Paul Sheldon is rescued by his number-one fan — and held captive by her."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Psychothriller",
+      "Isolation",
+      "Fan"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 3300,
+    "cover": {
+      "id": 8259296,
+      "small": "/covers/misery-96.webp",
+      "medium": "/covers/misery-320.webp",
+      "large": "/covers/misery-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAADwAwCdASoQABkAPxFysFAsJqSisAgBgCIJaAAD5aHURkjmBnGv8sIAAP7NwKMGaQivqDRyAxgHv281UVJUFIS7yt5ROfnsKM4Vrj+jHiUvxLzU7+icm6fiijC2KwRpFor8F/5ZS/vFn9ngfx785bql3VjS9D5B5XVzCehl0GcSDofwpMxJsEihek96sF0AAAA=",
+      "width": 320,
+      "height": 500
+    },
+    "pageCount": 416
+  },
+  {
+    "id": "shining",
+    "title": "Shining",
+    "author": "Stephen King",
+    "description": {
+      "de": "Das Overlook-Hotel im Winter: leer, abgeschnitten – und sehr, sehr wach.",
+      "en": "The Overlook Hotel in winter: empty, snowed in — and very much awake."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Horror",
+      "Hotel",
+      "Klassiker"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.5,
+    "likeCount": 4200,
+    "cover": {
+      "id": 12376585,
+      "small": "/covers/shining-96.webp",
+      "medium": "/covers/shining-320.webp",
+      "large": "/covers/shining-640.webp",
+      "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwBACdASoQABkAPxFysFAsJqSisAgBgCIJagAASlwedV2D9GD91Mro3rAA/rqB3lyaMhNnSjfEgP9Nl9VoFE+8MiPzc0xM4sLiKLYYylRtYmmv7ltR6PHD2fgKDWbjJhIgSGX2naTdhGCZkABkRtCQxH9RtcAA",
+      "width": 320,
+      "height": 500
+    },
+    "pageCount": 512
+  },
+  {
+    "id": "es",
+    "title": "Es",
+    "author": "Stephen King",
+    "description": {
+      "de": "Alle 27 Jahre erwacht in Derry etwas, das die Gestalt eurer schlimmsten Angst trägt.",
+      "en": "Every 27 years something wakes in Derry wearing the shape of your worst fear."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Horror",
+      "Kindheit",
+      "Derry"
+    ],
+    "price": {
+      "amount": 16,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.5,
+    "likeCount": 4700,
+    "cover": {
+      "id": 8569284,
+      "small": "/covers/es-96.webp",
+      "medium": "/covers/es-320.webp",
+      "large": "/covers/es-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoQABoAPxFysFAsJqSisAgBgCIJbAAD5GnYougwP+Jnc7HwAP7dnve3x+9hAMC+nMCfWuwoRTYH/83fE5n20G4Xtez29eYBVFmToE7v5+YaOkL8Htg+SngHSHYGPUFwWw+43jf9Sg9X39J/3v3+dmgiejDfX7wENY/S8seAAAA=",
+      "width": 306,
+      "height": 500
+    },
+    "pageCount": 1536
+  },
+  {
+    "id": "der-pate",
+    "title": "Der Pate",
+    "author": "Mario Puzo",
+    "description": {
+      "de": "Don Corleone macht Angebote, die man nicht ablehnen kann – sein Sohn wollte nie dazugehören.",
+      "en": "Don Corleone makes offers no one can refuse — his son never wanted in."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Mafia",
+      "Familie",
+      "Klassiker"
+    ],
+    "price": {
+      "amount": 13,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.6,
+    "likeCount": 3800,
+    "cover": {
+      "id": 6507069,
+      "small": "/covers/der-pate-96.webp",
+      "medium": "/covers/der-pate-320.webp",
+      "large": "/covers/der-pate-640.webp",
+      "lqip": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAABwBACdASoQABwAPxFysFAsJqSisAgBgCIJbAC7MoAlthgW85wjlOfZAtz6QAD9mf6isKl2cQW35i2aFfuiXyWnR3WH20riC5DOBXCqarQmk6WUjrY+Y1wjNtGDHI2qlml2y2bPM+5QfDB+vSNk0FKUzO3jAtUP0vnVBkSjxnOlq9rrEhMZqSlw87Da/2s/j189L8tJ/yr7Bg0u9aM0l8KIMUYGEnJ007/Z3xYANgAzTQwdzgtXrNCKBisQrst+ITIZ/wjE8vfqZDtBwaugAA==",
+      "width": 282,
+      "height": 500
+    },
+    "pageCount": 576
+  },
+  {
+    "id": "die-chemie-des-todes",
+    "title": "Die Chemie des Todes",
+    "author": "Simon Beckett",
+    "description": {
+      "de": "Forensiker David Hunter wollte nie wieder mit Toten arbeiten – dann findet das Dorf eine Leiche.",
+      "en": "Forensic expert David Hunter swore off the dead — then the village finds a body."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Forensik",
+      "Dorf",
+      "Serienmörder"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.3,
+    "likeCount": 2500,
+    "cover": {
+      "id": 6932649,
+      "small": "/covers/die-chemie-des-todes-96.webp",
+      "medium": "/covers/die-chemie-des-todes-320.webp",
+      "large": "/covers/die-chemie-des-todes-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABQBACdASoQABgAPxFysFAsJqSisAgBgCIJbACdAywBB1acyvdpVjfJz7xgAP7R1kDHk6rrpVnNUrYAwvLC/5F6zH0uNVFm+z1NS6d3OyF0Tg9LZff7BbGfpmuDxBPlgUXZveRH9I6EGDD5I7HyZDfQ3Ag+KWL3/AMCixRFL1nDaYOQuevsVT34ayAAAA==",
+      "width": 331,
+      "height": 500
+    },
+    "pageCount": 448
+  },
+  {
+    "id": "erbarmen",
+    "title": "Erbarmen",
+    "author": "Jussi Adler-Olsen",
+    "description": {
+      "de": "Carl Mørck übernimmt das Sonderdezernat Q – und einen Fall, der seit fünf Jahren als gelöst gilt.",
+      "en": "Carl Mørck takes over Department Q — and a case everyone closed five years ago."
+    },
+    "genre": "Thriller",
+    "tags": [
+      "Skandinavien",
+      "Cold Case",
+      "Sonderdezernat Q"
+    ],
+    "price": {
+      "amount": 11,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.2,
+    "likeCount": 2300,
+    "cover": {
+      "id": 6906197,
+      "small": "/covers/erbarmen-96.webp",
+      "medium": "/covers/erbarmen-320.webp",
+      "large": "/covers/erbarmen-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQBACdASoQABgAPxFysFAsJqSisAgBgCIJaACdMoMljE4XhSjqJUoBUXMHy5QA+iDRPTMFUBpADxZyRg9U/i6+/FDlZyrvzUPIzomlfJEJ1aDU5h43rlCEKR1bRyY3wRSBxs7dBNhFBXVyFp86QQAA",
+      "width": 185,
+      "height": 279
+    },
+    "pageCount": 432
+  },
+  {
+    "id": "homo-deus",
+    "title": "Homo Deus",
+    "author": "Yuval Noah Harari",
+    "description": {
+      "de": "Was kommt nach dem Homo sapiens? Eine Geschichte von Morgen zwischen Algorithmen und Unsterblichkeit.",
+      "en": "What comes after Homo sapiens? A history of tomorrow between algorithms and immortality."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Zukunft",
+      "Menschheit",
+      "Technologie"
+    ],
+    "price": {
+      "amount": 16,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 3900,
+    "cover": {
+      "id": 8846275,
+      "small": "/covers/homo-deus-96.webp",
+      "medium": "/covers/homo-deus-320.webp",
+      "large": "/covers/homo-deus-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoQABYAPxFysFAsJqSisAgBgCIJbACdMoADTqTCGQUVNY5ngbjAAPYpeke8BzblEqVCoRz16nDJ5xU8dn+4FjpJyQqHt6BmvjGzoW2Mx4KH+6B69yZh+ETH8qCK3p0+OocT39HK+T+3Sl4j4zOoGA0UeI87YQsnAA9XIj3MwMKOrj2AAAA=",
+      "width": 362,
+      "height": 500
+    },
+    "pageCount": 576
+  },
+  {
+    "id": "die-1-methode",
+    "title": "Die 1%-Methode",
+    "author": "James Clear",
+    "description": {
+      "de": "Minimale Veränderungen, verblüffende Ergebnisse: wie kleine Gewohnheiten Großes bewirken.",
+      "en": "Tiny changes, remarkable results: how small habits compound into big outcomes."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Gewohnheiten",
+      "Selbstoptimierung",
+      "Bestseller"
+    ],
+    "price": {
+      "amount": 15,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.6,
+    "likeCount": 5600,
+    "cover": {
+      "id": 12539702,
+      "small": "/covers/die-1-methode-96.webp",
+      "medium": "/covers/die-1-methode-320.webp",
+      "large": "/covers/die-1-methode-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoQABYAPxFysFAsJqSisAgBgCIJZQCdAB5e7U68udb0RmwA/udAjMjYE+DnfB0AJgzmzqorqH7EKsnAjM2l2gRSwuT7dziSAGiRAT6zp7e1FoZ4CqGrwNIG8k14AAAA",
+      "width": 369,
+      "height": 500
+    },
+    "pageCount": 368
+  },
+  {
+    "id": "die-subtile-kunst-des-daraufschei-ens",
+    "title": "Die subtile Kunst des Daraufscheißens",
+    "author": "Mark Manson",
+    "description": {
+      "de": "Nicht alles verdient deine Energie – ein unbequemer Ratgeber über die richtigen Prioritäten.",
+      "en": "Not everything deserves your energy — an uncomfortable guide to choosing what matters."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Lebenshilfe",
+      "Provokant",
+      "Prioritäten"
+    ],
+    "price": {
+      "amount": 13,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.1,
+    "likeCount": 4100,
+    "cover": {
+      "id": 8231990,
+      "small": "/covers/die-subtile-kunst-des-daraufschei-ens-96.webp",
+      "medium": "/covers/die-subtile-kunst-des-daraufschei-ens-320.webp",
+      "large": "/covers/die-subtile-kunst-des-daraufschei-ens-640.webp",
+      "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwAwCdASoQABgAPxFysFAsJqSisAgBgCIJbACdMoRwABde8jObGTAAAP1v30BzuG7XtLNWjXhw7uqWU+xGVB7tIJ+vN0zcKhRtfqZnjBAGDBz412RH5ZZFTCN7yIgi0Ap+AIq+yjld69OxBAY40VSmdlAAAA==",
+      "width": 180,
+      "height": 269
+    },
+    "pageCount": 224
+  },
+  {
+    "id": "becoming-meine-geschichte",
+    "title": "Becoming – Meine Geschichte",
+    "author": "Michelle Obama",
+    "description": {
+      "de": "Von der South Side Chicagos ins Weiße Haus – Michelle Obamas Weg in ihren eigenen Worten.",
+      "en": "From Chicago’s South Side to the White House — Michelle Obama’s journey in her own words."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Memoiren",
+      "Politik",
+      "Inspiration"
+    ],
+    "price": {
+      "amount": 17,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.7,
+    "likeCount": 5200,
+    "cover": {
+      "id": 8824664,
+      "small": "/covers/becoming-meine-geschichte-96.webp",
+      "medium": "/covers/becoming-meine-geschichte-320.webp",
+      "large": "/covers/becoming-meine-geschichte-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQABAABABoJQBOgCBj/d0dIAvkQAD+3tn6w/23Vga1YLQOYWSLZHB36Wup9+eBmOTT5pDzPRZB+YoZOrq+AV79M1eKv61gpd93qUIHerl8Q2noTe58LlJyQrWONrAP0TogAA==",
+      "width": 500,
+      "height": 500
+    },
+    "pageCount": 544
+  },
+  {
+    "id": "das-cafe-am-rande-der-welt",
+    "title": "Das Café am Rande der Welt",
+    "author": "John Strelecky",
+    "description": {
+      "de": "Drei Fragen auf einer Speisekarte stellen Johns ganzes Leben auf den Kopf.",
+      "en": "Three questions on a café menu turn John’s entire life upside down."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Lebenssinn",
+      "Parabel",
+      "Kurz"
+    ],
+    "price": {
+      "amount": 9,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.2,
+    "likeCount": 3400,
+    "cover": {
+      "id": 6804460,
+      "small": "/covers/das-cafe-am-rande-der-welt-96.webp",
+      "medium": "/covers/das-cafe-am-rande-der-welt-320.webp",
+      "large": "/covers/das-cafe-am-rande-der-welt-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBACdASoQABcAPxFysFAsJqSisAgBgCIJbACdMoAC+s2c6BFX3rF8vKwA/NSG0BaVCfIbUzlq5CKD7+dZ4W79n46cRnMkBzkSTplTCRuCfX2nkLUVCXhlzxfMKuvduKmvF6MKjcswr2FbFgNuBnaddgkKu3vKY9oO7Xjm67QMkouoEtAAAA==",
+      "width": 359,
+      "height": 500
+    },
     "pageCount": 128
+  },
+  {
+    "id": "darm-mit-charme",
+    "title": "Darm mit Charme",
+    "author": "Giulia Enders",
+    "description": {
+      "de": "Unser unterschätztes Organ: charmant erklärt, warum der Darm fast alles mitentscheidet.",
+      "en": "Our most underrated organ: a charming tour of why the gut has a say in almost everything."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Medizin",
+      "Humor",
+      "Körper"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.4,
+    "likeCount": 3700,
+    "cover": {
+      "id": 8776107,
+      "small": "/covers/darm-mit-charme-96.webp",
+      "medium": "/covers/darm-mit-charme-320.webp",
+      "large": "/covers/darm-mit-charme-640.webp",
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQAwCdASoQABkABABoJbACdMoAlsC/2OSKczJVWh43UAAA/uqOTj3BZoybVKAq9fQigC9EybzTMfSOmkBJLh9tJKvEG3Jv/zBP+fP64+4bbFW1iHyNSJ0CLzQ/E/SZXGQatbSgLh/82BMpvAfagUYjudzaNgwWc/ufhAHEvqmlm+lcQAA=",
+      "width": 321,
+      "height": 500
+    },
+    "pageCount": 304
+  },
+  {
+    "id": "warum-wir-schlafen",
+    "title": "Warum wir schlafen",
+    "author": "Matthew Walker",
+    "description": {
+      "de": "Schlaf ist die beste Gesundheitsvorsorge, die es gibt – und wir wissen erstaunlich wenig darüber.",
+      "en": "Sleep is the best health insurance there is — and we know astonishingly little about it."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Schlaf",
+      "Gesundheit",
+      "Wissenschaft"
+    ],
+    "price": {
+      "amount": 14,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.5,
+    "likeCount": 3100,
+    "cover": {
+      "id": 8814155,
+      "small": "/covers/warum-wir-schlafen-96.webp",
+      "medium": "/covers/warum-wir-schlafen-320.webp",
+      "large": "/covers/warum-wir-schlafen-640.webp",
+      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoQABgAPxFysFAsJqSisAgBgCIJQBOnKAAdAK3tkeJz3urwAAD+6N9GH2a4i9zVa85bey73f3SYU/SEN0Vn1d+n8W8bncEe5d5BOIS+bR0JlyVD0CASZMvkzZn1QScAAAA=",
+      "width": 328,
+      "height": 500
+    },
+    "pageCount": 480
+  },
+  {
+    "id": "der-mann-der-seine-frau-mit-einem-hut-verwechselte",
+    "title": "Der Mann, der seine Frau mit einem Hut verwechselte",
+    "author": "Oliver Sacks",
+    "description": {
+      "de": "Neurologische Fallgeschichten, die zeigen, wie zerbrechlich und wunderbar unser Gehirn ist.",
+      "en": "Neurological case stories revealing how fragile and wondrous the brain really is."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Neurologie",
+      "Fallgeschichten",
+      "Klassiker"
+    ],
+    "price": {
+      "amount": 12,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.3,
+    "likeCount": 2200,
+    "cover": {
+      "id": 6986188,
+      "small": "/covers/der-mann-der-seine-frau-mit-einem-hut-verwechselte-96.webp",
+      "medium": "/covers/der-mann-der-seine-frau-mit-einem-hut-verwechselte-320.webp",
+      "large": "/covers/der-mann-der-seine-frau-mit-einem-hut-verwechselte-640.webp",
+      "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoQABgAPxFysFAsJqSisAgBgCIJYwC7AB6r5eBgLw1sAAD+Ws5axMwBtkSjInVK2gCaJhlsgLk/SY/OK1cNgphSFmcBMdYpsyvhnvQ8xIAAAA==",
+      "width": 335,
+      "height": 500
+    },
+    "pageCount": 320
+  },
+  {
+    "id": "unser-kosmos",
+    "title": "Unser Kosmos",
+    "author": "Carl Sagan",
+    "description": {
+      "de": "Eine Reise durch Raum und Zeit – und eine Liebeserklärung an die wissenschaftliche Neugier.",
+      "en": "A voyage through space and time — and a love letter to scientific curiosity."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Astronomie",
+      "Klassiker",
+      "Staunen"
+    ],
+    "price": {
+      "amount": 16,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.6,
+    "likeCount": 2800,
+    "cover": {
+      "id": 8283901,
+      "small": "/covers/unser-kosmos-96.webp",
+      "medium": "/covers/unser-kosmos-320.webp",
+      "large": "/covers/unser-kosmos-640.webp",
+      "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoQABgAPxFysFAsJqSisAgBgCIJbAC7ACHSy6Q++F2CYds+4wAA/uw3u7uDUqFve2wL3f7cQJwQdM0222yHX914vYe7qsnvEwVwrJUN9qjN5GDu1l+pFeOeMtq0kxD0vayu7PKeCz86cwl/HTv3SufMsoZvyHpkAAA=",
+      "width": 329,
+      "height": 500
+    },
+    "pageCount": 432
+  },
+  {
+    "id": "befreit",
+    "title": "Befreit",
+    "author": "Tara Westover",
+    "description": {
+      "de": "Aufgewachsen ohne Schule in den Bergen Idahos – und der lange Weg bis nach Cambridge.",
+      "en": "Raised without schooling in the Idaho mountains — and the long road to Cambridge."
+    },
+    "genre": "Sachbuch",
+    "tags": [
+      "Memoiren",
+      "Bildung",
+      "Familie"
+    ],
+    "price": {
+      "amount": 14,
+      "currency": "EUR"
+    },
+    "publishedYear": 2000,
+    "rating": 4.6,
+    "likeCount": 3500,
+    "cover": {
+      "id": 8314077,
+      "small": "/covers/befreit-96.webp",
+      "medium": "/covers/befreit-320.webp",
+      "large": "/covers/befreit-640.webp",
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACQBACdASoQABgAPxFysFAsJqSisAgBgCIJbACdDiMzsAG1srEuEqo0cCEoNAAA/rbCnHHI4OZut1Wx/ogzcqvn6v1ZZRX4bigsPW0RPDgb9sNdDy5VOquF5DGFu+AXo4Suajc1mTC/uKF4AijEBD36q1i7nPXVR4yDXeEbW+Y8DO7nv03toVfJxpe/bVGsQPmsAY/a04fmJ2n8oEH9mEgAAAA=",
+      "width": 329,
+      "height": 500
+    },
+    "pageCount": 448
   }
 ]

@@ -1,8 +1,14 @@
 /**
  * Build-time seed generator. Merges the hand-curated editorial layer
- * (scripts/curated-books.ts) with real cover art, ISBN and publish year from
- * Open Library (Google Books as a cover fallback), validates every entry
- * against the zod `Book` schema, and writes src/assets/data/books.seed.json.
+ * (scripts/curated-books.ts) with real book metadata:
+ *
+ *   1. Google Books API (primary) — cover art via the volume endpoint
+ *      (higher-res imageLinks), ISBN-13, publish year, page count.
+ *   2. Open Library (fallback) — cover art when Google has none.
+ *
+ * Every entry is validated against the zod `Book` schema and written to
+ * src/assets/data/books.seed.json. Afterwards run `npm run optimize:covers`
+ * to self-host the images and `npm run embed` for the semantic index.
  *
  * Run with:  npm run seed
  */
@@ -17,50 +23,135 @@ import type { Book, BookCover } from '../src/app/core/models/book';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dirname, '../src/assets/data/books.seed.json');
 const UA = 'bookstore-portfolio/1.0 (seed-script)';
+const GOOGLE = 'https://www.googleapis.com/books/v1';
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-interface OlDoc {
-  cover_i?: number;
-  isbn?: string[];
-  first_publish_year?: number;
+interface GoogleVolumeInfo {
+  publishedDate?: string;
+  pageCount?: number;
+  industryIdentifiers?: { type: string; identifier: string }[];
+  imageLinks?: {
+    smallThumbnail?: string;
+    thumbnail?: string;
+    small?: string;
+    medium?: string;
+    large?: string;
+    extraLarge?: string;
+  };
 }
 
-async function openLibrary(c: CuratedBook): Promise<OlDoc | null> {
+interface GoogleMeta {
+  isbn?: string;
+  publishedYear?: number;
+  cover?: BookCover;
+}
+
+/** Optional — raises the Google Books quota (anonymous requests share a
+ *  small IP pool and 429 quickly). Create a free key in any GCP project. */
+const GOOGLE_KEY = process.env['GOOGLE_BOOKS_API_KEY'];
+
+async function fetchJson<T>(url: string): Promise<T | null> {
+  const keyed =
+    GOOGLE_KEY && url.startsWith(GOOGLE)
+      ? `${url}${url.includes('?') ? '&' : '?'}key=${GOOGLE_KEY}`
+      : url;
+  const res = await fetch(keyed, { headers: { 'User-Agent': UA } });
+  return res.ok ? ((await res.json()) as T) : null;
+}
+
+function toHttps(url: string): string {
+  return url.replace('http://', 'https://');
+}
+
+/** Build a cover from a volume's imageLinks, largest rendition first.
+ *  `zoom=` upgrades the plain thumbnail when no large rendition exists. */
+function coverFromLinks(links?: GoogleVolumeInfo['imageLinks']): BookCover | null {
+  if (!links) return null;
+  const large =
+    links.extraLarge ?? links.large ?? links.medium ?? links.small;
+  if (large) {
+    return {
+      id: 0,
+      small: toHttps(links.thumbnail ?? large),
+      medium: toHttps(links.medium ?? large),
+      large: toHttps(large),
+    };
+  }
+  if (links.thumbnail) {
+    const thumb = toHttps(links.thumbnail);
+    return {
+      id: 0,
+      small: thumb,
+      medium: thumb.replace('zoom=1', 'zoom=2'),
+      large: thumb.replace('zoom=1', 'zoom=3'),
+    };
+  }
+  return null;
+}
+
+async function googleVolume(c: CuratedBook): Promise<GoogleMeta | null> {
+  const q = c.query ?? { title: c.title, author: c.author };
+  // Strictest query shape first; German display titles often only hit on
+  // the loose text search.
+  const attempts = [
+    `intitle:"${q.title}"${q.author ? `+inauthor:"${q.author}"` : ''}`,
+    `${q.title} ${q.author ?? ''}`.trim(),
+    `${c.title} ${c.author}`,
+  ];
+
+  for (const term of attempts) {
+    const search = await fetchJson<{
+      items?: { id: string; volumeInfo?: GoogleVolumeInfo }[];
+    }>(`${GOOGLE}/volumes?q=${encodeURIComponent(term)}&maxResults=5`).catch(
+      () => null,
+    );
+    const hit = search?.items?.find((i) => i.volumeInfo?.imageLinks?.thumbnail);
+    if (!hit) {
+      await sleep(150);
+      continue;
+    }
+
+    // The volume endpoint exposes the larger imageLinks renditions that the
+    // search response omits.
+    const volume = await fetchJson<{ volumeInfo?: GoogleVolumeInfo }>(
+      `${GOOGLE}/volumes/${hit.id}`,
+    ).catch(() => null);
+    const info = volume?.volumeInfo ?? hit.volumeInfo ?? {};
+    const searchInfo = hit.volumeInfo ?? {};
+
+    const isbn = (info.industryIdentifiers ?? searchInfo.industryIdentifiers)
+      ?.sort((a, b) => (a.type === 'ISBN_13' ? -1 : b.type === 'ISBN_13' ? 1 : 0))
+      .find((i) => i.type.startsWith('ISBN'))?.identifier;
+    const year = parseInt(
+      (info.publishedDate ?? searchInfo.publishedDate ?? '').slice(0, 4),
+      10,
+    );
+
+    return {
+      isbn,
+      publishedYear: Number.isFinite(year) ? year : undefined,
+      cover:
+        coverFromLinks(info.imageLinks) ?? coverFromLinks(searchInfo.imageLinks),
+    };
+  }
+  return null;
+}
+
+/** Open Library fallback — only consulted when Google has no usable cover. */
+async function openLibraryCover(c: CuratedBook): Promise<BookCover | null> {
   const q = c.query ?? { title: c.title, author: c.author };
   const params = new URLSearchParams({
     title: q.title,
     limit: '5',
-    fields: 'cover_i,isbn,first_publish_year',
+    fields: 'cover_i',
   });
   if (q.author) params.set('author', q.author);
-  const res = await fetch(`https://openlibrary.org/search.json?${params}`, {
-    headers: { 'User-Agent': UA },
-  });
-  if (!res.ok) return null;
-  const json = (await res.json()) as { docs?: OlDoc[] };
-  const docs = json.docs ?? [];
-  // Prefer the first edition that actually has cover art; fall back to the
-  // top match for isbn/year metadata.
-  return docs.find((d) => d.cover_i) ?? docs[0] ?? null;
-}
-
-async function googleCover(c: CuratedBook): Promise<string | null> {
-  const q = c.query ?? { title: c.title, author: c.author };
-  const term = `intitle:${q.title}${q.author ? `+inauthor:${q.author}` : ''}`;
-  const res = await fetch(
-    `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(term)}&maxResults=1`,
-    { headers: { 'User-Agent': UA } },
-  );
-  if (!res.ok) return null;
-  const json = (await res.json()) as {
-    items?: { volumeInfo?: { imageLinks?: { thumbnail?: string } } }[];
-  };
-  const url = json.items?.[0]?.volumeInfo?.imageLinks?.thumbnail;
-  return url ? url.replace('http://', 'https://') : null;
-}
-
-function olCover(coverId: number): BookCover {
+  const json = await fetchJson<{ docs?: { cover_i?: number }[] }>(
+    `https://openlibrary.org/search.json?${params}`,
+  ).catch(() => null);
+  const coverId = json?.docs?.find((d) => d.cover_i)?.cover_i;
+  if (!coverId) return null;
   const base = `https://covers.openlibrary.org/b/id/${coverId}`;
   return {
     id: coverId,
@@ -72,21 +163,16 @@ function olCover(coverId: number): BookCover {
 
 async function build(): Promise<void> {
   const books: Book[] = [];
-  let googleFallbacks = 0;
+  let olFallbacks = 0;
   let missingCover = 0;
 
   for (const c of curatedBooks) {
-    const doc = await openLibrary(c).catch(() => null);
+    const meta = await googleVolume(c).catch(() => null);
 
-    let cover: BookCover | null = null;
-    if (doc?.cover_i) {
-      cover = olCover(doc.cover_i);
-    } else {
-      const g = await googleCover(c).catch(() => null);
-      if (g) {
-        cover = { id: 0, small: g, medium: g, large: g };
-        googleFallbacks++;
-      }
+    let cover = meta?.cover ?? null;
+    if (!cover) {
+      cover = await openLibraryCover(c).catch(() => null);
+      if (cover) olFallbacks++;
     }
 
     if (!cover) {
@@ -95,19 +181,16 @@ async function build(): Promise<void> {
       continue;
     }
 
-    const isbn =
-      doc?.isbn?.find((i) => i.length === 13) ?? doc?.isbn?.[0] ?? undefined;
-
     books.push({
       id: slugify(c.title),
-      isbn,
+      isbn: meta?.isbn,
       title: c.title,
       author: c.author,
       description: c.description,
       genre: c.genre,
       tags: c.tags,
       price: { amount: c.price, currency: 'EUR' },
-      publishedYear: doc?.first_publish_year ?? 2000,
+      publishedYear: meta?.publishedYear ?? 2000,
       rating: c.rating,
       likeCount: c.likeCount,
       cover,
@@ -115,7 +198,7 @@ async function build(): Promise<void> {
     });
 
     console.log(`  ✓ ${c.title}`);
-    await sleep(250); // be polite to Open Library
+    await sleep(250); // be polite to the APIs
   }
 
   const parsed = BookSeedSchema.parse(books);
@@ -124,9 +207,9 @@ async function build(): Promise<void> {
 
   console.log(
     `\nWrote ${parsed.length} books → ${OUT}` +
-      `\n  Open Library covers: ${parsed.length - googleFallbacks}` +
-      `\n  Google fallbacks:    ${googleFallbacks}` +
-      `\n  Skipped (no cover):  ${missingCover}`,
+      `\n  Google Books covers:    ${parsed.length - olFallbacks}` +
+      `\n  Open Library fallbacks: ${olFallbacks}` +
+      `\n  Skipped (no cover):     ${missingCover}`,
   );
 }
 
