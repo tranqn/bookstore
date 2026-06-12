@@ -10,13 +10,21 @@ import { TranslocoDirective } from '@jsverse/transloco';
 import { Header } from './core/layout/header';
 import { Footer } from './core/layout/footer';
 import { CartDrawer } from './core/layout/cart-drawer';
+import { CommandPalette } from './shared/ui/command-palette';
 import { ScrollService } from './core/services/scroll';
 import { UiStore } from './stores/ui.store';
 
 @Component({
   selector: 'app-root',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterOutlet, Header, Footer, CartDrawer, TranslocoDirective],
+  imports: [
+    RouterOutlet,
+    Header,
+    Footer,
+    CartDrawer,
+    CommandPalette,
+    TranslocoDirective,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

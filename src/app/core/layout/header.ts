@@ -38,6 +38,15 @@ import { FavoritesStore } from '../../stores/favorites.store';
       </nav>
 
       <div class="ml-auto flex items-center gap-2">
+        <button
+          type="button"
+          (click)="ui.openPalette()"
+          [attr.aria-label]="t('palette.title')"
+          class="hidden items-center gap-2 rounded-lg border border-white/15 px-3 py-1.5 text-sm text-muted transition-colors hover:accent sm:flex"
+        >
+          <span aria-hidden="true">⌕</span>
+          <kbd class="rounded border border-white/20 px-1 text-xs">⌘K</kbd>
+        </button>
         <a
           routerLink="/favorites"
           routerLinkActive="accent"

@@ -16,11 +16,17 @@ interface UiState {
   locale: Locale;
   theme: Theme;
   cartOpen: boolean;
+  paletteOpen: boolean;
 }
 
 export const UiStore = signalStore(
   { providedIn: 'root' },
-  withState<UiState>({ locale: 'de', theme: 'dark', cartOpen: false }),
+  withState<UiState>({
+    locale: 'de',
+    theme: 'dark',
+    cartOpen: false,
+    paletteOpen: false,
+  }),
   withComputed((store) => ({
     isLight: computed(() => store.theme() === 'light'),
     otherLocale: computed<Locale>(() => (store.locale() === 'de' ? 'en' : 'de')),
@@ -49,6 +55,15 @@ export const UiStore = signalStore(
       },
       closeCart(): void {
         patchState(store, { cartOpen: false });
+      },
+      openPalette(): void {
+        patchState(store, { paletteOpen: true, cartOpen: false });
+      },
+      closePalette(): void {
+        patchState(store, { paletteOpen: false });
+      },
+      togglePalette(): void {
+        patchState(store, { paletteOpen: !store.paletteOpen() });
       },
     };
   }),
