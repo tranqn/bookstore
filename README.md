@@ -25,6 +25,8 @@ A bilingual (DE/EN) bookstore experience built with **Angular 21**: server-side 
 - **Motion that respects users** — GSAP entrance timelines + Lenis smooth scrolling, dynamically imported after hydration and fully disabled for reduced-motion users.
 - **Bilingual & themeable** — Transloco (DE/EN) with persisted locale, dark/light theme on Tailwind v4 design tokens with WCAG AA contrast.
 - **Typed end to end** — strict TypeScript, zod-validated seed data, no `any`.
+- **Quality gates in CI** — eslint (zero warnings), Vitest unit tests, 21 Playwright E2E tests including **automated axe WCAG-AA audits of every route in both themes**, and Lighthouse budget assertions.
+- **Lighthouse (desktop): 100/100/100/100 on home** — 98–99 performance on the image-heavy routes, everything else 100. Enforced continuously via Lighthouse CI.
 
 ## Architecture
 
@@ -74,7 +76,11 @@ GEMINI_API_KEY=your-key npm start
 | `npm run build` | Production build (SSR + prerender) |
 | `npm run serve:ssr:bookstore` | Serve the production build |
 | `npm run test` / `npm run test:ci` | Vitest unit tests (watch / single run) |
+| `npm run e2e` | Playwright E2E + axe accessibility audits against the production build |
+| `npm run lint` | angular-eslint (template a11y rules included) |
 | `npm run seed` | Regenerate book seed data from Open Library/Google Books |
+| `npm run optimize:covers` | Self-host covers as WebP renditions + LQIP placeholders |
+| `npm run sitemap` | Regenerate `public/sitemap.xml` from the seed |
 
 ## Deployment
 
@@ -86,13 +92,15 @@ This is a ground-up remake of a vanilla-JS bookstore (preserved in [`legacy/`](l
 
 ## Roadmap
 
-- [ ] Shared-element view transitions (catalog → book detail)
-- [ ] ⌘K command palette
-- [ ] Self-hosted AVIF/WebP covers with LQIP placeholders + `NgOptimizedImage`
-- [ ] schema.org `Book` JSON-LD, Open Graph cards, sitemap
-- [ ] Playwright E2E + automated axe accessibility audits in CI
+- [x] Shared-element view transitions (catalog → book detail)
+- [x] ⌘K command palette
+- [x] Self-hosted WebP covers with LQIP placeholders + `NgOptimizedImage`
+- [x] schema.org `Book` JSON-LD, Open Graph cards, sitemap
+- [x] Playwright E2E + automated axe accessibility audits in CI
 - [ ] Streaming AI recommendations (NDJSON)
+- [ ] In-app "How it's built" page for the technically curious
 - [ ] Installable PWA with offline catalog
+- [ ] 3D shelf deep-linking from search
 
 ---
 
