@@ -45,3 +45,8 @@ Thumbs.db
 
 # Local AI assistant workspace
 .claude/
+
+# Playwright
+/test-results/
+/playwright-report/
+/.lighthouseci/

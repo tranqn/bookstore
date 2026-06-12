@@ -8,10 +8,12 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:ci": "ng test --watch=false",
+    "e2e": "playwright test",
     "seed": "tsx scripts/fetch-seed.ts",
     "optimize:covers": "tsx scripts/optimize-covers.ts",
     "sitemap": "tsx scripts/generate-sitemap.ts",
-    "serve:ssr:bookstore": "node dist/bookstore/server/server.mjs"
+    "serve:ssr:bookstore": "node dist/bookstore/server/server.mjs",
+    "lint": "ng lint"
   },
   "private": true,
   "packageManager": "npm@11.12.1",
@@ -27,6 +29,7 @@
     "@google/genai": "^1.52.0",
     "@jsverse/transloco": "^7.6.1",
     "@ngrx/signals": "^21.1.1",
+    "compression": "^1.8.1",
     "express": "^5.1.0",
     "gsap": "^3.15.0",
     "lenis": "^1.3.23",
@@ -39,11 +42,17 @@
     "@angular/build": "^21.2.6",
     "@angular/cli": "^21.2.6",
     "@angular/compiler-cli": "^21.2.0",
+    "@axe-core/playwright": "^4.11.3",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.60.0",
     "@tailwindcss/postcss": "^4.3.0",
+    "@types/compression": "^1.8.1",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
     "@types/three": "^0.180.0",
+    "angular-eslint": "21.4.0",
     "axe-core": "^4.12.1",
+    "eslint": "^10.3.0",
     "jsdom": "^28.0.0",
     "postcss": "^8.5.15",
     "prettier": "^3.8.1",
@@ -51,6 +60,7 @@
     "tailwindcss": "^4.3.0",
     "tsx": "^4.22.4",
     "typescript": "~5.9.2",
+    "typescript-eslint": "8.59.2",
     "vitest": "^4.0.8"
   }
 }
