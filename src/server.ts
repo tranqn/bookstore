@@ -4,6 +4,7 @@ import {
   isMainModule,
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
+import compression from 'compression';
 import express from 'express';
 import { join } from 'node:path';
 import type { Locale } from './app/core/models/book';
@@ -27,6 +28,9 @@ const allowedHosts = [
   ...(process.env['NG_ALLOWED_HOSTS']?.split(',') ?? []),
 ];
 const angularApp = new AngularNodeAppEngine({ allowedHosts });
+
+// gzip/brotli for HTML, JS, CSS and JSON (covers are already-compressed WebP).
+app.use(compression());
 
 /**
  * AI recommender BFF. Keeps GEMINI_API_KEY server-side; degrades to a local
