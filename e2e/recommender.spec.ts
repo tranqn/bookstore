@@ -25,6 +25,29 @@ test.describe('AI recommender', () => {
     await expect(page.getByText('Empfohlen von Gemini')).toBeVisible();
   });
 
+  test('streams NDJSON results card by card', async ({ page }) => {
+    const lines = [
+      JSON.stringify({ type: 'rec', bookId: 'momo', reason: 'Streamed first.', score: 0.9 }),
+      JSON.stringify({ type: 'rec', bookId: '1984', reason: 'Streamed second.', score: 0.8 }),
+      JSON.stringify({ type: 'done', source: 'gemini' }),
+    ];
+    await page.route('**/api/recommend', (route) =>
+      route.fulfill({
+        contentType: 'application/x-ndjson',
+        body: lines.join('\n') + '\n',
+      }),
+    );
+
+    await page.goto('/recommender');
+    await page.getByRole('textbox').fill('etwas Magisches');
+    await page.getByRole('button', { name: 'Empfehlungen finden' }).click();
+
+    const results = page.getByRole('listitem');
+    await expect(results.first()).toContainText('Momo');
+    await expect(results.nth(1)).toContainText('1984');
+    await expect(page.getByText('Empfohlen von Gemini')).toBeVisible();
+  });
+
   test('falls back to the local recommender when the BFF is down', async ({
     page,
   }) => {

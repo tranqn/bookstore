@@ -30,6 +30,19 @@
 
   --shadow-glow: 0 0 18px rgb(255 137 112 / 0.55);
   --radius-card: 1rem;
+
+  /* Streamed recommendation cards slide in as the model produces them. */
+  --animate-rec-in: rec-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  @keyframes rec-in {
+    from {
+      opacity: 0;
+      transform: translateY(14px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }
 
 /* ── Theme surface variables (consumed via .surface utilities) ── */

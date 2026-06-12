@@ -8,7 +8,7 @@ import compression from 'compression';
 import express from 'express';
 import { join } from 'node:path';
 import type { Locale } from './app/core/models/book';
-import { getRecommendations } from './server/recommender';
+import { getRecommendations, streamRecommendations } from './server/recommender';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
@@ -43,6 +43,22 @@ app.post('/api/recommend', express.json({ limit: '4kb' }), async (req, res) => {
 
   if (query.length < 2) {
     res.status(400).json({ error: 'query too short' });
+    return;
+  }
+
+  // Content negotiation: NDJSON streams one card per line as the model
+  // produces them; plain JSON keeps the original request/response contract.
+  if (req.headers.accept?.includes('application/x-ndjson')) {
+    res.setHeader('Content-Type', 'application/x-ndjson; charset=utf-8');
+    res.setHeader('X-Accel-Buffering', 'no'); // no proxy buffering
+    try {
+      for await (const event of streamRecommendations(query, locale, 4)) {
+        res.write(JSON.stringify(event) + '\n');
+        res.flush?.(); // push through the compression middleware immediately
+      }
+    } finally {
+      res.end();
+    }
     return;
   }
 

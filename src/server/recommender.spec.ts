@@ -1,5 +1,9 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { getRecommendations } from './recommender';
+import {
+  getRecommendations,
+  streamRecommendations,
+  type RecommendEvent,
+} from './recommender';
 
 describe('server recommender BFF', () => {
   afterEach(() => {
@@ -27,6 +31,22 @@ describe('server recommender BFF', () => {
       expect(r.score).toBeLessThanOrEqual(1);
       expect(r.reason.length).toBeGreaterThan(0);
     }
+  });
+
+  it('streams NDJSON events ending with a done marker (local fallback)', async () => {
+    vi.stubEnv('GEMINI_API_KEY', '');
+    const events: RecommendEvent[] = [];
+    for await (const event of streamRecommendations('fantasy', 'de', 3)) {
+      events.push(event);
+    }
+
+    const done = events.at(-1);
+    expect(done).toEqual({ type: 'done', source: 'local' });
+
+    const recs = events.filter((e) => e.type === 'rec');
+    expect(recs.length).toBeGreaterThan(0);
+    expect(recs.length).toBeLessThanOrEqual(3);
+    expect(new Set(recs.map((r) => r.bookId)).size).toBe(recs.length);
   });
 
   it('returns localized reasons', async () => {

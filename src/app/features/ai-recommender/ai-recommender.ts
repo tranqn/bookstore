@@ -47,10 +47,10 @@ import { RatingStars } from '../../shared/ui/rating-stars';
           }
           <button
             type="submit"
-            [disabled]="ai.isLoading() || text().trim().length < 2"
+            [disabled]="ai.isBusy() || text().trim().length < 2"
             class="ml-auto rounded-xl bg-coral-500 px-6 py-2.5 font-semibold text-ink-950 shadow-[var(--shadow-glow)] transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40"
           >
-            {{ ai.isLoading() ? t('recommender.thinking') : t('recommender.submit') }}
+            {{ ai.isBusy() ? t('recommender.thinking') : t('recommender.submit') }}
           </button>
         </div>
       </form>
@@ -73,7 +73,7 @@ import { RatingStars } from '../../shared/ui/rating-stars';
         } @else if (ai.cards().length > 0) {
           <ul class="space-y-4">
             @for (card of ai.cards(); track card.book.id; let i = $index) {
-              <li class="flex gap-4 rounded-2xl surface-raised p-4 ring-1 ring-white/10">
+              <li class="flex animate-rec-in gap-4 rounded-2xl surface-raised p-4 ring-1 ring-white/10">
                 <a
                   [routerLink]="['/book', card.book.id]"
                   class="relative block h-24 w-16 shrink-0 overflow-hidden rounded"
