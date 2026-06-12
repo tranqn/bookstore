@@ -8,12 +8,12 @@ test.describe('command palette', () => {
     const palette = page.getByRole('dialog', { name: 'Schnellsuche' });
     await expect(palette).toBeVisible();
 
-    await page.keyboard.type('dune');
-    await expect(
-      palette.getByRole('option', { name: /Dune/ }),
-    ).toBeVisible();
+    const input = palette.getByRole('combobox');
+    await expect(input).toBeFocused();
+    await input.fill('dune');
+    await expect(palette.getByRole('option', { name: /Dune/ })).toBeVisible();
 
-    await page.keyboard.press('Enter');
+    await input.press('Enter');
     await expect(page).toHaveURL(/\/book\/dune-der-wustenplanet/);
     await expect(palette).not.toBeVisible();
   });
@@ -26,17 +26,23 @@ test.describe('command palette', () => {
     const wasLight = ((await html.getAttribute('class')) ?? '').includes('light');
 
     await page.keyboard.press('ControlOrMeta+k');
-    await page.keyboard.type('farbschema');
-    await page.keyboard.press('Enter');
+    const palette = page.getByRole('dialog', { name: 'Schnellsuche' });
+    const input = palette.getByRole('combobox');
+    await expect(input).toBeFocused();
+    await input.fill('farbschema');
+    await expect(
+      palette.getByRole('option', { name: /Farbschema/ }),
+    ).toBeVisible();
+    await input.press('Enter');
 
     await expect
       .poll(async () => ((await html.getAttribute('class')) ?? '').includes('light'))
       .toBe(!wasLight);
+    await expect(palette).not.toBeVisible();
 
     await page.keyboard.press('ControlOrMeta+k');
-    await page.keyboard.press('Escape');
-    await expect(
-      page.getByRole('dialog', { name: 'Schnellsuche' }),
-    ).not.toBeVisible();
+    await expect(input).toBeFocused();
+    await input.press('Escape');
+    await expect(palette).not.toBeVisible();
   });
 });
