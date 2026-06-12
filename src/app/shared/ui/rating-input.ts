@@ -22,7 +22,7 @@ import {
           [attr.aria-checked]="value() === star"
           [attr.aria-label]="star + ' / 5'"
           (click)="value.set(value() === star ? 0 : star)"
-          class="rounded px-0.5 text-xl leading-none transition-transform hover:scale-125"
+          class="grid h-8 w-8 place-items-center rounded text-xl leading-none transition-transform hover:scale-125"
           [class]="star <= value() ? 'text-coral-500' : 'text-muted opacity-50'"
         >
           {{ star <= value() ? '★' : '☆' }}

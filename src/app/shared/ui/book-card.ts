@@ -44,7 +44,7 @@ import { RatingStars } from './rating-stars';
       </div>
 
       <div class="flex flex-1 flex-col gap-1 p-4">
-        <h3 class="line-clamp-2 font-bold leading-snug">{{ book().title }}</h3>
+        <h2 class="line-clamp-2 text-base font-bold leading-snug">{{ book().title }}</h2>
         <p class="text-sm text-muted">{{ book().author }}</p>
         <div class="mt-auto flex items-center justify-between pt-3">
           <app-rating-stars [value]="book().rating" />

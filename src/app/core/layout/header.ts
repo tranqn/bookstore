@@ -20,7 +20,7 @@ import { FavoritesStore } from '../../stores/favorites.store';
         routerLink="/"
         class="flex items-center gap-2 text-lg font-bold tracking-tight"
       >
-        <img src="/logo.png" alt="" width="28" height="28" class="rounded" />
+        <img src="/logo-56.webp" alt="" width="28" height="28" class="rounded" />
         <span>{{ t('brand') }}</span>
       </a>
 
@@ -41,7 +41,7 @@ import { FavoritesStore } from '../../stores/favorites.store';
         <button
           type="button"
           (click)="ui.openPalette()"
-          [attr.aria-label]="t('palette.title')"
+          [attr.aria-label]="t('palette.title') + ' — ⌘K'"
           class="hidden items-center gap-2 rounded-lg border border-white/15 px-3 py-1.5 text-sm text-muted transition-colors hover:accent sm:flex"
         >
           <span aria-hidden="true">⌕</span>
