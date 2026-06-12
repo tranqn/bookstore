@@ -117,9 +117,31 @@
     "inCart": "Im Warenkorb",
     "like": "Merken",
     "liked": "Gemerkt",
+    "viewInShelf": "Im 3D-Regal ansehen",
     "notFound": "Buch nicht gefunden."
   },
+  "arch": {
+    "kicker": "Für Neugierige & Recruiter",
+    "title": "Wie diese Seite gebaut ist",
+    "subtitle": "Architektur, Stack und die Entscheidungen dahinter – jede Karte verlinkt direkt in den Quellcode.",
+    "flowTitle": "Datenfluss",
+    "flow": {
+      "browser": "Browser",
+      "server": "Prerendered HTML · NDJSON-Stream",
+      "ai": "Schlüssel bleibt serverseitig",
+      "note": "Build-Pipeline: kuratierte Bücher → Open Library/Google Books → zod-validierter Seed → Prerender aller Routen."
+    },
+    "stackTitle": "Stack",
+    "decisionsTitle": "Entscheidungen",
+    "viewSource": "Quellcode ansehen",
+    "repo": "Repository auf GitHub"
+  },
+  "update": {
+    "available": "Neue Version verfügbar.",
+    "reload": "Neu laden"
+  },
   "footer": {
-    "designed": "gestaltet von Nam"
+    "designed": "gestaltet von Nam",
+    "howItsBuilt": "Wie diese Seite gebaut ist ↗"
   }
 }

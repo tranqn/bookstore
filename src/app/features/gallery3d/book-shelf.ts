@@ -5,6 +5,7 @@ import {
   DestroyRef,
   ElementRef,
   inject,
+  input,
   viewChild,
 } from '@angular/core';
 import { Router } from '@angular/router';
@@ -53,10 +54,14 @@ export class BookShelf {
   private readonly router = inject(Router);
   private readonly zoneDoc = inject(DestroyRef);
 
+  /** Book id the camera should fly to after the scene is built. */
+  readonly focus = input<string>();
+
   private renderer?: THREE.WebGLRenderer;
   private controls?: OrbitControls;
   private frame = 0;
   private disposers: (() => void)[] = [];
+  private focusFlight?: { pos: THREE.Vector3; look: THREE.Vector3 };
 
   constructor() {
     afterNextRender(() => this.init());
@@ -65,7 +70,14 @@ export class BookShelf {
 
   private init(): void {
     const container = this.hostEl().nativeElement;
-    const books = this.catalog.entities().slice(0, MAX_BOOKS);
+    const all = this.catalog.entities();
+    let books = all.slice(0, MAX_BOOKS);
+    // A deep-linked book must be on the wall even if it isn't in the top 24.
+    const focusId = this.focus();
+    if (focusId && !books.some((b) => b.id === focusId)) {
+      const focused = all.find((b) => b.id === focusId);
+      if (focused) books = [...books.slice(0, MAX_BOOKS - 1), focused];
+    }
     if (books.length === 0) return;
 
     const scene = new THREE.Scene();
@@ -155,6 +167,25 @@ export class BookShelf {
     controls.autoRotateSpeed = 0.6;
     this.controls = controls;
 
+    // Deep link: fly the camera to the focused book and glow it briefly.
+    if (focusId) {
+      const target = meshes.find((m) => m.userData.bookId === focusId);
+      if (target) {
+        controls.autoRotate = false;
+        target.userData.hovered = true;
+        const release = setTimeout(() => (target.userData.hovered = false), 2800);
+        this.disposers.push(() => clearTimeout(release));
+        this.focusFlight = {
+          pos: new THREE.Vector3(
+            target.position.x * 0.55,
+            target.userData.baseY * 0.55 + 0.3,
+            9,
+          ),
+          look: new THREE.Vector3(target.position.x, target.userData.baseY, 0),
+        };
+      }
+    }
+
     // Pointer interaction (hover raise + click navigate).
     const raycaster = new THREE.Raycaster();
     const pointer = new THREE.Vector2();
@@ -214,6 +245,13 @@ export class BookShelf {
         const e = m.userData.hovered ? 0.6 : 0;
         mat.emissive.setHex(0xff8970);
         mat.emissiveIntensity += (e - mat.emissiveIntensity) * 0.15;
+      }
+      if (this.focusFlight) {
+        camera.position.lerp(this.focusFlight.pos, 0.06);
+        controls.target.lerp(this.focusFlight.look, 0.08);
+        if (camera.position.distanceTo(this.focusFlight.pos) < 0.05) {
+          this.focusFlight = undefined;
+        }
       }
       controls.update();
       renderer.render(scene, camera);

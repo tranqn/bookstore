@@ -45,6 +45,7 @@
     "inCart": "In cart",
     "like": "Save",
     "liked": "Saved",
+    "viewInShelf": "View on the 3D shelf",
     "notFound": "Book not found."
   },
   "recommender": {
@@ -119,7 +120,28 @@
     "anonymous": "Anonymous",
     "empty": "Please write something before submitting."
   },
+  "arch": {
+    "kicker": "For the curious & recruiters",
+    "title": "How this site is built",
+    "subtitle": "Architecture, stack and the decisions behind it — every card deep-links into the source code.",
+    "flowTitle": "Data flow",
+    "flow": {
+      "browser": "Browser",
+      "server": "Prerendered HTML · NDJSON stream",
+      "ai": "Key stays server-side",
+      "note": "Build pipeline: curated books → Open Library/Google Books → zod-validated seed → prerender of every route."
+    },
+    "stackTitle": "Stack",
+    "decisionsTitle": "Decisions",
+    "viewSource": "View source",
+    "repo": "Repository on GitHub"
+  },
+  "update": {
+    "available": "A new version is available.",
+    "reload": "Reload"
+  },
   "footer": {
-    "designed": "designed by Nam"
+    "designed": "designed by Nam",
+    "howItsBuilt": "How this site is built ↗"
   }
 }

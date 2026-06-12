@@ -55,6 +55,13 @@
           >
             {{ favorites.isFavorite(b.id) ? '♥ ' + t('detail.liked') : '♡ ' + t('detail.like') }}
           </button>
+          <a
+            routerLink="/gallery"
+            [queryParams]="{ focus: b.id }"
+            class="rounded-xl border border-white/20 px-6 py-3 font-semibold transition-colors hover:accent"
+          >
+            🧊 {{ t('detail.viewInShelf') }}
+          </a>
         </div>
 
         <dl class="mt-8 grid grid-cols-2 gap-4 text-sm sm:max-w-md">

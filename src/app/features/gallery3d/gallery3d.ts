@@ -4,6 +4,7 @@ import {
   Component,
   computed,
   inject,
+  input,
   signal,
 } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
@@ -40,7 +41,7 @@ type View = '3d' | 'grid';
 
       @if (show3d()) {
         @defer (on viewport) {
-          <app-book-shelf />
+          <app-book-shelf [focus]="focus()" />
         } @placeholder {
           <div class="grid h-[70vh] place-items-center rounded-3xl bg-ink-900/40">
             <span class="text-muted">◈</span>
@@ -65,6 +66,9 @@ type View = '3d' | 'grid';
 export class Gallery3d {
   protected readonly catalog = inject(CatalogStore);
   private readonly platform = inject(PlatformService);
+
+  /** Deep link `/gallery?focus=<bookId>` — camera flies to that book. */
+  readonly focus = input<string>();
 
   protected readonly canUse3d = signal(false);
   protected readonly view = signal<View>('grid');
