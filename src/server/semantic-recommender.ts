@@ -47,9 +47,10 @@ export async function semanticRecommend(
 }
 
 /** Loads the model and runs one inference so the first real query is fast.
- *  Fire-and-forget at server start; failures just mean tier 3 takes over. */
-export function warmup(): void {
-  void getEmbedder()
-    .then((embed) => embed([queryPrompt('warmup')]))
-    .catch(() => {});
+ *  Called at server start; a rejection just means tier 3 takes over, but it is
+ *  surfaced to the caller so the reason ends up in the logs. */
+export function warmup(): Promise<void> {
+  return getEmbedder().then(async (embed) => {
+    await embed([queryPrompt('warmup')]);
+  });
 }
