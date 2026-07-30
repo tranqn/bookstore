@@ -8,7 +8,7 @@ import { TranslocoDirective } from '@jsverse/transloco';
 import type { Locale } from '../../core/models/book';
 import { UiStore } from '../../stores/ui.store';
 
-const REPO = 'https://github.com/tranqn/bookstore/blob/remake-angular';
+const REPO = 'https://github.com/tranqn/bookstore/blob/bookstore';
 
 interface DecisionCard {
   icon: string;

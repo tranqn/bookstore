@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main, remake-angular]
+    branches: [main, bookstore]
   pull_request:
     branches: [main]
 
