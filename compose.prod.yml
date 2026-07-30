@@ -1,0 +1,52 @@
+# Production stack for the Bookstore (Angular 21 SSR) with automatic HTTPS.
+#
+# Caddy (Let's Encrypt) sits in front of the single Node/Express SSR server.
+# The app is proxy-aware (trust proxy = 1) and reads its host allowlist from
+# NG_ALLOWED_HOSTS, so one Caddy hop is exactly what it expects.
+#
+#   cp .env.example .env          # set SITE_ADDRESS (and optionally GEMINI_API_KEY)
+#   docker compose -f compose.prod.yml up -d --build
+#
+# App: https://<SITE_ADDRESS>/
+
+services:
+  caddy:
+    image: caddy:2
+    container_name: bookstore_caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"           # HTTP/3
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:?set SITE_ADDRESS to your domain/sslip.io host in .env}
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data         # certificates
+      - caddy_config:/config
+    depends_on:
+      - app
+
+  app:
+    build: .
+    image: bookstore:prod
+    container_name: bookstore_app
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+      # Angular's SSRF Host-header guard — must include the public hostname.
+      - NG_ALLOWED_HOSTS=${SITE_ADDRESS:?set SITE_ADDRESS in .env}
+      # Optional tier-1 Gemini key; blank = local/keyword fallback.
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      # Set to 1 on low-RAM hosts to skip the local EmbeddingGemma model.
+      - DISABLE_SEMANTIC=${DISABLE_SEMANTIC:-}
+    expose:
+      - "4000"                   # reached only via Caddy, not published to the host
+    volumes:
+      - hf_cache:/app/.cache/huggingface   # EmbeddingGemma model cache (first-start download)
+
+volumes:
+  caddy_data:
+  caddy_config:
+  hf_cache:

@@ -1,0 +1,12 @@
+# Reverse proxy for the Bookstore production stack.
+#
+# Caddy terminates TLS (automatic Let's Encrypt) and forwards everything to the
+# Angular SSR Node server. The app itself sets security headers (helmet), gzip
+# and rate-limits /api/recommend, and trusts exactly one proxy hop — this Caddy.
+#
+# SITE_ADDRESS is injected from .env (your domain or the <ip>.sslip.io host).
+
+{$SITE_ADDRESS} {
+	encode zstd gzip
+	reverse_proxy app:4000
+}
