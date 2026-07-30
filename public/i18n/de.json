@@ -20,6 +20,11 @@
     "ctaCatalog": "Katalog ansehen",
     "ctaGallery": "Ins 3D-Regal"
   },
+  "card": {
+    "format": "Buch",
+    "available": "Sofort lieferbar",
+    "likes": "Merkungen"
+  },
   "catalog": {
     "title": "Katalog",
     "searchPlaceholder": "Titel, Autor oder Thema suchen…",
@@ -71,7 +76,12 @@
   },
   "checkout": {
     "title": "Kasse",
-    "steps": { "cart": "Warenkorb", "details": "Adresse", "payment": "Zahlung", "done": "Bestätigung" },
+    "steps": {
+      "cart": "Warenkorb",
+      "details": "Adresse",
+      "payment": "Zahlung",
+      "done": "Bestätigung"
+    },
     "name": "Name",
     "email": "E-Mail",
     "address": "Straße und Hausnummer",

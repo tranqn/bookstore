@@ -20,6 +20,11 @@
     "ctaCatalog": "Browse the catalog",
     "ctaGallery": "Enter the 3D shelf"
   },
+  "card": {
+    "format": "Book",
+    "available": "In stock",
+    "likes": "saves"
+  },
   "catalog": {
     "title": "Catalog",
     "searchPlaceholder": "Search title, author or topic…",
