@@ -3,7 +3,7 @@
   "nav": {
     "home": "Home",
     "catalog": "Catalog",
-    "gallery": "3D Shelf",
+    "gallery": "Gallery",
     "recommender": "AI Picks",
     "favorites": "Favorites",
     "cart": "Cart"
@@ -62,11 +62,11 @@
     "viaLocal": "Recommended by the local model"
   },
   "gallery": {
-    "hint": "Spin the shelf, hover a book, and click through to its page.",
-    "controls": "Drag to rotate · scroll to zoom · click to open the book",
-    "loading": "Loading the shelf…",
+    "hint": "Roam the cover wall, hover a book, and click through to its page.",
+    "controls": "Drag to explore the wall · click a cover to open the book",
+    "loading": "Loading the gallery…",
     "viewGrid": "View as grid",
-    "view3d": "View in 3D"
+    "view3d": "View as gallery"
   },
   "cart": {
     "title": "Cart",

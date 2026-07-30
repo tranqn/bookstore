@@ -17,7 +17,7 @@ export const routes: Routes = [
     path: 'gallery',
     loadComponent: () =>
       import('./features/gallery3d/gallery3d').then((m) => m.Gallery3d),
-    title: '3D-Regal · Bookstore',
+    title: 'Gallery · Bookstore',
   },
   {
     path: 'recommender',

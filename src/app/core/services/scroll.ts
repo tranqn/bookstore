@@ -48,6 +48,17 @@ export class ScrollService {
     this.lenis?.scrollTo(0, { immediate: true });
   }
 
+  /** Freeze smooth scrolling — used while an immersive overlay (e.g. the
+   *  fullscreen gallery) owns the viewport. No-op on server / reduced-motion. */
+  pause(): void {
+    this.lenis?.stop();
+  }
+
+  /** Resume smooth scrolling after an immersive overlay closes. */
+  resume(): void {
+    this.lenis?.start();
+  }
+
   destroy(): void {
     if (!this.started) return; // never ran (server / reduced-motion)
     cancelAnimationFrame(this.rafId);

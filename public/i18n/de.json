@@ -3,7 +3,7 @@
   "nav": {
     "home": "Start",
     "catalog": "Katalog",
-    "gallery": "3D-Regal",
+    "gallery": "Galerie",
     "recommender": "KI-Empfehlung",
     "favorites": "Favoriten",
     "cart": "Warenkorb"
@@ -50,11 +50,11 @@
     "viaLocal": "Empfohlen vom lokalen Modell"
   },
   "gallery": {
-    "hint": "Dreh das Regal, fahr über ein Buch und klick dich zum Titel.",
-    "controls": "Ziehen zum Drehen · Scrollen zum Zoomen · Klick öffnet das Buch",
-    "loading": "Regal wird geladen…",
+    "hint": "Streif über die Cover-Wand, fahr über ein Buch und klick dich zum Titel.",
+    "controls": "Zieh über die Wand · Klick aufs Cover öffnet das Buch",
+    "loading": "Galerie wird geladen…",
     "viewGrid": "Als Raster ansehen",
-    "view3d": "In 3D ansehen"
+    "view3d": "Als Galerie ansehen"
   },
   "cart": {
     "title": "Warenkorb",
