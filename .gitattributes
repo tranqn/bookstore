@@ -1,0 +1,11 @@
+# Linguist: keep the language bar showing the work that is actually mine.
+#
+# legacy/ is the archived vanilla-JS predecessor, kept for history only. Without
+# this it dominates the statistics and the repo reads as a JavaScript project
+# instead of the Angular/TypeScript app it is.
+legacy/** linguist-vendored
+
+# Build output of the seed pipeline, not hand-written source.
+src/assets/data/books.seed.json linguist-generated
+src/assets/data/books.embeddings.json linguist-generated
+public/sitemap.xml linguist-generated
