@@ -54,6 +54,11 @@
   --on-surface: white;
   --on-surface-muted: rgb(255 255 255 / 0.72);
   --accent: rgb(255 137 112);
+  /* Neutral panel behind product covers — lifts dark cover art off the card. */
+  --cover-panel: rgb(255 255 255 / 0.07);
+  --card-border: rgb(255 255 255 / 0.1);
+  /* Availability / success text, AA on its surface in both themes. */
+  --ok: rgb(110 231 168);
 }
 
 .light {
@@ -63,6 +68,9 @@
   --on-surface-muted: rgb(40 28 78 / 0.78);
   /* Darkened terracotta so accent text clears WCAG AA (4.5:1) on white/cream. */
   --accent: rgb(176 54 24);
+  --cover-panel: rgb(244 241 234 / 0.75);
+  --card-border: rgb(20 14 54 / 0.12);
+  --ok: rgb(21 111 71);
 }
 
 @layer base {
@@ -131,4 +139,10 @@
 }
 @utility accent {
   color: var(--accent);
+}
+@utility cover-panel {
+  background-color: var(--cover-panel);
+}
+@utility text-ok {
+  color: var(--ok);
 }
