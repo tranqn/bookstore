@@ -52,7 +52,10 @@ const BASE_BG = new THREE.Color(0x201c3a);
 // Coprime-ish with the catalogue size so panning sweeps the whole shelf.
 const ROW_STRIDE = 9;
 
-const DISTORTION = -0.12; // barrel amount (phantom.land uses ≈ -0.116)
+// Barrel amount. Kept light: enough curvature to read as a warped wall, not so
+// much that the tiles near the edges bow noticeably (phantom.land runs ≈ -0.116,
+// which is too strong for a grid this dense).
+const DISTORTION = -0.045;
 // Gentle vignette: keep the wall bright nearly to the edges, only the far
 // corners fall off into the dark background.
 const VIGNETTE_OFFSET = 0.5;
