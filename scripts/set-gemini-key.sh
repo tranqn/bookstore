@@ -52,10 +52,10 @@ else
 fi
 
 # ── Auf der VM eintragen ────────────────────────────────────────────────────
-# Der Key kommt ueber stdin, nicht als Argument. Auf der VM liest ihn ein
-# kurzes Skript aus der ersten Zeile und schreibt die .env neu.
-echo "Schreibe .env auf $VM_HOST …"
-printf '%s\n' "$KEY" | ssh_vm "APP_DIR='$APP_DIR' bash -s" <<'REMOTE'
+# Zwei getrennte Verbindungen, weil stdin nur einmal vergeben werden kann:
+# zuerst das Skript (enthaelt kein Geheimnis) in eine Datei, danach der Key
+# ueber stdin. So steht der Key weder in argv noch in der History.
+REMOTE_SCRIPT=$(cat <<'REMOTE'
 set -euo pipefail
 IFS= read -r key || key=""
 cd "$HOME/$APP_DIR" || { echo "Verzeichnis $HOME/$APP_DIR fehlt" >&2; exit 1; }
@@ -84,6 +84,11 @@ sudo docker compose -f compose.prod.yml up -d >/dev/null 2>&1
 sleep 8
 sudo docker compose -f compose.prod.yml ps --format 'table {{.Service}}\t{{.Status}}'
 REMOTE
+)
+
+echo "Schreibe .env auf $VM_HOST …"
+printf '%s' "$REMOTE_SCRIPT" | ssh_vm "cat > /tmp/set-gemini-key.remote.sh"
+printf '%s\n' "$KEY" | ssh_vm "APP_DIR='$APP_DIR' bash /tmp/set-gemini-key.remote.sh; rc=\$?; rm -f /tmp/set-gemini-key.remote.sh; exit \$rc"
 
 unset KEY
 
