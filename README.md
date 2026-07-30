@@ -1,6 +1,6 @@
 # 📚 Bookstore — Stories you can touch
 
-A bilingual (DE/EN) bookstore with a **74-book curated catalog**, built with **Angular 21**: server-side rendering, signal-based state, an interactive **Three.js 3D bookshelf**, and a **three-tier AI book recommender** (Gemini → local EmbeddingGemma → keyword fallback) behind a server-side BFF.
+A bilingual (DE/EN) bookstore with a **74-book curated catalog**, built with **Angular 21**: server-side rendering, signal-based state, an interactive **Three.js cover gallery**, and a **three-tier AI book recommender** (Gemini → local EmbeddingGemma → keyword fallback) behind a server-side BFF.
 
 **🔗 Live demo:** _deploying to Render — link coming shortly_
 
@@ -8,20 +8,20 @@ A bilingual (DE/EN) bookstore with a **74-book curated catalog**, built with **A
 [![Angular](https://img.shields.io/badge/Angular-21-dd0031?logo=angular)](https://angular.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-| Home (dark) | Catalog (light) |
-| --- | --- |
+| Home (dark)                                                          | Catalog (light)                                                                |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | ![Home hero with GSAP entrance animation](docs/screenshots/home.png) | ![Catalog with search, genre filter and sorting](docs/screenshots/catalog.png) |
 
-| 3D bookshelf (Three.js) | AI recommender |
-| --- | --- |
-| ![Interactive 3D book wall](docs/screenshots/gallery-3d.png) | ![Mood-based AI book recommendations](docs/screenshots/ai-recommender.png) |
+| Cover gallery (Three.js)                                         | AI recommender                                                             |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| ![Pannable wall of book covers](docs/screenshots/gallery-3d.png) | ![Mood-based AI book recommendations](docs/screenshots/ai-recommender.png) |
 
 ## Highlights
 
 - **Angular 21 SSR + hydration with event replay** — Express server, all routes prerendered at build time (every book detail page ships as static HTML), `withEventReplay()` so no click is lost before hydration.
 - **Signal-based state management** — six `@ngrx/signals` stores (catalog with entities, cart, favorites, reviews, UI, AI) with `computed()` pipelines and localStorage persistence via effects.
 - **Three-tier AI recommender** — the browser never sees an API key. Tier 1: a server-side BFF (`POST /api/recommend`) calls Gemini 2.5 Flash with the catalog as grounding context and **streams results as NDJSON** — each card zod-validated, filtered against real catalog IDs, animating in while the model thinks. Tier 2 (no key / API failure): **EmbeddingGemma 300M runs locally on the server's CPU** — book vectors precomputed at build time, queries ranked by cosine similarity, fully bilingual, ~1 s on a 2-vCPU box. Tier 3: a deterministic keyword recommender, which also runs client-side if the server is unreachable.
-- **Three.js 3D bookshelf** — raycaster hover, orbit controls, genre-tinted spines, loaded via `@defer (on viewport)`; falls back to a regular grid under SSR, missing WebGL, or `prefers-reduced-motion`. Deep-linkable: `/gallery?focus=<book>` flies the camera to that book.
+- **Three.js cover gallery** — a pannable, infinitely tiling wall of square cover cards: raycaster hover with a genre-derived tint, covers drawn to an offscreen canvas, loaded via `@defer (on viewport)`; falls back to a regular grid under SSR, missing WebGL, or `prefers-reduced-motion`. Deep-linkable: `/gallery?focus=<book>` centres the wall on that book.
 - **Installable PWA** — service worker with offline asset caching, update toast on new deploys (`SwUpdate`), `/api/**` explicitly excluded from caching.
 - **Self-documenting** — an in-app [`/architecture`](https://bookstore-tranqn.onrender.com/architecture) page walks through the stack and engineering decisions, each card deep-linking into the source.
 - **Motion that respects users** — GSAP entrance timelines + Lenis smooth scrolling, dynamically imported after hydration and fully disabled for reduced-motion users.
@@ -72,17 +72,17 @@ The AI recommender works out of the box via the local fallback. To enable Gemini
 GEMINI_API_KEY=your-key npm start
 ```
 
-| Script | What it does |
-| --- | --- |
-| `npm start` | Dev server with HMR |
-| `npm run build` | Production build (SSR + prerender) |
-| `npm run serve:ssr:bookstore` | Serve the production build |
-| `npm run test` / `npm run test:ci` | Vitest unit tests (watch / single run) |
-| `npm run e2e` | Playwright E2E + axe accessibility audits against the production build |
-| `npm run lint` | angular-eslint (template a11y rules included) |
-| `npm run seed` | Regenerate book seed data from Open Library/Google Books |
-| `npm run optimize:covers` | Self-host covers as WebP renditions + LQIP placeholders |
-| `npm run sitemap` | Regenerate `public/sitemap.xml` from the seed |
+| Script                             | What it does                                                           |
+| ---------------------------------- | ---------------------------------------------------------------------- |
+| `npm start`                        | Dev server with HMR                                                    |
+| `npm run build`                    | Production build (SSR + prerender)                                     |
+| `npm run serve:ssr:bookstore`      | Serve the production build                                             |
+| `npm run test` / `npm run test:ci` | Vitest unit tests (watch / single run)                                 |
+| `npm run e2e`                      | Playwright E2E + axe accessibility audits against the production build |
+| `npm run lint`                     | angular-eslint (template a11y rules included)                          |
+| `npm run seed`                     | Regenerate book seed data from Open Library/Google Books               |
+| `npm run optimize:covers`          | Self-host covers as WebP renditions + LQIP placeholders                |
+| `npm run sitemap`                  | Regenerate `public/sitemap.xml` from the seed                          |
 
 ## Deployment
 
@@ -101,13 +101,13 @@ docker run -d -p 80:4000 \
 
 **Render:** one-click via [`render.yaml`](render.yaml) (Blueprint), `GEMINI_API_KEY` set in the dashboard.
 
-| Env var | Purpose |
-| --- | --- |
-| `PORT` | Listen port (default `4000`) |
-| `NG_ALLOWED_HOSTS` | Comma-separated hostnames for Angular's SSRF guard (your domain) |
-| `GEMINI_API_KEY` | Optional — enables tier-1 streamed Gemini recommendations |
-| `DISABLE_SEMANTIC` | Set to `1` to skip the local EmbeddingGemma tier (low-RAM hosts) |
-| `GOOGLE_BOOKS_API_KEY` | Build-time only — raises the quota for `npm run seed` |
+| Env var                | Purpose                                                          |
+| ---------------------- | ---------------------------------------------------------------- |
+| `PORT`                 | Listen port (default `4000`)                                     |
+| `NG_ALLOWED_HOSTS`     | Comma-separated hostnames for Angular's SSRF guard (your domain) |
+| `GEMINI_API_KEY`       | Optional — enables tier-1 streamed Gemini recommendations        |
+| `DISABLE_SEMANTIC`     | Set to `1` to skip the local EmbeddingGemma tier (low-RAM hosts) |
+| `GOOGLE_BOOKS_API_KEY` | Build-time only — raises the quota for `npm run seed`            |
 
 Data pipeline after changing the catalog: `npm run seed && npm run optimize:covers && npm run embed && npm run sitemap`.
 
@@ -125,7 +125,7 @@ This is a ground-up remake of a vanilla-JS bookstore (preserved in [`legacy/`](l
 - [x] Streaming AI recommendations (NDJSON)
 - [x] In-app "How it's built" page (`/architecture`)
 - [x] Installable PWA with update toast
-- [x] 3D shelf deep-linking (`/gallery?focus=…`)
+- [x] Cover-gallery deep-linking (`/gallery?focus=…`)
 - [ ] Order history with a real backend (the current checkout is intentionally a mock)
 
 ---
