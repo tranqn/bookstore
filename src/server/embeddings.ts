@@ -12,8 +12,7 @@ export const EMBEDDING_MODEL = 'onnx-community/embeddinggemma-300m-ONNX';
 export const EMBEDDING_DIMS = 256;
 
 /** EmbeddingGemma prompt formats (asymmetric retrieval). */
-export const queryPrompt = (text: string): string =>
-  `task: search result | query: ${text}`;
+export const queryPrompt = (text: string): string => `task: search result | query: ${text}`;
 export const documentPrompt = (title: string, text: string): string =>
   `title: ${title} | text: ${text}`;
 
@@ -25,7 +24,15 @@ let embedderPromise: Promise<Embedder> | null = null;
  *  model to the HF cache; subsequent calls are ~50 ms per query on CPU). */
 export function getEmbedder(): Promise<Embedder> {
   embedderPromise ??= (async () => {
-    const { pipeline } = await import('@huggingface/transformers');
+    const { env, pipeline } = await import('@huggingface/transformers');
+    // transformers.js caches into node_modules/@huggingface/transformers/.cache
+    // by default. In the container that path belongs to root while the process
+    // runs as `node`, so the download fails with EACCES. HF_HOME points at a
+    // writable volume; honour it when set.
+    const cacheDir = process.env['HF_HOME'];
+    if (cacheDir) {
+      env.cacheDir = cacheDir;
+    }
     const extractor = await pipeline('feature-extraction', EMBEDDING_MODEL, {
       dtype: 'q8',
     });

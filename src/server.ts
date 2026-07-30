@@ -24,12 +24,17 @@ const allowedHosts = [
   'localhost',
   '127.0.0.1',
   '*.onrender.com',
-  ...(process.env['RENDER_EXTERNAL_HOSTNAME']
-    ? [process.env['RENDER_EXTERNAL_HOSTNAME']]
-    : []),
+  ...(process.env['RENDER_EXTERNAL_HOSTNAME'] ? [process.env['RENDER_EXTERNAL_HOSTNAME']] : []),
   ...(process.env['NG_ALLOWED_HOSTS']?.split(',') ?? []),
 ];
-const angularApp = new AngularNodeAppEngine({ allowedHosts });
+// Behind Caddy the request arrives over plain HTTP with the real scheme and
+// host in X-Forwarded-*. Without trusting them the engine builds the wrong
+// request URL, misses the prerendered route and silently serves the CSR shell
+// (11 KB) instead of the rendered page (~180 KB for /catalog).
+const angularApp = new AngularNodeAppEngine({
+  allowedHosts,
+  trustProxyHeaders: true,
+});
 
 // Security headers. CSP stays off: Angular hydration relies on inline
 // scripts/event-replay attributes that a strict policy would break; the
@@ -115,9 +120,7 @@ app.use(
     setHeaders: (res, path) => {
       res.setHeader(
         'Cache-Control',
-        HASHED_ASSET.test(path)
-          ? 'public, max-age=31536000, immutable'
-          : 'no-cache',
+        HASHED_ASSET.test(path) ? 'public, max-age=31536000, immutable' : 'no-cache',
       );
     },
   }),
@@ -129,9 +132,7 @@ app.use(
 app.use((req, res, next) => {
   angularApp
     .handle(req)
-    .then((response) =>
-      response ? writeResponseToNodeResponse(response, res) : next(),
-    )
+    .then((response) => (response ? writeResponseToNodeResponse(response, res) : next()))
     .catch(next);
 });
 
@@ -153,7 +154,14 @@ if (isMainModule(import.meta.url) || process.env['pm_id']) {
     if (!process.env['DISABLE_SEMANTIC']) {
       import('./server/semantic-recommender')
         .then((m) => m.warmup())
-        .catch(() => {});
+        .catch((err: unknown) => {
+          // Non-fatal: the recommender falls back to the keyword tier. Log it
+          // anyway, a silent catch here hid a model-cache permission error.
+          console.warn(
+            'EmbeddingGemma warmup failed, falling back to keyword tier:',
+            err instanceof Error ? err.message : err,
+          );
+        });
     }
   });
 
