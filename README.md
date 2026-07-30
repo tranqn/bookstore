@@ -2,7 +2,7 @@
 
 A bilingual (DE/EN) bookstore with a **74-book curated catalog**, built with **Angular 21**: server-side rendering, signal-based state, an interactive **Three.js cover gallery**, and a **three-tier AI book recommender** (Gemini → local EmbeddingGemma → keyword fallback) behind a server-side BFF.
 
-**🔗 Live demo:** _deploying to Render — link coming shortly_
+**🔗 Live demo:** https://bookstore.quocnamtran.com
 
 [![CI](https://github.com/tranqn/bookstore/actions/workflows/ci.yml/badge.svg)](https://github.com/tranqn/bookstore/actions/workflows/ci.yml)
 [![Angular](https://img.shields.io/badge/Angular-21-dd0031?logo=angular)](https://angular.dev)
@@ -23,7 +23,7 @@ A bilingual (DE/EN) bookstore with a **74-book curated catalog**, built with **A
 - **Three-tier AI recommender** — the browser never sees an API key. Tier 1: a server-side BFF (`POST /api/recommend`) calls Gemini 2.5 Flash with the catalog as grounding context and **streams results as NDJSON** — each card zod-validated, filtered against real catalog IDs, animating in while the model thinks. Tier 2 (no key / API failure): **EmbeddingGemma 300M runs locally on the server's CPU** — book vectors precomputed at build time, queries ranked by cosine similarity, fully bilingual, ~1 s on a 2-vCPU box. Tier 3: a deterministic keyword recommender, which also runs client-side if the server is unreachable.
 - **Three.js cover gallery** — a pannable, infinitely tiling wall of square cover cards: raycaster hover with a genre-derived tint, covers drawn to an offscreen canvas, loaded via `@defer (on viewport)`; falls back to a regular grid under SSR, missing WebGL, or `prefers-reduced-motion`. Deep-linkable: `/gallery?focus=<book>` centres the wall on that book.
 - **Installable PWA** — service worker with offline asset caching, update toast on new deploys (`SwUpdate`), `/api/**` explicitly excluded from caching.
-- **Self-documenting** — an in-app [`/architecture`](https://bookstore-tranqn.onrender.com/architecture) page walks through the stack and engineering decisions, each card deep-linking into the source.
+- **Self-documenting** — an in-app [`/architecture`](https://bookstore.quocnamtran.com/architecture) page walks through the stack and engineering decisions, each card deep-linking into the source.
 - **Motion that respects users** — GSAP entrance timelines + Lenis smooth scrolling, dynamically imported after hydration and fully disabled for reduced-motion users.
 - **Bilingual & themeable** — Transloco (DE/EN) with persisted locale, dark/light theme on Tailwind v4 design tokens with WCAG AA contrast.
 - **Typed end to end** — strict TypeScript, zod-validated seed data, no `any`.
