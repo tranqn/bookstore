@@ -1,16 +1,29 @@
 <app-reading-progress />
 
-<section *transloco="let t" class="py-10">
-  <a
-    routerLink="/catalog"
-    class="mb-8 inline-flex items-center gap-2 text-sm text-muted transition-colors hover:accent"
-  >
-    ← {{ t('detail.back') }}
-  </a>
+<section *transloco="let t" class="pb-10 pt-[var(--stack-gap)]">
+  <!-- Reachable from anywhere on the page, not only from the top. The section's
+       top padding equals the sticky offset minus the header, so the pill sits
+       on the exact same line before and after it sticks — same gap above and
+       below, at every scroll position. `w-fit` keeps the sticky strip from
+       covering the content it scrolls over. -->
+  <div class="sticky top-[calc(var(--header-h)+var(--stack-gap))] z-20 mb-[var(--stack-gap)] w-fit">
+    <a
+      routerLink="/catalog"
+      class="group inline-flex items-center gap-2 rounded-full border border-[color:var(--card-border)] surface-raised px-4 py-2 text-sm font-semibold shadow-md backdrop-blur-md transition-colors hover:accent"
+    >
+      <span aria-hidden="true" class="transition-transform group-hover:-translate-x-0.5">←</span>
+      {{ t('detail.back') }}
+    </a>
+  </div>
 
   @if (book(); as b) {
     <article class="grid gap-10 md:grid-cols-[minmax(0,320px)_1fr]">
-      <div class="md:sticky md:top-24 md:self-start">
+      <!-- Next layer of the sticky stack: parked one --stack-gap below the
+           back pill, which is where it already sits in flow — so it pins
+           without shifting either. -->
+      <div
+        class="md:sticky md:top-[calc(var(--header-h)+var(--back-pill-h)+var(--stack-gap)*2)] md:self-start"
+      >
         <div
           class="relative aspect-2/3 overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-glow)] ring-1 ring-white/10"
         >
@@ -51,7 +64,11 @@
             (click)="toggleLike()"
             [attr.aria-pressed]="favorites.isFavorite(b.id)"
             class="rounded-xl border px-6 py-3 font-semibold transition-colors"
-            [class]="favorites.isFavorite(b.id) ? 'border-coral-500 accent' : 'border-white/20 hover:accent'"
+            [class]="
+              favorites.isFavorite(b.id)
+                ? 'border-coral-500 accent'
+                : 'border-white/20 hover:accent'
+            "
           >
             {{ favorites.isFavorite(b.id) ? '♥ ' + t('detail.liked') : '♡ ' + t('detail.like') }}
           </button>
@@ -93,9 +110,7 @@
 
         <!-- Reviews -->
         <section class="mt-12 border-t border-white/10 pt-8">
-          <h2 class="text-xl font-bold">
-            {{ t('reviews.title') }} ({{ bookReviews().length }})
-          </h2>
+          <h2 class="text-xl font-bold">{{ t('reviews.title') }} ({{ bookReviews().length }})</h2>
 
           <form [formGroup]="reviewForm" (ngSubmit)="submitReview()" class="mt-5 grid gap-3">
             <input
@@ -108,17 +123,16 @@
               rows="3"
               [placeholder]="t('reviews.yourReview')"
               class="resize-y rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm outline-none focus:border-coral-500"
-              [class.border-coral-600]="reviewForm.controls.body.touched && reviewForm.controls.body.invalid"
+              [class.border-coral-600]="
+                reviewForm.controls.body.touched && reviewForm.controls.body.invalid
+              "
             ></textarea>
             @if (reviewForm.controls.body.touched && reviewForm.controls.body.invalid) {
               <p class="text-sm text-coral-400">{{ t('reviews.empty') }}</p>
             }
             <div class="flex items-center gap-3 text-sm">
               <span class="text-muted">{{ t('reviews.yourRating') }}</span>
-              <app-rating-input
-                [label]="t('reviews.yourRating')"
-                [(value)]="reviewRating"
-              />
+              <app-rating-input [label]="t('reviews.yourRating')" [(value)]="reviewRating" />
             </div>
             <button
               type="submit"

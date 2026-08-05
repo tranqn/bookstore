@@ -59,6 +59,14 @@
   --card-border: rgb(255 255 255 / 0.1);
   /* Availability / success text, AA on its surface in both themes. */
   --ok: rgb(110 231 168);
+
+  /* Sticky stack: the site header, then anything parked under it (the book
+     detail back pill, then the cover column). Each layer keeps --stack-gap
+     above and below, so a sticky element sits exactly where it started and
+     never jumps as the page scrolls. */
+  --header-h: 3.75rem;
+  --stack-gap: 1rem;
+  --back-pill-h: 2.375rem; /* text-sm line box + py-2 + border */
 }
 
 .light {
