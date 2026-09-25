@@ -8,6 +8,7 @@ on:
     branches: [main, bookstore]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   lint-and-unit:
@@ -85,7 +86,9 @@ jobs:
     # The correctness gates block the deploy. Lighthouse deliberately does not:
     # a performance budget slipping is worth a red check, not a blocked release.
     needs: [lint-and-unit, build, e2e]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/bookstore'
+    # workflow_dispatch is allowed too: dispatching needs write access on the
+    # repo, so it is a manual redeploy button for me and not a fork's way in.
+    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/bookstore'
     runs-on: [self-hosted, hetzner, deploy]
     concurrency:
       group: deploy-bookstore
