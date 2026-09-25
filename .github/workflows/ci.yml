@@ -1,3 +1,6 @@
+# The deploy job at the bottom runs on a self-hosted runner inside my own
+# server, so it must never be reachable from a fork: it has no pull_request
+# path to it and additionally refuses anything but a push to the release branch.
 name: CI
 
 on:
@@ -76,3 +79,23 @@ jobs:
         run: PORT=4287 node dist/bookstore/server/server.mjs &
       - name: Lighthouse audit (budgets in lighthouserc.json)
         run: npx -y @lhci/cli@0.15.x autorun
+
+  deploy:
+    name: Deploy to Hetzner
+    # The correctness gates block the deploy. Lighthouse deliberately does not:
+    # a performance budget slipping is worth a red check, not a blocked release.
+    needs: [lint-and-unit, build, e2e]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/bookstore'
+    runs-on: [self-hosted, hetzner, deploy]
+    concurrency:
+      group: deploy-bookstore
+      cancel-in-progress: false
+    timeout-minutes: 30
+    steps:
+      # No checkout: the runner never materialises repo content. It hands a
+      # commit to a root-owned script that it cannot modify, and that script
+      # refuses any commit which is not already on origin/bookstore.
+      - name: Deploy
+        env:
+          SHA: ${{ github.sha }}
+        run: /opt/ci/bin/deploy bookstore "$SHA"
